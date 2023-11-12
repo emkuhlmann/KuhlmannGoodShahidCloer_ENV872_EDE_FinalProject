@@ -1,6 +1,10 @@
 library(here)
 library(tidyverse)
 library(ggplot2)
+library(lubridate)
+library(RColorBrewer)
+#install.packages("plotly")
+library(plotly)
 #importing dataset and replacing "suppressed" entries in the values column as NAs
 CA_Asthma_EDVisits <- read.csv(here("Data/Raw/CA_Asthma_EDVisits.csv"), 
                                stringsAsFactors = T, 
@@ -25,7 +29,6 @@ Asthma_ED$Year <- as.factor(Asthma_ED$Year)
 #plotting annual visits by county
 ED_Visits <- ggplot(Asthma_ED, aes(x = factor(CountyFIPS), y = Visits, fill = Year)) +
   geom_col()
-
 ED_Visits
 
 #annual visits across all counties
@@ -33,6 +36,18 @@ YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
   geom_col()
 
 YearlyVisits
+
+#heatmap
+AsthmaVisits_heatmap <- ggplot(Asthma_ED, aes(x = Year, y = County, fill = Visits)) +
+  geom_tile() +
+  scale_fill_distiller(name = "ED Visits", palette = "RdYlGn", 
+                      breaks = c(100, 300, 500, 700),
+                      direction = -1)
+AsthmaVisits_heatmap
+
+#interactive heatmap
+int_heatmap <- ggplotly(AsthmaVisits_heatmap)
+int_heatmap
 
 #saving processed data
 write.csv(Asthma_ED, row.names = FALSE, 
