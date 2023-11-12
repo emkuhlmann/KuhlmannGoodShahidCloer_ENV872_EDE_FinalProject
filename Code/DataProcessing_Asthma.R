@@ -22,5 +22,18 @@ Asthma_ED <- Asthma_ED %>%
 Asthma_ED$Visits <- as.numeric(Asthma_ED$Visits)
 Asthma_ED$Year <- as.factor(Asthma_ED$Year)
 
+#plotting annual visits by county
+ED_Visits <- ggplot(Asthma_ED, aes(x = factor(CountyFIPS), y = Visits, fill = Year)) +
+  geom_col()
 
+ED_Visits
 
+#annual visits across all counties
+YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
+  geom_col()
+
+YearlyVisits
+
+#saving processed data
+write.csv(Asthma_ED, row.names = FALSE, 
+          file = "./Data/Processed/Asthma_ED_Visits_Processed.csv")
