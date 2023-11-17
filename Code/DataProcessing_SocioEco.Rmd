@@ -1,0 +1,104 @@
+---
+title: "Processing Data Socioeconomic Factors"
+output: html_document
+date: "2023-11-14"
+---
+
+```{r setup, include=FALSE}
+library(here)
+library(tidyverse)
+getwd()
+here()
+```
+
+```{r, reading in datasets and removing extra columns}
+poverty_2013.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty13.csv", stringsAsFactors = TRUE)
+poverty_2014.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty14.csv", stringsAsFactors = TRUE)
+poverty_2015.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty15.csv", stringsAsFactors = TRUE)
+poverty_2016.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty16.csv", stringsAsFactors = TRUE)
+poverty_2017.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty17.csv", stringsAsFactors = TRUE)
+poverty_2018.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty18.csv", stringsAsFactors = TRUE)
+poverty_2019.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty19.csv", stringsAsFactors = TRUE)
+poverty_2020.df <- read.csv("Data/Raw/Socioeconomic_Factors/poverty20.csv", stringsAsFactors = TRUE)
+
+poverty_2013.df <- poverty_2013.df[-c(7,8)]
+poverty_2014.df <- poverty_2014.df[-c(7,8)]
+poverty_2015.df <- poverty_2015.df[-c(7,8)]
+poverty_2016.df <- poverty_2016.df[-c(7,8)]
+poverty_2017.df <- poverty_2017.df[-c(7,8)]
+poverty_2018.df <- poverty_2018.df[-c(7,8)]
+poverty_2019.df <- poverty_2019.df[-c(7,8)]
+poverty_2020.df <- poverty_2020.df[-c(7,8)]
+```
+
+```{r, binding datasets together}
+poverty_1314.df <- rbind(poverty_2013.df, poverty_2014.df)
+poverty_1516.df <- rbind(poverty_2015.df, poverty_2016.df)
+poverty_1718.df <- rbind(poverty_2017.df, poverty_2018.df)
+poverty_1920.df <- rbind(poverty_2019.df, poverty_2020.df)
+
+poverty1316.df <- rbind(poverty_1314.df, poverty_1516)
+poverty1720.df <- rbind(poverty_1718.df, poverty_1920.df)
+
+poverty13_20.df <- rbind(poverty1316.df, poverty1720.df)
+
+colnames(poverty13_20.df) #StateFIPS, State, CountyFIPS, County, Year, Value
+summary(poverty13_20.df) #464 obsv of 6 variables
+
+sum(is.na(poverty13_20.df$Value)) #no na's in the dataset
+```
+```{r, renaming column names}
+poverty13_20.df <- poverty13_20.df %>%
+  rename(Percent_Poverty = Value)
+```
+
+```{r, changing the class of the variables}
+poverty13_20.df$Year <- as.factor(poverty13_20.df$Year)
+poverty13_20.df$Percent_Poverty <- as.numeric(poverty13_20.df$Percent_Poverty)
+poverty13_20.df$CountyFIPS <- as.factor(poverty13_20.df$CountyFIPS)
+poverty13_20.df$County <- as.character(poverty13_20.df$County)
+poverty13_20.df$State <- as.character(poverty13_20.df$State)
+```
+
+```{r, adding column for average percentage by county}
+poverty13_20_summary_bycounty.df <- poverty13_20.df %>%
+  group_by(County) %>%
+  summarise(mean_percent = mean(Percent_Poverty))
+```
+
+
+```{r, plotting average percentages by county}
+Poverty_perct_county <- ggplot(poverty13_20_summarybycounty.df, aes(x = County, y = mean_percent)) +
+  geom_col()
+
+print(Poverty_perct_county)
+```
+```{r, adding column for average percentage by year}
+poverty13_20_summary_byyear.df <- poverty13_20.df %>%
+  group_by(Year) %>%
+  summarise(mean_percent = mean(Percent_Poverty))
+```
+
+```{r, plotting average percentages by year}
+Poverty_perct_year <- ggplot(poverty13_20_summary_byyear.df, aes(x = Year, y = mean_percent)) +
+  geom_col()
+
+print(Poverty_perct_year)
+```
+
+```{r}
+percent_poverty_heatmap <- ggplot(poverty13_20.df, aes(x = Year, y = County, fill = Percent_Poverty)) +
+  geom_tile() +
+  scale_fill_distiller(name = "Percent in Poverty", palette = "RdY1Gn")
+
+print(percent_poverty_heatmap)
+```
+
+```{r, saving processed data}
+write.csv(poverty13_20.df, row.names = FALSE, file = "./Data/Processed/Percent_poverty_processed.csv")
+
+write.csv(poverty13_20_summary_bycounty.df, row.names = FALSE, file = "./Data/Processed/Percent_poverty_bycounty_processed.csv")
+
+write.csv(poverty13_20_summary_byyear.df, row.names = FALSE, file = "./Data/Processed/Percent_poverty_byyear_processed.csv")
+```
+
