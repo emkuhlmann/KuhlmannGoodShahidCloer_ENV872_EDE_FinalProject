@@ -1,0 +1,602 @@
+"CountyFIPS","County","Year","Population"
+"06001","Alameda County, California","2005",1421308
+"06007","Butte County, California","2005",207937
+"06013","Contra Costa County, California","2005",1006486
+"06017","El Dorado County, California","2005",175790
+"06019","Fresno County, California","2005",858948
+"06023","Humboldt County, California","2005",124031
+"06025","Imperial County, California","2005",144523
+"06029","Kern County, California","2005",724206
+"06031","Kings County, California","2005",121418
+"06033","Lake County, California","2005",63962
+"06037","Los Angeles County, California","2005",9758886
+"06039","Madera County, California","2005",134159
+"06041","Marin County, California","2005",235609
+"06045","Mendocino County, California","2005",86011
+"06047","Merced County, California","2005",237278
+"06053","Monterey County, California","2005",389004
+"06055","Napa County, California","2005",127445
+"06057","Nevada County, California","2005",97572
+"06059","Orange County, California","2005",2944537
+"06061","Placer County, California","2005",314135
+"06065","Riverside County, California","2005",1911281
+"06067","Sacramento County, California","2005",1337942
+"06071","San Bernardino County, California","2005",1916665
+"06073","San Diego County, California","2005",2824259
+"06075","San Francisco County, California","2005",719077
+"06077","San Joaquin County, California","2005",646259
+"06079","San Luis Obispo County, California","2005",239638
+"06081","San Mateo County, California","2005",689271
+"06083","Santa Barbara County, California","2005",383393
+"06085","Santa Clara County, California","2005",1669890
+"06087","Santa Cruz County, California","2005",240367
+"06089","Shasta County, California","2005",176570
+"06095","Solano County, California","2005",395426
+"06097","Sonoma County, California","2005",453850
+"06099","Stanislaus County, California","2005",497804
+"06101","Sutter County, California","2005",87444
+"06107","Tulare County, California","2005",404909
+"06111","Ventura County, California","2005",782759
+"06113","Yolo County, California","2005",176609
+"06115","Yuba County, California","2005",65818
+"06001","Alameda County, California","2006",1457426
+"06007","Butte County, California","2006",215881
+"06013","Contra Costa County, California","2006",1024319
+"06017","El Dorado County, California","2006",178066
+"06019","Fresno County, California","2006",891756
+"06023","Humboldt County, California","2006",128330
+"06025","Imperial County, California","2006",160301
+"06029","Kern County, California","2006",780117
+"06031","Kings County, California","2006",146153
+"06033","Lake County, California","2006",65933
+"06037","Los Angeles County, California","2006",9948081
+"06039","Madera County, California","2006",146345
+"06041","Marin County, California","2006",248742
+"06045","Mendocino County, California","2006",88109
+"06047","Merced County, California","2006",245658
+"06053","Monterey County, California","2006",410206
+"06055","Napa County, California","2006",133522
+"06057","Nevada County, California","2006",98764
+"06059","Orange County, California","2006",3002048
+"06061","Placer County, California","2006",326242
+"06065","Riverside County, California","2006",2026803
+"06067","Sacramento County, California","2006",1374724
+"06071","San Bernardino County, California","2006",1999332
+"06073","San Diego County, California","2006",2941454
+"06075","San Francisco County, California","2006",744041
+"06077","San Joaquin County, California","2006",673170
+"06079","San Luis Obispo County, California","2006",257005
+"06081","San Mateo County, California","2006",705499
+"06083","Santa Barbara County, California","2006",400335
+"06085","Santa Clara County, California","2006",1731281
+"06087","Santa Cruz County, California","2006",249705
+"06089","Shasta County, California","2006",179951
+"06095","Solano County, California","2006",411680
+"06097","Sonoma County, California","2006",466891
+"06099","Stanislaus County, California","2006",512138
+"06101","Sutter County, California","2006",91410
+"06107","Tulare County, California","2006",419909
+"06111","Ventura County, California","2006",799720
+"06113","Yolo County, California","2006",188085
+"06115","Yuba County, California","2006",70396
+"06001","Alameda County, California","2007",1464202
+"06007","Butte County, California","2007",218779
+"06013","Contra Costa County, California","2007",1019640
+"06017","El Dorado County, California","2007",175689
+"06019","Fresno County, California","2007",899348
+"06023","Humboldt County, California","2007",128864
+"06025","Imperial County, California","2007",161867
+"06029","Kern County, California","2007",790710
+"06031","Kings County, California","2007",148875
+"06033","Lake County, California","2007",64664
+"06037","Los Angeles County, California","2007",9878554
+"06039","Madera County, California","2007",146513
+"06041","Marin County, California","2007",248096
+"06045","Mendocino County, California","2007",86273
+"06047","Merced County, California","2007",245514
+"06053","Monterey County, California","2007",407637
+"06055","Napa County, California","2007",132565
+"06057","Nevada County, California","2007",97027
+"06059","Orange County, California","2007",2997033
+"06061","Placer County, California","2007",332920
+"06065","Riverside County, California","2007",2073571
+"06067","Sacramento County, California","2007",1386667
+"06071","San Bernardino County, California","2007",2007800
+"06073","San Diego County, California","2007",2974859
+"06075","San Francisco County, California","2007",764976
+"06077","San Joaquin County, California","2007",670990
+"06079","San Luis Obispo County, California","2007",262436
+"06081","San Mateo County, California","2007",706984
+"06083","Santa Barbara County, California","2007",404197
+"06085","Santa Clara County, California","2007",1748976
+"06087","Santa Cruz County, California","2007",251747
+"06089","Shasta County, California","2007",179427
+"06095","Solano County, California","2007",408599
+"06097","Sonoma County, California","2007",464435
+"06099","Stanislaus County, California","2007",511263
+"06101","Sutter County, California","2007",92040
+"06107","Tulare County, California","2007",421553
+"06111","Ventura County, California","2007",798364
+"06113","Yolo County, California","2007",195844
+"06115","Yuba County, California","2007",72098
+"06001","Alameda County, California","2008",1474368
+"06007","Butte County, California","2008",220337
+"06013","Contra Costa County, California","2008",1029703
+"06017","El Dorado County, California","2008",176075
+"06019","Fresno County, California","2008",909153
+"06023","Humboldt County, California","2008",129000
+"06025","Imperial County, California","2008",163972
+"06029","Kern County, California","2008",800458
+"06031","Kings County, California","2008",149518
+"06033","Lake County, California","2008",64866
+"06037","Los Angeles County, California","2008",9862049
+"06039","Madera County, California","2008",148333
+"06041","Marin County, California","2008",248794
+"06045","Mendocino County, California","2008",86221
+"06047","Merced County, California","2008",246117
+"06053","Monterey County, California","2008",408238
+"06055","Napa County, California","2008",133433
+"06057","Nevada County, California","2008",97118
+"06059","Orange County, California","2008",3010759
+"06061","Placer County, California","2008",341945
+"06065","Riverside County, California","2008",2100516
+"06067","Sacramento County, California","2008",1394154
+"06071","San Bernardino County, California","2008",2015355
+"06073","San Diego County, California","2008",3001072
+"06075","San Francisco County, California","2008",808976
+"06077","San Joaquin County, California","2008",672388
+"06079","San Luis Obispo County, California","2008",265297
+"06081","San Mateo County, California","2008",712690
+"06083","Santa Barbara County, California","2008",405396
+"06085","Santa Clara County, California","2008",1764499
+"06087","Santa Cruz County, California","2008",253137
+"06089","Shasta County, California","2008",180214
+"06095","Solano County, California","2008",407515
+"06097","Sonoma County, California","2008",466741
+"06099","Stanislaus County, California","2008",510694
+"06101","Sutter County, California","2008",92207
+"06107","Tulare County, California","2008",426276
+"06111","Ventura County, California","2008",797740
+"06113","Yolo County, California","2008",197658
+"06115","Yuba County, California","2008",73067
+"06001","Alameda County, California","2009",1491482
+"06007","Butte County, California","2009",220577
+"06013","Contra Costa County, California","2009",1041274
+"06017","El Dorado County, California","2009",178447
+"06019","Fresno County, California","2009",915267
+"06023","Humboldt County, California","2009",129623
+"06025","Imperial County, California","2009",166874
+"06029","Kern County, California","2009",807407
+"06031","Kings County, California","2009",148764
+"06033","Lake County, California","2009",65279
+"06037","Los Angeles County, California","2009",9848011
+"06039","Madera County, California","2009",148632
+"06041","Marin County, California","2009",250750
+"06045","Mendocino County, California","2009",86040
+"06047","Merced County, California","2009",245321
+"06053","Monterey County, California","2009",410370
+"06055","Napa County, California","2009",134650
+"06057","Nevada County, California","2009",97751
+"06059","Orange County, California","2009",3026786
+"06061","Placer County, California","2009",348552
+"06065","Riverside County, California","2009",2125440
+"06067","Sacramento County, California","2009",1400949
+"06071","San Bernardino County, California","2009",2017673
+"06073","San Diego County, California","2009",3053793
+"06075","San Francisco County, California","2009",815358
+"06077","San Joaquin County, California","2009",674860
+"06079","San Luis Obispo County, California","2009",266971
+"06081","San Mateo County, California","2009",718989
+"06083","Santa Barbara County, California","2009",407057
+"06085","Santa Clara County, California","2009",1784642
+"06087","Santa Cruz County, California","2009",256218
+"06089","Shasta County, California","2009",181099
+"06095","Solano County, California","2009",407234
+"06097","Sonoma County, California","2009",472102
+"06099","Stanislaus County, California","2009",510385
+"06101","Sutter County, California","2009",92614
+"06107","Tulare County, California","2009",429668
+"06111","Ventura County, California","2009",802983
+"06113","Yolo County, California","2009",199407
+"06115","Yuba County, California","2009",72925
+"06001","Alameda County, California","2010",1513952
+"06007","Butte County, California","2010",220072
+"06013","Contra Costa County, California","2010",1052827
+"06017","El Dorado County, California","2010",181194
+"06019","Fresno County, California","2010",933248
+"06023","Humboldt County, California","2010",134794
+"06025","Imperial County, California","2010",175234
+"06029","Kern County, California","2010",842207
+"06031","Kings County, California","2010",153174
+"06033","Lake County, California","2010",64771
+"06037","Los Angeles County, California","2010",9830420
+"06039","Madera County, California","2010",151408
+"06041","Marin County, California","2010",252916
+"06045","Mendocino County, California","2010",87828
+"06047","Merced County, California","2010",256778
+"06053","Monterey County, California","2010",416682
+"06055","Napa County, California","2010",136858
+"06057","Nevada County, California","2010",98794
+"06059","Orange County, California","2010",3018963
+"06061","Placer County, California","2010",350048
+"06065","Riverside County, California","2010",2203332
+"06067","Sacramento County, California","2010",1421959
+"06071","San Bernardino County, California","2010",2042441
+"06073","San Diego County, California","2010",3105989
+"06075","San Francisco County, California","2010",805463
+"06077","San Joaquin County, California","2010",687744
+"06079","San Luis Obispo County, California","2010",270113
+"06081","San Mateo County, California","2010",720162
+"06083","Santa Barbara County, California","2010",424712
+"06085","Santa Clara County, California","2010",1787694
+"06087","Santa Cruz County, California","2010",263054
+"06089","Shasta County, California","2010",177291
+"06095","Solano County, California","2010",414305
+"06097","Sonoma County, California","2010",485120
+"06099","Stanislaus County, California","2010",515358
+"06101","Sutter County, California","2010",94806
+"06107","Tulare County, California","2010",443688
+"06111","Ventura County, California","2010",825706
+"06113","Yolo County, California","2010",201190
+"06115","Yuba County, California","2010",72388
+"06001","Alameda County, California","2011",1529875
+"06007","Butte County, California","2011",220266
+"06013","Contra Costa County, California","2011",1066096
+"06017","El Dorado County, California","2011",180938
+"06019","Fresno County, California","2011",942904
+"06023","Humboldt County, California","2011",134761
+"06025","Imperial County, California","2011",177057
+"06029","Kern County, California","2011",851710
+"06031","Kings County, California","2011",153765
+"06033","Lake County, California","2011",64323
+"06037","Los Angeles County, California","2011",9889056
+"06039","Madera County, California","2011",152925
+"06041","Marin County, California","2011",255031
+"06045","Mendocino County, California","2011",87553
+"06047","Merced County, California","2011",259898
+"06053","Monterey County, California","2011",421898
+"06055","Napa County, California","2011",138088
+"06057","Nevada County, California","2011",98612
+"06059","Orange County, California","2011",3055745
+"06061","Placer County, California","2011",357138
+"06065","Riverside County, California","2011",2239620
+"06067","Sacramento County, California","2011",1436105
+"06071","San Bernardino County, California","2011",2065377
+"06073","San Diego County, California","2011",3140069
+"06075","San Francisco County, California","2011",812826
+"06077","San Joaquin County, California","2011",696214
+"06079","San Luis Obispo County, California","2011",271969
+"06081","San Mateo County, California","2011",727209
+"06083","Santa Barbara County, California","2011",426878
+"06085","Santa Clara County, California","2011",1809378
+"06087","Santa Cruz County, California","2011",264298
+"06089","Shasta County, California","2011",177774
+"06095","Solano County, California","2011",416471
+"06097","Sonoma County, California","2011",488116
+"06099","Stanislaus County, California","2011",518522
+"06101","Sutter County, California","2011",94919
+"06107","Tulare County, California","2011",449253
+"06111","Ventura County, California","2011",831771
+"06113","Yolo County, California","2011",202054
+"06115","Yuba County, California","2011",72578
+"06001","Alameda County, California","2012",1554720
+"06007","Butte County, California","2012",221539
+"06013","Contra Costa County, California","2012",1079597
+"06017","El Dorado County, California","2012",180561
+"06019","Fresno County, California","2012",947895
+"06023","Humboldt County, California","2012",134827
+"06025","Imperial County, California","2012",176948
+"06029","Kern County, California","2012",856158
+"06031","Kings County, California","2012",151364
+"06033","Lake County, California","2012",63983
+"06037","Los Angeles County, California","2012",9962789
+"06039","Madera County, California","2012",152218
+"06041","Marin County, California","2012",256069
+"06045","Mendocino County, California","2012",87428
+"06047","Merced County, California","2012",262305
+"06053","Monterey County, California","2012",426762
+"06055","Napa County, California","2012",139045
+"06057","Nevada County, California","2012",98292
+"06059","Orange County, California","2012",3090132
+"06061","Placer County, California","2012",361682
+"06065","Riverside County, California","2012",2268783
+"06067","Sacramento County, California","2012",1450121
+"06071","San Bernardino County, California","2012",2081313
+"06073","San Diego County, California","2012",3177063
+"06075","San Francisco County, California","2012",825863
+"06077","San Joaquin County, California","2012",702612
+"06079","San Luis Obispo County, California","2012",274804
+"06081","San Mateo County, California","2012",739311
+"06083","Santa Barbara County, California","2012",431249
+"06085","Santa Clara County, California","2012",1837504
+"06087","Santa Cruz County, California","2012",266776
+"06089","Shasta County, California","2012",178586
+"06095","Solano County, California","2012",420757
+"06097","Sonoma County, California","2012",491829
+"06099","Stanislaus County, California","2012",521726
+"06101","Sutter County, California","2012",95022
+"06107","Tulare County, California","2012",451977
+"06111","Ventura County, California","2012",835981
+"06113","Yolo County, California","2012",204118
+"06115","Yuba County, California","2012",72926
+"06001","Alameda County, California","2013",1578891
+"06007","Butte County, California","2013",222090
+"06013","Contra Costa County, California","2013",1094205
+"06017","El Dorado County, California","2013",181737
+"06019","Fresno County, California","2013",955272
+"06023","Humboldt County, California","2013",134493
+"06025","Imperial County, California","2013",176584
+"06029","Kern County, California","2013",864124
+"06031","Kings County, California","2013",150960
+"06033","Lake County, California","2013",63860
+"06037","Los Angeles County, California","2013",10017068
+"06039","Madera County, California","2013",152389
+"06041","Marin County, California","2013",258365
+"06045","Mendocino County, California","2013",87192
+"06047","Merced County, California","2013",263228
+"06053","Monterey County, California","2013",428826
+"06055","Napa County, California","2013",140326
+"06057","Nevada County, California","2013",98200
+"06059","Orange County, California","2013",3114363
+"06061","Placer County, California","2013",367309
+"06065","Riverside County, California","2013",2292507
+"06067","Sacramento County, California","2013",1462131
+"06071","San Bernardino County, California","2013",2088371
+"06073","San Diego County, California","2013",3211252
+"06075","San Francisco County, California","2013",837442
+"06077","San Joaquin County, California","2013",704379
+"06079","San Luis Obispo County, California","2013",276443
+"06081","San Mateo County, California","2013",747373
+"06083","Santa Barbara County, California","2013",435697
+"06085","Santa Clara County, California","2013",1862041
+"06087","Santa Cruz County, California","2013",269419
+"06089","Shasta County, California","2013",178980
+"06095","Solano County, California","2013",424788
+"06097","Sonoma County, California","2013",495025
+"06099","Stanislaus County, California","2013",525491
+"06101","Sutter County, California","2013",95350
+"06107","Tulare County, California","2013",454143
+"06111","Ventura County, California","2013",839620
+"06113","Yolo County, California","2013",204593
+"06115","Yuba County, California","2013",73340
+"06001","Alameda County, California","2014",1610921
+"06007","Butte County, California","2014",224241
+"06013","Contra Costa County, California","2014",1111339
+"06017","El Dorado County, California","2014",183087
+"06019","Fresno County, California","2014",965974
+"06023","Humboldt County, California","2014",134809
+"06025","Imperial County, California","2014",179091
+"06029","Kern County, California","2014",874589
+"06031","Kings County, California","2014",150269
+"06033","Lake County, California","2014",64184
+"06037","Los Angeles County, California","2014",10116705
+"06039","Madera County, California","2014",154548
+"06041","Marin County, California","2014",260750
+"06045","Mendocino County, California","2014",87869
+"06047","Merced County, California","2014",266353
+"06053","Monterey County, California","2014",431344
+"06055","Napa County, California","2014",141667
+"06057","Nevada County, California","2014",98893
+"06059","Orange County, California","2014",3145515
+"06061","Placer County, California","2014",371694
+"06065","Riverside County, California","2014",2329271
+"06067","Sacramento County, California","2014",1482026
+"06071","San Bernardino County, California","2014",2112619
+"06073","San Diego County, California","2014",3263431
+"06075","San Francisco County, California","2014",852469
+"06077","San Joaquin County, California","2014",715597
+"06079","San Luis Obispo County, California","2014",279083
+"06081","San Mateo County, California","2014",758581
+"06083","Santa Barbara County, California","2014",440668
+"06085","Santa Clara County, California","2014",1894605
+"06087","Santa Cruz County, California","2014",271804
+"06089","Shasta County, California","2014",179804
+"06095","Solano County, California","2014",431131
+"06097","Sonoma County, California","2014",500292
+"06099","Stanislaus County, California","2014",531997
+"06101","Sutter County, California","2014",95847
+"06107","Tulare County, California","2014",458198
+"06111","Ventura County, California","2014",846178
+"06113","Yolo County, California","2014",207590
+"06115","Yuba County, California","2014",73966
+"06001","Alameda County, California","2015",1638215
+"06007","Butte County, California","2015",225411
+"06013","Contra Costa County, California","2015",1126745
+"06017","El Dorado County, California","2015",184452
+"06019","Fresno County, California","2015",974861
+"06023","Humboldt County, California","2015",135727
+"06025","Imperial County, California","2015",180191
+"06029","Kern County, California","2015",882176
+"06031","Kings County, California","2015",150965
+"06033","Lake County, California","2015",64591
+"06037","Los Angeles County, California","2015",10170292
+"06039","Madera County, California","2015",154998
+"06041","Marin County, California","2015",261221
+"06045","Mendocino County, California","2015",87649
+"06047","Merced County, California","2015",268455
+"06053","Monterey County, California","2015",433898
+"06055","Napa County, California","2015",142456
+"06057","Nevada County, California","2015",98877
+"06059","Orange County, California","2015",3169776
+"06061","Placer County, California","2015",375391
+"06065","Riverside County, California","2015",2361026
+"06067","Sacramento County, California","2015",1501335
+"06071","San Bernardino County, California","2015",2128133
+"06073","San Diego County, California","2015",3299521
+"06075","San Francisco County, California","2015",864816
+"06077","San Joaquin County, California","2015",726106
+"06079","San Luis Obispo County, California","2015",281401
+"06081","San Mateo County, California","2015",765135
+"06083","Santa Barbara County, California","2015",444769
+"06085","Santa Clara County, California","2015",1918044
+"06087","Santa Cruz County, California","2015",274146
+"06089","Shasta County, California","2015",179533
+"06095","Solano County, California","2015",436092
+"06097","Sonoma County, California","2015",502146
+"06099","Stanislaus County, California","2015",538388
+"06101","Sutter County, California","2015",96463
+"06107","Tulare County, California","2015",459863
+"06111","Ventura County, California","2015",850536
+"06113","Yolo County, California","2015",213016
+"06115","Yuba County, California","2015",74492
+"06001","Alameda County, California","2016",1647704
+"06007","Butte County, California","2016",226864
+"06013","Contra Costa County, California","2016",1135127
+"06017","El Dorado County, California","2016",185625
+"06019","Fresno County, California","2016",979915
+"06023","Humboldt County, California","2016",136646
+"06025","Imperial County, California","2016",180883
+"06029","Kern County, California","2016",884788
+"06031","Kings County, California","2016",149785
+"06033","Lake County, California","2016",64116
+"06037","Los Angeles County, California","2016",10137915
+"06039","Madera County, California","2016",154697
+"06041","Marin County, California","2016",260651
+"06045","Mendocino County, California","2016",87628
+"06047","Merced County, California","2016",268672
+"06053","Monterey County, California","2016",435232
+"06055","Napa County, California","2016",142166
+"06057","Nevada County, California","2016",99107
+"06059","Orange County, California","2016",3172532
+"06061","Placer County, California","2016",380531
+"06065","Riverside County, California","2016",2387741
+"06067","Sacramento County, California","2016",1514460
+"06071","San Bernardino County, California","2016",2140096
+"06073","San Diego County, California","2016",3317749
+"06075","San Francisco County, California","2016",870887
+"06077","San Joaquin County, California","2016",733709
+"06079","San Luis Obispo County, California","2016",282887
+"06081","San Mateo County, California","2016",764797
+"06083","Santa Barbara County, California","2016",446170
+"06085","Santa Clara County, California","2016",1919402
+"06087","Santa Cruz County, California","2016",274673
+"06089","Shasta County, California","2016",179631
+"06095","Solano County, California","2016",440207
+"06097","Sonoma County, California","2016",503070
+"06099","Stanislaus County, California","2016",541560
+"06101","Sutter County, California","2016",96651
+"06107","Tulare County, California","2016",460437
+"06111","Ventura County, California","2016",849738
+"06113","Yolo County, California","2016",215802
+"06115","Yuba County, California","2016",75275
+"06001","Alameda County, California","2017",1663190
+"06007","Butte County, California","2017",229294
+"06013","Contra Costa County, California","2017",1147439
+"06017","El Dorado County, California","2017",188987
+"06019","Fresno County, California","2017",989255
+"06023","Humboldt County, California","2017",136754
+"06025","Imperial County, California","2017",182830
+"06029","Kern County, California","2017",893119
+"06031","Kings County, California","2017",150101
+"06033","Lake County, California","2017",64246
+"06037","Los Angeles County, California","2017",10163507
+"06039","Madera County, California","2017",156890
+"06041","Marin County, California","2017",260955
+"06045","Mendocino County, California","2017",88018
+"06047","Merced County, California","2017",272673
+"06053","Monterey County, California","2017",437907
+"06055","Napa County, California","2017",140973
+"06057","Nevada County, California","2017",99814
+"06059","Orange County, California","2017",3190400
+"06061","Placer County, California","2017",386166
+"06065","Riverside County, California","2017",2423266
+"06067","Sacramento County, California","2017",1530615
+"06071","San Bernardino County, California","2017",2157404
+"06073","San Diego County, California","2017",3337685
+"06075","San Francisco County, California","2017",884363
+"06077","San Joaquin County, California","2017",745424
+"06079","San Luis Obispo County, California","2017",283405
+"06081","San Mateo County, California","2017",771410
+"06083","Santa Barbara County, California","2017",448150
+"06085","Santa Clara County, California","2017",1938153
+"06087","Santa Cruz County, California","2017",275897
+"06089","Shasta County, California","2017",179921
+"06095","Solano County, California","2017",445458
+"06097","Sonoma County, California","2017",504217
+"06099","Stanislaus County, California","2017",547899
+"06101","Sutter County, California","2017",96648
+"06107","Tulare County, California","2017",464493
+"06111","Ventura County, California","2017",854223
+"06113","Yolo County, California","2017",219116
+"06115","Yuba County, California","2017",77031
+"06001","Alameda County, California","2018",1666753
+"06007","Butte County, California","2018",231256
+"06013","Contra Costa County, California","2018",1150215
+"06017","El Dorado County, California","2018",190678
+"06019","Fresno County, California","2018",994400
+"06023","Humboldt County, California","2018",136373
+"06025","Imperial County, California","2018",181827
+"06029","Kern County, California","2018",896764
+"06031","Kings County, California","2018",151366
+"06033","Lake County, California","2018",64382
+"06037","Los Angeles County, California","2018",10105518
+"06039","Madera County, California","2018",157672
+"06041","Marin County, California","2018",259666
+"06045","Mendocino County, California","2018",87606
+"06047","Merced County, California","2018",274765
+"06053","Monterey County, California","2018",435594
+"06055","Napa County, California","2018",139417
+"06057","Nevada County, California","2018",99696
+"06059","Orange County, California","2018",3185968
+"06061","Placer County, California","2018",393149
+"06065","Riverside County, California","2018",2450758
+"06067","Sacramento County, California","2018",1540975
+"06071","San Bernardino County, California","2018",2171603
+"06073","San Diego County, California","2018",3343364
+"06075","San Francisco County, California","2018",883305
+"06077","San Joaquin County, California","2018",752660
+"06079","San Luis Obispo County, California","2018",284010
+"06081","San Mateo County, California","2018",769545
+"06083","Santa Barbara County, California","2018",446527
+"06085","Santa Clara County, California","2018",1937570
+"06087","Santa Cruz County, California","2018",274255
+"06089","Shasta County, California","2018",180040
+"06095","Solano County, California","2018",446610
+"06097","Sonoma County, California","2018",499942
+"06099","Stanislaus County, California","2018",549815
+"06101","Sutter County, California","2018",96807
+"06107","Tulare County, California","2018",465861
+"06111","Ventura County, California","2018",850967
+"06113","Yolo County, California","2018",220408
+"06115","Yuba County, California","2018",78041
+"06001","Alameda County, California","2019",1671329
+"06007","Butte County, California","2019",219186
+"06013","Contra Costa County, California","2019",1153526
+"06017","El Dorado County, California","2019",192843
+"06019","Fresno County, California","2019",999101
+"06023","Humboldt County, California","2019",135558
+"06025","Imperial County, California","2019",181215
+"06029","Kern County, California","2019",900202
+"06031","Kings County, California","2019",152940
+"06033","Lake County, California","2019",64386
+"06037","Los Angeles County, California","2019",10039107
+"06039","Madera County, California","2019",157327
+"06041","Marin County, California","2019",258826
+"06045","Mendocino County, California","2019",86749
+"06047","Merced County, California","2019",277680
+"06053","Monterey County, California","2019",434061
+"06055","Napa County, California","2019",137744
+"06057","Nevada County, California","2019",99755
+"06059","Orange County, California","2019",3175692
+"06061","Placer County, California","2019",398329
+"06065","Riverside County, California","2019",2470546
+"06067","Sacramento County, California","2019",1552058
+"06071","San Bernardino County, California","2019",2180085
+"06073","San Diego County, California","2019",3338330
+"06075","San Francisco County, California","2019",881549
+"06077","San Joaquin County, California","2019",762148
+"06079","San Luis Obispo County, California","2019",283111
+"06081","San Mateo County, California","2019",766573
+"06083","Santa Barbara County, California","2019",446499
+"06085","Santa Clara County, California","2019",1927852
+"06087","Santa Cruz County, California","2019",273213
+"06089","Shasta County, California","2019",180080
+"06095","Solano County, California","2019",447643
+"06097","Sonoma County, California","2019",494336
+"06099","Stanislaus County, California","2019",550660
+"06101","Sutter County, California","2019",96971
+"06103","Tehama County, California","2019",65084
+"06107","Tulare County, California","2019",466195
+"06111","Ventura County, California","2019",846006
+"06113","Yolo County, California","2019",220500
+"06115","Yuba County, California","2019",78668

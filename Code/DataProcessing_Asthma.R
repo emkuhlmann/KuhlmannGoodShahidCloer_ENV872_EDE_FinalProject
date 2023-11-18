@@ -26,6 +26,21 @@ Asthma_ED <- Asthma_ED %>%
 Asthma_ED$Visits <- as.numeric(Asthma_ED$Visits)
 Asthma_ED$Year <- as.factor(Asthma_ED$Year)
 
+#reading in population data
+Cal_pop <- read.csv("./Data/Processed/CA_population_data.csv", 
+                    stringsAsFactors = T)
+
+#joining population and asthma data
+Asthma_visits_full <- Asthma_ED %>% 
+  inner_join(Cal_pop, by = c("CountyFIPS", "Year")) %>% 
+  select(CountyFIPS:Visits, Population) %>% 
+  rename(County = County.x)
+
+#normalizing ED visits by population -> asthma visits per 100k people
+Asthma_vis_normalized <- Asthma_visits_full %>% 
+  mutate(visits_per100k = (Visits/Population)*100000) %>% 
+  select(CountyFIPS:visits_per100k)
+
 #plotting annual visits by county
 ED_Visits <- ggplot(Asthma_ED, aes(x = factor(CountyFIPS), y = Visits, fill = Year)) +
   geom_col()
@@ -38,9 +53,10 @@ YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
 YearlyVisits
 
 #heatmap
-AsthmaVisits_heatmap <- ggplot(Asthma_ED, aes(x = Year, y = County, fill = Visits)) +
+AsthmaVisits_heatmap <- ggplot(Asthma_vis_normalized, 
+                               aes(x = Year, y = County, fill = visits_per100k)) +
   geom_tile() +
-  scale_fill_distiller(name = "ED Visits", palette = "RdYlGn", 
+  scale_fill_distiller(name = "ED Visits per 100k", palette = "RdYlGn", 
                       breaks = c(100, 300, 500, 700),
                       direction = -1)
 AsthmaVisits_heatmap
@@ -52,3 +68,6 @@ int_heatmap
 #saving processed data
 write.csv(Asthma_ED, row.names = FALSE, 
           file = "./Data/Processed/Asthma_ED_Visits_Processed.csv")
+
+
+
