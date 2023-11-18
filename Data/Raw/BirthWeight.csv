@@ -1,0 +1,1219 @@
+StateFIPS,State,CountyFIPS,County,Year,Value
+06,California,06001,Alameda,2000,1162.00
+06,California,06001,Alameda,2001,1160.00
+06,California,06001,Alameda,2002,1091.00
+06,California,06001,Alameda,2003,1167.00
+06,California,06001,Alameda,2004,1047.00
+06,California,06001,Alameda,2005,1096.00
+06,California,06001,Alameda,2006,1163.00
+06,California,06001,Alameda,2007,1109.00
+06,California,06001,Alameda,2008,1077.00
+06,California,06001,Alameda,2009,1076.00
+06,California,06001,Alameda,2010,1006.00
+06,California,06001,Alameda,2011,1024.00
+06,California,06001,Alameda,2012,1094.00
+06,California,06001,Alameda,2013,1030.00
+06,California,06001,Alameda,2014,1025.00
+06,California,06001,Alameda,2015,1012.00
+06,California,06001,Alameda,2016,1029.00
+06,California,06001,Alameda,2017,1063.00
+06,California,06001,Alameda,2018,1012.00
+06,California,06001,Alameda,2019,1038.00
+06,California,06001,Alameda,2020,968.00
+06,California,06003,Alpine,2000,No Events
+06,California,06003,Alpine,2001,No Events
+06,California,06003,Alpine,2002,No Events
+06,California,06003,Alpine,2003,Suppressed
+06,California,06003,Alpine,2004,No Events
+06,California,06003,Alpine,2005,No Events
+06,California,06003,Alpine,2006,No Events
+06,California,06003,Alpine,2007,Suppressed
+06,California,06003,Alpine,2008,Suppressed
+06,California,06003,Alpine,2009,Suppressed
+06,California,06003,Alpine,2010,Suppressed
+06,California,06003,Alpine,2011,Suppressed
+06,California,06003,Alpine,2012,Suppressed
+06,California,06003,Alpine,2013,Suppressed
+06,California,06003,Alpine,2014,Suppressed
+06,California,06003,Alpine,2015,Suppressed
+06,California,06003,Alpine,2016,Suppressed
+06,California,06003,Alpine,2017,Suppressed
+06,California,06003,Alpine,2018,Suppressed
+06,California,06003,Alpine,2019,Suppressed
+06,California,06003,Alpine,2020,Suppressed
+06,California,06005,Amador,2000,Suppressed
+06,California,06005,Amador,2001,Suppressed
+06,California,06005,Amador,2002,Suppressed
+06,California,06005,Amador,2003,Suppressed
+06,California,06005,Amador,2004,Suppressed
+06,California,06005,Amador,2005,Suppressed
+06,California,06005,Amador,2006,Suppressed
+06,California,06005,Amador,2007,Suppressed
+06,California,06005,Amador,2008,Suppressed
+06,California,06005,Amador,2009,10.00
+06,California,06005,Amador,2010,Suppressed
+06,California,06005,Amador,2011,Suppressed
+06,California,06005,Amador,2012,Suppressed
+06,California,06005,Amador,2013,Suppressed
+06,California,06005,Amador,2014,Suppressed
+06,California,06005,Amador,2015,Suppressed
+06,California,06005,Amador,2016,Suppressed
+06,California,06005,Amador,2017,Suppressed
+06,California,06005,Amador,2018,Suppressed
+06,California,06005,Amador,2019,Suppressed
+06,California,06005,Amador,2020,10.00
+06,California,06007,Butte,2000,81.00
+06,California,06007,Butte,2001,94.00
+06,California,06007,Butte,2002,111.00
+06,California,06007,Butte,2003,102.00
+06,California,06007,Butte,2004,91.00
+06,California,06007,Butte,2005,111.00
+06,California,06007,Butte,2006,117.00
+06,California,06007,Butte,2007,132.00
+06,California,06007,Butte,2008,104.00
+06,California,06007,Butte,2009,115.00
+06,California,06007,Butte,2010,101.00
+06,California,06007,Butte,2011,97.00
+06,California,06007,Butte,2012,105.00
+06,California,06007,Butte,2013,112.00
+06,California,06007,Butte,2014,115.00
+06,California,06007,Butte,2015,120.00
+06,California,06007,Butte,2016,105.00
+06,California,06007,Butte,2017,105.00
+06,California,06007,Butte,2018,103.00
+06,California,06007,Butte,2019,110.00
+06,California,06007,Butte,2020,88.00
+06,California,06009,Calaveras,2000,Suppressed
+06,California,06009,Calaveras,2001,Suppressed
+06,California,06009,Calaveras,2002,Suppressed
+06,California,06009,Calaveras,2003,Suppressed
+06,California,06009,Calaveras,2004,Suppressed
+06,California,06009,Calaveras,2005,Suppressed
+06,California,06009,Calaveras,2006,Suppressed
+06,California,06009,Calaveras,2007,Suppressed
+06,California,06009,Calaveras,2008,Suppressed
+06,California,06009,Calaveras,2009,Suppressed
+06,California,06009,Calaveras,2010,Suppressed
+06,California,06009,Calaveras,2011,Suppressed
+06,California,06009,Calaveras,2012,Suppressed
+06,California,06009,Calaveras,2013,Suppressed
+06,California,06009,Calaveras,2014,Suppressed
+06,California,06009,Calaveras,2015,Suppressed
+06,California,06009,Calaveras,2016,Suppressed
+06,California,06009,Calaveras,2017,29.00
+06,California,06009,Calaveras,2018,Suppressed
+06,California,06009,Calaveras,2019,21.00
+06,California,06009,Calaveras,2020,Suppressed
+06,California,06011,Colusa,2000,Suppressed
+06,California,06011,Colusa,2001,Suppressed
+06,California,06011,Colusa,2002,Suppressed
+06,California,06011,Colusa,2003,Suppressed
+06,California,06011,Colusa,2004,Suppressed
+06,California,06011,Colusa,2005,Suppressed
+06,California,06011,Colusa,2006,Suppressed
+06,California,06011,Colusa,2007,Suppressed
+06,California,06011,Colusa,2008,Suppressed
+06,California,06011,Colusa,2009,Suppressed
+06,California,06011,Colusa,2010,Suppressed
+06,California,06011,Colusa,2011,Suppressed
+06,California,06011,Colusa,2012,Suppressed
+06,California,06011,Colusa,2013,Suppressed
+06,California,06011,Colusa,2014,Suppressed
+06,California,06011,Colusa,2015,Suppressed
+06,California,06011,Colusa,2016,Suppressed
+06,California,06011,Colusa,2017,Suppressed
+06,California,06011,Colusa,2018,Suppressed
+06,California,06011,Colusa,2019,Suppressed
+06,California,06011,Colusa,2020,Suppressed
+06,California,06013,Contra Costa,2000,599.00
+06,California,06013,Contra Costa,2001,608.00
+06,California,06013,Contra Costa,2002,573.00
+06,California,06013,Contra Costa,2003,625.00
+06,California,06013,Contra Costa,2004,654.00
+06,California,06013,Contra Costa,2005,615.00
+06,California,06013,Contra Costa,2006,653.00
+06,California,06013,Contra Costa,2007,605.00
+06,California,06013,Contra Costa,2008,608.00
+06,California,06013,Contra Costa,2009,598.00
+06,California,06013,Contra Costa,2010,617.00
+06,California,06013,Contra Costa,2011,615.00
+06,California,06013,Contra Costa,2012,585.00
+06,California,06013,Contra Costa,2013,585.00
+06,California,06013,Contra Costa,2014,598.00
+06,California,06013,Contra Costa,2015,594.00
+06,California,06013,Contra Costa,2016,634.00
+06,California,06013,Contra Costa,2017,648.00
+06,California,06013,Contra Costa,2018,609.00
+06,California,06013,Contra Costa,2019,670.00
+06,California,06013,Contra Costa,2020,609.00
+06,California,06015,Del Norte,2000,Suppressed
+06,California,06015,Del Norte,2001,Suppressed
+06,California,06015,Del Norte,2002,Suppressed
+06,California,06015,Del Norte,2003,Suppressed
+06,California,06015,Del Norte,2004,Suppressed
+06,California,06015,Del Norte,2005,Suppressed
+06,California,06015,Del Norte,2006,Suppressed
+06,California,06015,Del Norte,2007,Suppressed
+06,California,06015,Del Norte,2008,Suppressed
+06,California,06015,Del Norte,2009,Suppressed
+06,California,06015,Del Norte,2010,Suppressed
+06,California,06015,Del Norte,2011,Suppressed
+06,California,06015,Del Norte,2012,Suppressed
+06,California,06015,Del Norte,2013,Suppressed
+06,California,06015,Del Norte,2014,Suppressed
+06,California,06015,Del Norte,2015,Suppressed
+06,California,06015,Del Norte,2016,Suppressed
+06,California,06015,Del Norte,2017,Suppressed
+06,California,06015,Del Norte,2018,Suppressed
+06,California,06015,Del Norte,2019,Suppressed
+06,California,06015,Del Norte,2020,Suppressed
+06,California,06017,El Dorado,2000,65.00
+06,California,06017,El Dorado,2001,66.00
+06,California,06017,El Dorado,2002,79.00
+06,California,06017,El Dorado,2003,74.00
+06,California,06017,El Dorado,2004,84.00
+06,California,06017,El Dorado,2005,74.00
+06,California,06017,El Dorado,2006,78.00
+06,California,06017,El Dorado,2007,77.00
+06,California,06017,El Dorado,2008,85.00
+06,California,06017,El Dorado,2009,83.00
+06,California,06017,El Dorado,2010,76.00
+06,California,06017,El Dorado,2011,66.00
+06,California,06017,El Dorado,2012,62.00
+06,California,06017,El Dorado,2013,69.00
+06,California,06017,El Dorado,2014,68.00
+06,California,06017,El Dorado,2015,83.00
+06,California,06017,El Dorado,2016,81.00
+06,California,06017,El Dorado,2017,87.00
+06,California,06017,El Dorado,2018,74.00
+06,California,06017,El Dorado,2019,66.00
+06,California,06017,El Dorado,2020,75.00
+06,California,06019,Fresno,2000,755.00
+06,California,06019,Fresno,2001,776.00
+06,California,06019,Fresno,2002,782.00
+06,California,06019,Fresno,2003,880.00
+06,California,06019,Fresno,2004,886.00
+06,California,06019,Fresno,2005,864.00
+06,California,06019,Fresno,2006,941.00
+06,California,06019,Fresno,2007,1020.00
+06,California,06019,Fresno,2008,1064.00
+06,California,06019,Fresno,2009,953.00
+06,California,06019,Fresno,2010,976.00
+06,California,06019,Fresno,2011,981.00
+06,California,06019,Fresno,2012,990.00
+06,California,06019,Fresno,2013,968.00
+06,California,06019,Fresno,2014,989.00
+06,California,06019,Fresno,2015,916.00
+06,California,06019,Fresno,2016,837.00
+06,California,06019,Fresno,2017,792.00
+06,California,06019,Fresno,2018,852.00
+06,California,06019,Fresno,2019,896.00
+06,California,06019,Fresno,2020,807.00
+06,California,06021,Glenn,2000,Suppressed
+06,California,06021,Glenn,2001,Suppressed
+06,California,06021,Glenn,2002,Suppressed
+06,California,06021,Glenn,2003,Suppressed
+06,California,06021,Glenn,2004,Suppressed
+06,California,06021,Glenn,2005,Suppressed
+06,California,06021,Glenn,2006,Suppressed
+06,California,06021,Glenn,2007,Suppressed
+06,California,06021,Glenn,2008,Suppressed
+06,California,06021,Glenn,2009,Suppressed
+06,California,06021,Glenn,2010,Suppressed
+06,California,06021,Glenn,2011,20.00
+06,California,06021,Glenn,2012,Suppressed
+06,California,06021,Glenn,2013,31.00
+06,California,06021,Glenn,2014,23.00
+06,California,06021,Glenn,2015,Suppressed
+06,California,06021,Glenn,2016,Suppressed
+06,California,06021,Glenn,2017,20.00
+06,California,06021,Glenn,2018,Suppressed
+06,California,06021,Glenn,2019,Suppressed
+06,California,06021,Glenn,2020,Suppressed
+06,California,06023,Humboldt,2000,53.00
+06,California,06023,Humboldt,2001,57.00
+06,California,06023,Humboldt,2002,57.00
+06,California,06023,Humboldt,2003,63.00
+06,California,06023,Humboldt,2004,80.00
+06,California,06023,Humboldt,2005,72.00
+06,California,06023,Humboldt,2006,75.00
+06,California,06023,Humboldt,2007,68.00
+06,California,06023,Humboldt,2008,68.00
+06,California,06023,Humboldt,2009,53.00
+06,California,06023,Humboldt,2010,70.00
+06,California,06023,Humboldt,2011,56.00
+06,California,06023,Humboldt,2012,58.00
+06,California,06023,Humboldt,2013,74.00
+06,California,06023,Humboldt,2014,67.00
+06,California,06023,Humboldt,2015,49.00
+06,California,06023,Humboldt,2016,66.00
+06,California,06023,Humboldt,2017,57.00
+06,California,06023,Humboldt,2018,71.00
+06,California,06023,Humboldt,2019,67.00
+06,California,06023,Humboldt,2020,55.00
+06,California,06025,Imperial,2000,97.00
+06,California,06025,Imperial,2001,119.00
+06,California,06025,Imperial,2002,125.00
+06,California,06025,Imperial,2003,123.00
+06,California,06025,Imperial,2004,136.00
+06,California,06025,Imperial,2005,138.00
+06,California,06025,Imperial,2006,140.00
+06,California,06025,Imperial,2007,165.00
+06,California,06025,Imperial,2008,153.00
+06,California,06025,Imperial,2009,136.00
+06,California,06025,Imperial,2010,139.00
+06,California,06025,Imperial,2011,123.00
+06,California,06025,Imperial,2012,139.00
+06,California,06025,Imperial,2013,129.00
+06,California,06025,Imperial,2014,141.00
+06,California,06025,Imperial,2015,120.00
+06,California,06025,Imperial,2016,135.00
+06,California,06025,Imperial,2017,114.00
+06,California,06025,Imperial,2018,117.00
+06,California,06025,Imperial,2019,120.00
+06,California,06025,Imperial,2020,106.00
+06,California,06027,Inyo,2000,Suppressed
+06,California,06027,Inyo,2001,Suppressed
+06,California,06027,Inyo,2002,Suppressed
+06,California,06027,Inyo,2003,Suppressed
+06,California,06027,Inyo,2004,10.00
+06,California,06027,Inyo,2005,Suppressed
+06,California,06027,Inyo,2006,Suppressed
+06,California,06027,Inyo,2007,Suppressed
+06,California,06027,Inyo,2008,Suppressed
+06,California,06027,Inyo,2009,Suppressed
+06,California,06027,Inyo,2010,Suppressed
+06,California,06027,Inyo,2011,Suppressed
+06,California,06027,Inyo,2012,Suppressed
+06,California,06027,Inyo,2013,Suppressed
+06,California,06027,Inyo,2014,Suppressed
+06,California,06027,Inyo,2015,Suppressed
+06,California,06027,Inyo,2016,Suppressed
+06,California,06027,Inyo,2017,Suppressed
+06,California,06027,Inyo,2018,Suppressed
+06,California,06027,Inyo,2019,Suppressed
+06,California,06027,Inyo,2020,Suppressed
+06,California,06029,Kern,2000,613.00
+06,California,06029,Kern,2001,588.00
+06,California,06029,Kern,2002,670.00
+06,California,06029,Kern,2003,701.00
+06,California,06029,Kern,2004,733.00
+06,California,06029,Kern,2005,784.00
+06,California,06029,Kern,2006,830.00
+06,California,06029,Kern,2007,895.00
+06,California,06029,Kern,2008,840.00
+06,California,06029,Kern,2009,839.00
+06,California,06029,Kern,2010,799.00
+06,California,06029,Kern,2011,810.00
+06,California,06029,Kern,2012,762.00
+06,California,06029,Kern,2013,808.00
+06,California,06029,Kern,2014,753.00
+06,California,06029,Kern,2015,744.00
+06,California,06029,Kern,2016,785.00
+06,California,06029,Kern,2017,788.00
+06,California,06029,Kern,2018,709.00
+06,California,06029,Kern,2019,746.00
+06,California,06029,Kern,2020,695.00
+06,California,06031,Kings,2000,96.00
+06,California,06031,Kings,2001,110.00
+06,California,06031,Kings,2002,111.00
+06,California,06031,Kings,2003,114.00
+06,California,06031,Kings,2004,137.00
+06,California,06031,Kings,2005,133.00
+06,California,06031,Kings,2006,135.00
+06,California,06031,Kings,2007,142.00
+06,California,06031,Kings,2008,140.00
+06,California,06031,Kings,2009,136.00
+06,California,06031,Kings,2010,129.00
+06,California,06031,Kings,2011,137.00
+06,California,06031,Kings,2012,98.00
+06,California,06031,Kings,2013,118.00
+06,California,06031,Kings,2014,107.00
+06,California,06031,Kings,2015,103.00
+06,California,06031,Kings,2016,118.00
+06,California,06031,Kings,2017,116.00
+06,California,06031,Kings,2018,116.00
+06,California,06031,Kings,2019,105.00
+06,California,06031,Kings,2020,107.00
+06,California,06033,Lake,2000,Suppressed
+06,California,06033,Lake,2001,30.00
+06,California,06033,Lake,2002,32.00
+06,California,06033,Lake,2003,40.00
+06,California,06033,Lake,2004,31.00
+06,California,06033,Lake,2005,31.00
+06,California,06033,Lake,2006,31.00
+06,California,06033,Lake,2007,28.00
+06,California,06033,Lake,2008,37.00
+06,California,06033,Lake,2009,28.00
+06,California,06033,Lake,2010,36.00
+06,California,06033,Lake,2011,37.00
+06,California,06033,Lake,2012,31.00
+06,California,06033,Lake,2013,40.00
+06,California,06033,Lake,2014,47.00
+06,California,06033,Lake,2015,31.00
+06,California,06033,Lake,2016,34.00
+06,California,06033,Lake,2017,34.00
+06,California,06033,Lake,2018,37.00
+06,California,06033,Lake,2019,33.00
+06,California,06033,Lake,2020,39.00
+06,California,06035,Lassen,2000,21.00
+06,California,06035,Lassen,2001,19.00
+06,California,06035,Lassen,2002,Suppressed
+06,California,06035,Lassen,2003,Suppressed
+06,California,06035,Lassen,2004,Suppressed
+06,California,06035,Lassen,2005,Suppressed
+06,California,06035,Lassen,2006,Suppressed
+06,California,06035,Lassen,2007,Suppressed
+06,California,06035,Lassen,2008,Suppressed
+06,California,06035,Lassen,2009,22.00
+06,California,06035,Lassen,2010,Suppressed
+06,California,06035,Lassen,2011,Suppressed
+06,California,06035,Lassen,2012,Suppressed
+06,California,06035,Lassen,2013,Suppressed
+06,California,06035,Lassen,2014,Suppressed
+06,California,06035,Lassen,2015,21.00
+06,California,06035,Lassen,2016,Suppressed
+06,California,06035,Lassen,2017,22.00
+06,California,06035,Lassen,2018,Suppressed
+06,California,06035,Lassen,2019,25.00
+06,California,06035,Lassen,2020,Suppressed
+06,California,06037,Los Angeles,2000,7882.00
+06,California,06037,Los Angeles,2001,7862.00
+06,California,06037,Los Angeles,2002,7901.00
+06,California,06037,Los Angeles,2003,8286.00
+06,California,06037,Los Angeles,2004,8230.00
+06,California,06037,Los Angeles,2005,8253.00
+06,California,06037,Los Angeles,2006,8469.00
+06,California,06037,Los Angeles,2007,8426.00
+06,California,06037,Los Angeles,2008,8088.00
+06,California,06037,Los Angeles,2009,7604.00
+06,California,06037,Los Angeles,2010,7299.00
+06,California,06037,Los Angeles,2011,6914.00
+06,California,06037,Los Angeles,2012,6999.00
+06,California,06037,Los Angeles,2013,6894.00
+06,California,06037,Los Angeles,2014,6767.00
+06,California,06037,Los Angeles,2015,6881.00
+06,California,06037,Los Angeles,2016,6617.00
+06,California,06037,Los Angeles,2017,6418.00
+06,California,06037,Los Angeles,2018,6170.00
+06,California,06037,Los Angeles,2019,6161.00
+06,California,06037,Los Angeles,2020,5543.00
+06,California,06039,Madera,2000,86.00
+06,California,06039,Madera,2001,107.00
+06,California,06039,Madera,2002,108.00
+06,California,06039,Madera,2003,126.00
+06,California,06039,Madera,2004,110.00
+06,California,06039,Madera,2005,117.00
+06,California,06039,Madera,2006,126.00
+06,California,06039,Madera,2007,138.00
+06,California,06039,Madera,2008,117.00
+06,California,06039,Madera,2009,119.00
+06,California,06039,Madera,2010,129.00
+06,California,06039,Madera,2011,122.00
+06,California,06039,Madera,2012,113.00
+06,California,06039,Madera,2013,108.00
+06,California,06039,Madera,2014,110.00
+06,California,06039,Madera,2015,100.00
+06,California,06039,Madera,2016,124.00
+06,California,06039,Madera,2017,109.00
+06,California,06039,Madera,2018,111.00
+06,California,06039,Madera,2019,77.00
+06,California,06039,Madera,2020,115.00
+06,California,06041,Marin,2000,115.00
+06,California,06041,Marin,2001,103.00
+06,California,06041,Marin,2002,98.00
+06,California,06041,Marin,2003,111.00
+06,California,06041,Marin,2004,107.00
+06,California,06041,Marin,2005,92.00
+06,California,06041,Marin,2006,86.00
+06,California,06041,Marin,2007,100.00
+06,California,06041,Marin,2008,110.00
+06,California,06041,Marin,2009,87.00
+06,California,06041,Marin,2010,97.00
+06,California,06041,Marin,2011,76.00
+06,California,06041,Marin,2012,76.00
+06,California,06041,Marin,2013,102.00
+06,California,06041,Marin,2014,86.00
+06,California,06041,Marin,2015,89.00
+06,California,06041,Marin,2016,84.00
+06,California,06041,Marin,2017,86.00
+06,California,06041,Marin,2018,79.00
+06,California,06041,Marin,2019,83.00
+06,California,06041,Marin,2020,79.00
+06,California,06043,Mariposa,2000,Suppressed
+06,California,06043,Mariposa,2001,Suppressed
+06,California,06043,Mariposa,2002,Suppressed
+06,California,06043,Mariposa,2003,Suppressed
+06,California,06043,Mariposa,2004,Suppressed
+06,California,06043,Mariposa,2005,Suppressed
+06,California,06043,Mariposa,2006,Suppressed
+06,California,06043,Mariposa,2007,Suppressed
+06,California,06043,Mariposa,2008,Suppressed
+06,California,06043,Mariposa,2009,Suppressed
+06,California,06043,Mariposa,2010,Suppressed
+06,California,06043,Mariposa,2011,Suppressed
+06,California,06043,Mariposa,2012,Suppressed
+06,California,06043,Mariposa,2013,Suppressed
+06,California,06043,Mariposa,2014,Suppressed
+06,California,06043,Mariposa,2015,Suppressed
+06,California,06043,Mariposa,2016,Suppressed
+06,California,06043,Mariposa,2017,Suppressed
+06,California,06043,Mariposa,2018,Suppressed
+06,California,06043,Mariposa,2019,Suppressed
+06,California,06043,Mariposa,2020,Suppressed
+06,California,06045,Mendocino,2000,Suppressed
+06,California,06045,Mendocino,2001,42.00
+06,California,06045,Mendocino,2002,56.00
+06,California,06045,Mendocino,2003,47.00
+06,California,06045,Mendocino,2004,56.00
+06,California,06045,Mendocino,2005,50.00
+06,California,06045,Mendocino,2006,67.00
+06,California,06045,Mendocino,2007,51.00
+06,California,06045,Mendocino,2008,57.00
+06,California,06045,Mendocino,2009,47.00
+06,California,06045,Mendocino,2010,41.00
+06,California,06045,Mendocino,2011,48.00
+06,California,06045,Mendocino,2012,57.00
+06,California,06045,Mendocino,2013,44.00
+06,California,06045,Mendocino,2014,51.00
+06,California,06045,Mendocino,2015,56.00
+06,California,06045,Mendocino,2016,52.00
+06,California,06045,Mendocino,2017,57.00
+06,California,06045,Mendocino,2018,45.00
+06,California,06045,Mendocino,2019,58.00
+06,California,06045,Mendocino,2020,53.00
+06,California,06047,Merced,2000,188.00
+06,California,06047,Merced,2001,185.00
+06,California,06047,Merced,2002,216.00
+06,California,06047,Merced,2003,220.00
+06,California,06047,Merced,2004,203.00
+06,California,06047,Merced,2005,220.00
+06,California,06047,Merced,2006,213.00
+06,California,06047,Merced,2007,224.00
+06,California,06047,Merced,2008,222.00
+06,California,06047,Merced,2009,239.00
+06,California,06047,Merced,2010,223.00
+06,California,06047,Merced,2011,230.00
+06,California,06047,Merced,2012,230.00
+06,California,06047,Merced,2013,213.00
+06,California,06047,Merced,2014,191.00
+06,California,06047,Merced,2015,197.00
+06,California,06047,Merced,2016,195.00
+06,California,06047,Merced,2017,233.00
+06,California,06047,Merced,2018,159.00
+06,California,06047,Merced,2019,165.00
+06,California,06047,Merced,2020,153.00
+06,California,06049,Modoc,2000,Suppressed
+06,California,06049,Modoc,2001,Suppressed
+06,California,06049,Modoc,2002,Suppressed
+06,California,06049,Modoc,2003,Suppressed
+06,California,06049,Modoc,2004,Suppressed
+06,California,06049,Modoc,2005,Suppressed
+06,California,06049,Modoc,2006,Suppressed
+06,California,06049,Modoc,2007,Suppressed
+06,California,06049,Modoc,2008,Suppressed
+06,California,06049,Modoc,2009,Suppressed
+06,California,06049,Modoc,2010,Suppressed
+06,California,06049,Modoc,2011,Suppressed
+06,California,06049,Modoc,2012,Suppressed
+06,California,06049,Modoc,2013,Suppressed
+06,California,06049,Modoc,2014,Suppressed
+06,California,06049,Modoc,2015,Suppressed
+06,California,06049,Modoc,2016,Suppressed
+06,California,06049,Modoc,2017,Suppressed
+06,California,06049,Modoc,2018,Suppressed
+06,California,06049,Modoc,2019,Suppressed
+06,California,06049,Modoc,2020,Suppressed
+06,California,06051,Mono,2000,Suppressed
+06,California,06051,Mono,2001,Suppressed
+06,California,06051,Mono,2002,Suppressed
+06,California,06051,Mono,2003,Suppressed
+06,California,06051,Mono,2004,Suppressed
+06,California,06051,Mono,2005,Suppressed
+06,California,06051,Mono,2006,Suppressed
+06,California,06051,Mono,2007,Suppressed
+06,California,06051,Mono,2008,Suppressed
+06,California,06051,Mono,2009,Suppressed
+06,California,06051,Mono,2010,Suppressed
+06,California,06051,Mono,2011,Suppressed
+06,California,06051,Mono,2012,Suppressed
+06,California,06051,Mono,2013,Suppressed
+06,California,06051,Mono,2014,Suppressed
+06,California,06051,Mono,2015,Suppressed
+06,California,06051,Mono,2016,Suppressed
+06,California,06051,Mono,2017,Suppressed
+06,California,06051,Mono,2018,10.00
+06,California,06051,Mono,2019,Suppressed
+06,California,06051,Mono,2020,Suppressed
+06,California,06053,Monterey,2000,290.00
+06,California,06053,Monterey,2001,269.00
+06,California,06053,Monterey,2002,330.00
+06,California,06053,Monterey,2003,336.00
+06,California,06053,Monterey,2004,387.00
+06,California,06053,Monterey,2005,375.00
+06,California,06053,Monterey,2006,349.00
+06,California,06053,Monterey,2007,319.00
+06,California,06053,Monterey,2008,339.00
+06,California,06053,Monterey,2009,305.00
+06,California,06053,Monterey,2010,291.00
+06,California,06053,Monterey,2011,313.00
+06,California,06053,Monterey,2012,305.00
+06,California,06053,Monterey,2013,290.00
+06,California,06053,Monterey,2014,295.00
+06,California,06053,Monterey,2015,306.00
+06,California,06053,Monterey,2016,266.00
+06,California,06053,Monterey,2017,273.00
+06,California,06053,Monterey,2018,311.00
+06,California,06053,Monterey,2019,290.00
+06,California,06053,Monterey,2020,267.00
+06,California,06055,Napa,2000,57.00
+06,California,06055,Napa,2001,61.00
+06,California,06055,Napa,2002,74.00
+06,California,06055,Napa,2003,65.00
+06,California,06055,Napa,2004,67.00
+06,California,06055,Napa,2005,68.00
+06,California,06055,Napa,2006,83.00
+06,California,06055,Napa,2007,68.00
+06,California,06055,Napa,2008,77.00
+06,California,06055,Napa,2009,68.00
+06,California,06055,Napa,2010,67.00
+06,California,06055,Napa,2011,64.00
+06,California,06055,Napa,2012,59.00
+06,California,06055,Napa,2013,64.00
+06,California,06055,Napa,2014,65.00
+06,California,06055,Napa,2015,59.00
+06,California,06055,Napa,2016,65.00
+06,California,06055,Napa,2017,55.00
+06,California,06055,Napa,2018,62.00
+06,California,06055,Napa,2019,45.00
+06,California,06055,Napa,2020,45.00
+06,California,06057,Nevada,2000,33.00
+06,California,06057,Nevada,2001,Suppressed
+06,California,06057,Nevada,2002,31.00
+06,California,06057,Nevada,2003,33.00
+06,California,06057,Nevada,2004,37.00
+06,California,06057,Nevada,2005,40.00
+06,California,06057,Nevada,2006,42.00
+06,California,06057,Nevada,2007,47.00
+06,California,06057,Nevada,2008,30.00
+06,California,06057,Nevada,2009,27.00
+06,California,06057,Nevada,2010,28.00
+06,California,06057,Nevada,2011,34.00
+06,California,06057,Nevada,2012,35.00
+06,California,06057,Nevada,2013,42.00
+06,California,06057,Nevada,2014,33.00
+06,California,06057,Nevada,2015,39.00
+06,California,06057,Nevada,2016,34.00
+06,California,06057,Nevada,2017,39.00
+06,California,06057,Nevada,2018,29.00
+06,California,06057,Nevada,2019,41.00
+06,California,06057,Nevada,2020,37.00
+06,California,06059,Orange,2000,1881.00
+06,California,06059,Orange,2001,1895.00
+06,California,06059,Orange,2002,1906.00
+06,California,06059,Orange,2003,1898.00
+06,California,06059,Orange,2004,2009.00
+06,California,06059,Orange,2005,1968.00
+06,California,06059,Orange,2006,1973.00
+06,California,06059,Orange,2007,2076.00
+06,California,06059,Orange,2008,1909.00
+06,California,06059,Orange,2009,1896.00
+06,California,06059,Orange,2010,1779.00
+06,California,06059,Orange,2011,1799.00
+06,California,06059,Orange,2012,1697.00
+06,California,06059,Orange,2013,1663.00
+06,California,06059,Orange,2014,1710.00
+06,California,06059,Orange,2015,1729.00
+06,California,06059,Orange,2016,1758.00
+06,California,06059,Orange,2017,1644.00
+06,California,06059,Orange,2018,1634.00
+06,California,06059,Orange,2019,1726.00
+06,California,06059,Orange,2020,1467.00
+06,California,06061,Placer,2000,133.00
+06,California,06061,Placer,2001,130.00
+06,California,06061,Placer,2002,138.00
+06,California,06061,Placer,2003,138.00
+06,California,06061,Placer,2004,162.00
+06,California,06061,Placer,2005,155.00
+06,California,06061,Placer,2006,147.00
+06,California,06061,Placer,2007,165.00
+06,California,06061,Placer,2008,129.00
+06,California,06061,Placer,2009,133.00
+06,California,06061,Placer,2010,127.00
+06,California,06061,Placer,2011,153.00
+06,California,06061,Placer,2012,158.00
+06,California,06061,Placer,2013,114.00
+06,California,06061,Placer,2014,134.00
+06,California,06061,Placer,2015,144.00
+06,California,06061,Placer,2016,138.00
+06,California,06061,Placer,2017,158.00
+06,California,06061,Placer,2018,138.00
+06,California,06061,Placer,2019,155.00
+06,California,06061,Placer,2020,140.00
+06,California,06063,Plumas,2000,Suppressed
+06,California,06063,Plumas,2001,Suppressed
+06,California,06063,Plumas,2002,Suppressed
+06,California,06063,Plumas,2003,Suppressed
+06,California,06063,Plumas,2004,Suppressed
+06,California,06063,Plumas,2005,Suppressed
+06,California,06063,Plumas,2006,Suppressed
+06,California,06063,Plumas,2007,Suppressed
+06,California,06063,Plumas,2008,Suppressed
+06,California,06063,Plumas,2009,Suppressed
+06,California,06063,Plumas,2010,Suppressed
+06,California,06063,Plumas,2011,Suppressed
+06,California,06063,Plumas,2012,Suppressed
+06,California,06063,Plumas,2013,Suppressed
+06,California,06063,Plumas,2014,Suppressed
+06,California,06063,Plumas,2015,19.00
+06,California,06063,Plumas,2016,Suppressed
+06,California,06063,Plumas,2017,Suppressed
+06,California,06063,Plumas,2018,Suppressed
+06,California,06063,Plumas,2019,Suppressed
+06,California,06063,Plumas,2020,Suppressed
+06,California,06065,Riverside,2000,1202.00
+06,California,06065,Riverside,2001,1185.00
+06,California,06065,Riverside,2002,1222.00
+06,California,06065,Riverside,2003,1360.00
+06,California,06065,Riverside,2004,1419.00
+06,California,06065,Riverside,2005,1607.00
+06,California,06065,Riverside,2006,1681.00
+06,California,06065,Riverside,2007,1726.00
+06,California,06065,Riverside,2008,1605.00
+06,California,06065,Riverside,2009,1525.00
+06,California,06065,Riverside,2010,1526.00
+06,California,06065,Riverside,2011,1450.00
+06,California,06065,Riverside,2012,1487.00
+06,California,06065,Riverside,2013,1484.00
+06,California,06065,Riverside,2014,1477.00
+06,California,06065,Riverside,2015,1530.00
+06,California,06065,Riverside,2016,1608.00
+06,California,06065,Riverside,2017,1531.00
+06,California,06065,Riverside,2018,1515.00
+06,California,06065,Riverside,2019,1487.00
+06,California,06065,Riverside,2020,1410.00
+06,California,06067,Sacramento,2000,937.00
+06,California,06067,Sacramento,2001,958.00
+06,California,06067,Sacramento,2002,916.00
+06,California,06067,Sacramento,2003,997.00
+06,California,06067,Sacramento,2004,1082.00
+06,California,06067,Sacramento,2005,1067.00
+06,California,06067,Sacramento,2006,1180.00
+06,California,06067,Sacramento,2007,1160.00
+06,California,06067,Sacramento,2008,1075.00
+06,California,06067,Sacramento,2009,1057.00
+06,California,06067,Sacramento,2010,1067.00
+06,California,06067,Sacramento,2011,983.00
+06,California,06067,Sacramento,2012,1012.00
+06,California,06067,Sacramento,2013,1001.00
+06,California,06067,Sacramento,2014,1041.00
+06,California,06067,Sacramento,2015,1029.00
+06,California,06067,Sacramento,2016,999.00
+06,California,06067,Sacramento,2017,1049.00
+06,California,06067,Sacramento,2018,1002.00
+06,California,06067,Sacramento,2019,1033.00
+06,California,06067,Sacramento,2020,1066.00
+06,California,06069,San Benito,2000,40.00
+06,California,06069,San Benito,2001,41.00
+06,California,06069,San Benito,2002,31.00
+06,California,06069,San Benito,2003,33.00
+06,California,06069,San Benito,2004,33.00
+06,California,06069,San Benito,2005,42.00
+06,California,06069,San Benito,2006,37.00
+06,California,06069,San Benito,2007,41.00
+06,California,06069,San Benito,2008,45.00
+06,California,06069,San Benito,2009,27.00
+06,California,06069,San Benito,2010,34.00
+06,California,06069,San Benito,2011,40.00
+06,California,06069,San Benito,2012,23.00
+06,California,06069,San Benito,2013,41.00
+06,California,06069,San Benito,2014,Suppressed
+06,California,06069,San Benito,2015,45.00
+06,California,06069,San Benito,2016,32.00
+06,California,06069,San Benito,2017,35.00
+06,California,06069,San Benito,2018,37.00
+06,California,06069,San Benito,2019,39.00
+06,California,06069,San Benito,2020,50.00
+06,California,06071,San Bernardino,2000,1429.00
+06,California,06071,San Bernardino,2001,1500.00
+06,California,06071,San Bernardino,2002,1593.00
+06,California,06071,San Bernardino,2003,1596.00
+06,California,06071,San Bernardino,2004,1830.00
+06,California,06071,San Bernardino,2005,1842.00
+06,California,06071,San Bernardino,2006,1801.00
+06,California,06071,San Bernardino,2007,1921.00
+06,California,06071,San Bernardino,2008,1865.00
+06,California,06071,San Bernardino,2009,1743.00
+06,California,06071,San Bernardino,2010,1740.00
+06,California,06071,San Bernardino,2011,1664.00
+06,California,06071,San Bernardino,2012,1738.00
+06,California,06071,San Bernardino,2013,1733.00
+06,California,06071,San Bernardino,2014,1654.00
+06,California,06071,San Bernardino,2015,1703.00
+06,California,06071,San Bernardino,2016,1730.00
+06,California,06071,San Bernardino,2017,1658.00
+06,California,06071,San Bernardino,2018,1720.00
+06,California,06071,San Bernardino,2019,1763.00
+06,California,06071,San Bernardino,2020,1674.00
+06,California,06073,San Diego,2000,2002.00
+06,California,06073,San Diego,2001,1988.00
+06,California,06073,San Diego,2002,1973.00
+06,California,06073,San Diego,2003,2068.00
+06,California,06073,San Diego,2004,2131.00
+06,California,06073,San Diego,2005,2216.00
+06,California,06073,San Diego,2006,2102.00
+06,California,06073,San Diego,2007,2339.00
+06,California,06073,San Diego,2008,2238.00
+06,California,06073,San Diego,2009,2108.00
+06,California,06073,San Diego,2010,2126.00
+06,California,06073,San Diego,2011,2070.00
+06,California,06073,San Diego,2012,2041.00
+06,California,06073,San Diego,2013,1992.00
+06,California,06073,San Diego,2014,2063.00
+06,California,06073,San Diego,2015,2054.00
+06,California,06073,San Diego,2016,2063.00
+06,California,06073,San Diego,2017,1998.00
+06,California,06073,San Diego,2018,2135.00
+06,California,06073,San Diego,2019,1958.00
+06,California,06073,San Diego,2020,1902.00
+06,California,06075,San Francisco,2000,418.00
+06,California,06075,San Francisco,2001,455.00
+06,California,06075,San Francisco,2002,388.00
+06,California,06075,San Francisco,2003,436.00
+06,California,06075,San Francisco,2004,421.00
+06,California,06075,San Francisco,2005,418.00
+06,California,06075,San Francisco,2006,420.00
+06,California,06075,San Francisco,2007,466.00
+06,California,06075,San Francisco,2008,449.00
+06,California,06075,San Francisco,2009,401.00
+06,California,06075,San Francisco,2010,428.00
+06,California,06075,San Francisco,2011,431.00
+06,California,06075,San Francisco,2012,460.00
+06,California,06075,San Francisco,2013,461.00
+06,California,06075,San Francisco,2014,443.00
+06,California,06075,San Francisco,2015,446.00
+06,California,06075,San Francisco,2016,468.00
+06,California,06075,San Francisco,2017,445.00
+06,California,06075,San Francisco,2018,430.00
+06,California,06075,San Francisco,2019,458.00
+06,California,06075,San Francisco,2020,437.00
+06,California,06077,San Joaquin,2000,498.00
+06,California,06077,San Joaquin,2001,486.00
+06,California,06077,San Joaquin,2002,552.00
+06,California,06077,San Joaquin,2003,557.00
+06,California,06077,San Joaquin,2004,559.00
+06,California,06077,San Joaquin,2005,619.00
+06,California,06077,San Joaquin,2006,646.00
+06,California,06077,San Joaquin,2007,605.00
+06,California,06077,San Joaquin,2008,620.00
+06,California,06077,San Joaquin,2009,576.00
+06,California,06077,San Joaquin,2010,592.00
+06,California,06077,San Joaquin,2011,550.00
+06,California,06077,San Joaquin,2012,558.00
+06,California,06077,San Joaquin,2013,555.00
+06,California,06077,San Joaquin,2014,528.00
+06,California,06077,San Joaquin,2015,606.00
+06,California,06077,San Joaquin,2016,615.00
+06,California,06077,San Joaquin,2017,580.00
+06,California,06077,San Joaquin,2018,570.00
+06,California,06077,San Joaquin,2019,620.00
+06,California,06077,San Joaquin,2020,556.00
+06,California,06079,San Luis Obispo,2000,102.00
+06,California,06079,San Luis Obispo,2001,100.00
+06,California,06079,San Luis Obispo,2002,94.00
+06,California,06079,San Luis Obispo,2003,111.00
+06,California,06079,San Luis Obispo,2004,119.00
+06,California,06079,San Luis Obispo,2005,129.00
+06,California,06079,San Luis Obispo,2006,112.00
+06,California,06079,San Luis Obispo,2007,128.00
+06,California,06079,San Luis Obispo,2008,119.00
+06,California,06079,San Luis Obispo,2009,102.00
+06,California,06079,San Luis Obispo,2010,100.00
+06,California,06079,San Luis Obispo,2011,97.00
+06,California,06079,San Luis Obispo,2012,85.00
+06,California,06079,San Luis Obispo,2013,137.00
+06,California,06079,San Luis Obispo,2014,101.00
+06,California,06079,San Luis Obispo,2015,119.00
+06,California,06079,San Luis Obispo,2016,106.00
+06,California,06079,San Luis Obispo,2017,110.00
+06,California,06079,San Luis Obispo,2018,103.00
+06,California,06079,San Luis Obispo,2019,106.00
+06,California,06079,San Luis Obispo,2020,102.00
+06,California,06081,San Mateo,2000,469.00
+06,California,06081,San Mateo,2001,408.00
+06,California,06081,San Mateo,2002,431.00
+06,California,06081,San Mateo,2003,483.00
+06,California,06081,San Mateo,2004,447.00
+06,California,06081,San Mateo,2005,458.00
+06,California,06081,San Mateo,2006,465.00
+06,California,06081,San Mateo,2007,469.00
+06,California,06081,San Mateo,2008,446.00
+06,California,06081,San Mateo,2009,447.00
+06,California,06081,San Mateo,2010,486.00
+06,California,06081,San Mateo,2011,416.00
+06,California,06081,San Mateo,2012,430.00
+06,California,06081,San Mateo,2013,407.00
+06,California,06081,San Mateo,2014,435.00
+06,California,06081,San Mateo,2015,471.00
+06,California,06081,San Mateo,2016,418.00
+06,California,06081,San Mateo,2017,451.00
+06,California,06081,San Mateo,2018,409.00
+06,California,06081,San Mateo,2019,386.00
+06,California,06081,San Mateo,2020,406.00
+06,California,06083,Santa Barbara,2000,234.00
+06,California,06083,Santa Barbara,2001,266.00
+06,California,06083,Santa Barbara,2002,254.00
+06,California,06083,Santa Barbara,2003,295.00
+06,California,06083,Santa Barbara,2004,300.00
+06,California,06083,Santa Barbara,2005,287.00
+06,California,06083,Santa Barbara,2006,287.00
+06,California,06083,Santa Barbara,2007,290.00
+06,California,06083,Santa Barbara,2008,285.00
+06,California,06083,Santa Barbara,2009,267.00
+06,California,06083,Santa Barbara,2010,251.00
+06,California,06083,Santa Barbara,2011,264.00
+06,California,06083,Santa Barbara,2012,269.00
+06,California,06083,Santa Barbara,2013,271.00
+06,California,06083,Santa Barbara,2014,278.00
+06,California,06083,Santa Barbara,2015,275.00
+06,California,06083,Santa Barbara,2016,295.00
+06,California,06083,Santa Barbara,2017,330.00
+06,California,06083,Santa Barbara,2018,297.00
+06,California,06083,Santa Barbara,2019,268.00
+06,California,06083,Santa Barbara,2020,291.00
+06,California,06085,Santa Clara,2000,1255.00
+06,California,06085,Santa Clara,2001,1205.00
+06,California,06085,Santa Clara,2002,1224.00
+06,California,06085,Santa Clara,2003,1270.00
+06,California,06085,Santa Clara,2004,1251.00
+06,California,06085,Santa Clara,2005,1247.00
+06,California,06085,Santa Clara,2006,1332.00
+06,California,06085,Santa Clara,2007,1298.00
+06,California,06085,Santa Clara,2008,1236.00
+06,California,06085,Santa Clara,2009,1294.00
+06,California,06085,Santa Clara,2010,1181.00
+06,California,06085,Santa Clara,2011,1180.00
+06,California,06085,Santa Clara,2012,1207.00
+06,California,06085,Santa Clara,2013,1212.00
+06,California,06085,Santa Clara,2014,1187.00
+06,California,06085,Santa Clara,2015,1198.00
+06,California,06085,Santa Clara,2016,1201.00
+06,California,06085,Santa Clara,2017,1131.00
+06,California,06085,Santa Clara,2018,1119.00
+06,California,06085,Santa Clara,2019,1164.00
+06,California,06085,Santa Clara,2020,1102.00
+06,California,06087,Santa Cruz,2000,147.00
+06,California,06087,Santa Cruz,2001,139.00
+06,California,06087,Santa Cruz,2002,146.00
+06,California,06087,Santa Cruz,2003,131.00
+06,California,06087,Santa Cruz,2004,124.00
+06,California,06087,Santa Cruz,2005,143.00
+06,California,06087,Santa Cruz,2006,149.00
+06,California,06087,Santa Cruz,2007,159.00
+06,California,06087,Santa Cruz,2008,155.00
+06,California,06087,Santa Cruz,2009,139.00
+06,California,06087,Santa Cruz,2010,120.00
+06,California,06087,Santa Cruz,2011,119.00
+06,California,06087,Santa Cruz,2012,132.00
+06,California,06087,Santa Cruz,2013,116.00
+06,California,06087,Santa Cruz,2014,113.00
+06,California,06087,Santa Cruz,2015,146.00
+06,California,06087,Santa Cruz,2016,115.00
+06,California,06087,Santa Cruz,2017,121.00
+06,California,06087,Santa Cruz,2018,117.00
+06,California,06087,Santa Cruz,2019,122.00
+06,California,06087,Santa Cruz,2020,90.00
+06,California,06089,Shasta,2000,89.00
+06,California,06089,Shasta,2001,84.00
+06,California,06089,Shasta,2002,94.00
+06,California,06089,Shasta,2003,101.00
+06,California,06089,Shasta,2004,84.00
+06,California,06089,Shasta,2005,119.00
+06,California,06089,Shasta,2006,98.00
+06,California,06089,Shasta,2007,119.00
+06,California,06089,Shasta,2008,98.00
+06,California,06089,Shasta,2009,91.00
+06,California,06089,Shasta,2010,97.00
+06,California,06089,Shasta,2011,108.00
+06,California,06089,Shasta,2012,92.00
+06,California,06089,Shasta,2013,99.00
+06,California,06089,Shasta,2014,87.00
+06,California,06089,Shasta,2015,91.00
+06,California,06089,Shasta,2016,121.00
+06,California,06089,Shasta,2017,116.00
+06,California,06089,Shasta,2018,87.00
+06,California,06089,Shasta,2019,106.00
+06,California,06089,Shasta,2020,99.00
+06,California,06091,Sierra,2000,No Events
+06,California,06091,Sierra,2001,No Events
+06,California,06091,Sierra,2002,Suppressed
+06,California,06091,Sierra,2003,Suppressed
+06,California,06091,Sierra,2004,Suppressed
+06,California,06091,Sierra,2005,No Events
+06,California,06091,Sierra,2006,Suppressed
+06,California,06091,Sierra,2007,Suppressed
+06,California,06091,Sierra,2008,Suppressed
+06,California,06091,Sierra,2009,Suppressed
+06,California,06091,Sierra,2010,Suppressed
+06,California,06091,Sierra,2011,Suppressed
+06,California,06091,Sierra,2012,Suppressed
+06,California,06091,Sierra,2013,Suppressed
+06,California,06091,Sierra,2014,Suppressed
+06,California,06091,Sierra,2015,Suppressed
+06,California,06091,Sierra,2016,Suppressed
+06,California,06091,Sierra,2017,Suppressed
+06,California,06091,Sierra,2018,Suppressed
+06,California,06091,Sierra,2019,Suppressed
+06,California,06091,Sierra,2020,Suppressed
+06,California,06093,Siskiyou,2000,Suppressed
+06,California,06093,Siskiyou,2001,28.00
+06,California,06093,Siskiyou,2002,27.00
+06,California,06093,Siskiyou,2003,22.00
+06,California,06093,Siskiyou,2004,33.00
+06,California,06093,Siskiyou,2005,Suppressed
+06,California,06093,Siskiyou,2006,22.00
+06,California,06093,Siskiyou,2007,36.00
+06,California,06093,Siskiyou,2008,30.00
+06,California,06093,Siskiyou,2009,24.00
+06,California,06093,Siskiyou,2010,30.00
+06,California,06093,Siskiyou,2011,23.00
+06,California,06093,Siskiyou,2012,28.00
+06,California,06093,Siskiyou,2013,33.00
+06,California,06093,Siskiyou,2014,Suppressed
+06,California,06093,Siskiyou,2015,31.00
+06,California,06093,Siskiyou,2016,Suppressed
+06,California,06093,Siskiyou,2017,20.00
+06,California,06093,Siskiyou,2018,32.00
+06,California,06093,Siskiyou,2019,36.00
+06,California,06093,Siskiyou,2020,29.00
+06,California,06095,Solano,2000,309.00
+06,California,06095,Solano,2001,318.00
+06,California,06095,Solano,2002,310.00
+06,California,06095,Solano,2003,275.00
+06,California,06095,Solano,2004,313.00
+06,California,06095,Solano,2005,299.00
+06,California,06095,Solano,2006,321.00
+06,California,06095,Solano,2007,293.00
+06,California,06095,Solano,2008,311.00
+06,California,06095,Solano,2009,285.00
+06,California,06095,Solano,2010,251.00
+06,California,06095,Solano,2011,272.00
+06,California,06095,Solano,2012,265.00
+06,California,06095,Solano,2013,270.00
+06,California,06095,Solano,2014,274.00
+06,California,06095,Solano,2015,235.00
+06,California,06095,Solano,2016,258.00
+06,California,06095,Solano,2017,254.00
+06,California,06095,Solano,2018,302.00
+06,California,06095,Solano,2019,294.00
+06,California,06095,Solano,2020,238.00
+06,California,06097,Sonoma,2000,241.00
+06,California,06097,Sonoma,2001,230.00
+06,California,06097,Sonoma,2002,179.00
+06,California,06097,Sonoma,2003,244.00
+06,California,06097,Sonoma,2004,234.00
+06,California,06097,Sonoma,2005,249.00
+06,California,06097,Sonoma,2006,234.00
+06,California,06097,Sonoma,2007,233.00
+06,California,06097,Sonoma,2008,236.00
+06,California,06097,Sonoma,2009,223.00
+06,California,06097,Sonoma,2010,220.00
+06,California,06097,Sonoma,2011,176.00
+06,California,06097,Sonoma,2012,207.00
+06,California,06097,Sonoma,2013,205.00
+06,California,06097,Sonoma,2014,206.00
+06,California,06097,Sonoma,2015,192.00
+06,California,06097,Sonoma,2016,213.00
+06,California,06097,Sonoma,2017,192.00
+06,California,06097,Sonoma,2018,200.00
+06,California,06097,Sonoma,2019,179.00
+06,California,06097,Sonoma,2020,182.00
+06,California,06099,Stanislaus,2000,319.00
+06,California,06099,Stanislaus,2001,364.00
+06,California,06099,Stanislaus,2002,378.00
+06,California,06099,Stanislaus,2003,388.00
+06,California,06099,Stanislaus,2004,393.00
+06,California,06099,Stanislaus,2005,395.00
+06,California,06099,Stanislaus,2006,446.00
+06,California,06099,Stanislaus,2007,437.00
+06,California,06099,Stanislaus,2008,394.00
+06,California,06099,Stanislaus,2009,382.00
+06,California,06099,Stanislaus,2010,371.00
+06,California,06099,Stanislaus,2011,331.00
+06,California,06099,Stanislaus,2012,377.00
+06,California,06099,Stanislaus,2013,370.00
+06,California,06099,Stanislaus,2014,367.00
+06,California,06099,Stanislaus,2015,364.00
+06,California,06099,Stanislaus,2016,411.00
+06,California,06099,Stanislaus,2017,401.00
+06,California,06099,Stanislaus,2018,342.00
+06,California,06099,Stanislaus,2019,334.00
+06,California,06099,Stanislaus,2020,371.00
+06,California,06101,Sutter,2000,54.00
+06,California,06101,Sutter,2001,51.00
+06,California,06101,Sutter,2002,48.00
+06,California,06101,Sutter,2003,54.00
+06,California,06101,Sutter,2004,65.00
+06,California,06101,Sutter,2005,66.00
+06,California,06101,Sutter,2006,67.00
+06,California,06101,Sutter,2007,57.00
+06,California,06101,Sutter,2008,74.00
+06,California,06101,Sutter,2009,62.00
+06,California,06101,Sutter,2010,53.00
+06,California,06101,Sutter,2011,59.00
+06,California,06101,Sutter,2012,53.00
+06,California,06101,Sutter,2013,57.00
+06,California,06101,Sutter,2014,66.00
+06,California,06101,Sutter,2015,61.00
+06,California,06101,Sutter,2016,85.00
+06,California,06101,Sutter,2017,57.00
+06,California,06101,Sutter,2018,67.00
+06,California,06101,Sutter,2019,68.00
+06,California,06101,Sutter,2020,55.00
+06,California,06103,Tehama,2000,34.00
+06,California,06103,Tehama,2001,Suppressed
+06,California,06103,Tehama,2002,31.00
+06,California,06103,Tehama,2003,40.00
+06,California,06103,Tehama,2004,30.00
+06,California,06103,Tehama,2005,38.00
+06,California,06103,Tehama,2006,32.00
+06,California,06103,Tehama,2007,35.00
+06,California,06103,Tehama,2008,31.00
+06,California,06103,Tehama,2009,32.00
+06,California,06103,Tehama,2010,35.00
+06,California,06103,Tehama,2011,30.00
+06,California,06103,Tehama,2012,34.00
+06,California,06103,Tehama,2013,31.00
+06,California,06103,Tehama,2014,34.00
+06,California,06103,Tehama,2015,36.00
+06,California,06103,Tehama,2016,34.00
+06,California,06103,Tehama,2017,33.00
+06,California,06103,Tehama,2018,43.00
+06,California,06103,Tehama,2019,Suppressed
+06,California,06103,Tehama,2020,36.00
+06,California,06105,Trinity,2000,Suppressed
+06,California,06105,Trinity,2001,Suppressed
+06,California,06105,Trinity,2002,Suppressed
+06,California,06105,Trinity,2003,Suppressed
+06,California,06105,Trinity,2004,Suppressed
+06,California,06105,Trinity,2005,Suppressed
+06,California,06105,Trinity,2006,Suppressed
+06,California,06105,Trinity,2007,Suppressed
+06,California,06105,Trinity,2008,Suppressed
+06,California,06105,Trinity,2009,Suppressed
+06,California,06105,Trinity,2010,Suppressed
+06,California,06105,Trinity,2011,Suppressed
+06,California,06105,Trinity,2012,Suppressed
+06,California,06105,Trinity,2013,Suppressed
+06,California,06105,Trinity,2014,Suppressed
+06,California,06105,Trinity,2015,Suppressed
+06,California,06105,Trinity,2016,Suppressed
+06,California,06105,Trinity,2017,Suppressed
+06,California,06105,Trinity,2018,Suppressed
+06,California,06105,Trinity,2019,Suppressed
+06,California,06105,Trinity,2020,Suppressed
+06,California,06107,Tulare,2000,360.00
+06,California,06107,Tulare,2001,315.00
+06,California,06107,Tulare,2002,326.00
+06,California,06107,Tulare,2003,369.00
+06,California,06107,Tulare,2004,403.00
+06,California,06107,Tulare,2005,410.00
+06,California,06107,Tulare,2006,430.00
+06,California,06107,Tulare,2007,404.00
+06,California,06107,Tulare,2008,426.00
+06,California,06107,Tulare,2009,400.00
+06,California,06107,Tulare,2010,416.00
+06,California,06107,Tulare,2011,403.00
+06,California,06107,Tulare,2012,351.00
+06,California,06107,Tulare,2013,415.00
+06,California,06107,Tulare,2014,401.00
+06,California,06107,Tulare,2015,390.00
+06,California,06107,Tulare,2016,379.00
+06,California,06107,Tulare,2017,429.00
+06,California,06107,Tulare,2018,373.00
+06,California,06107,Tulare,2019,368.00
+06,California,06107,Tulare,2020,347.00
+06,California,06109,Tuolumne,2000,20.00
+06,California,06109,Tuolumne,2001,Suppressed
+06,California,06109,Tuolumne,2002,Suppressed
+06,California,06109,Tuolumne,2003,Suppressed
+06,California,06109,Tuolumne,2004,Suppressed
+06,California,06109,Tuolumne,2005,Suppressed
+06,California,06109,Tuolumne,2006,22.00
+06,California,06109,Tuolumne,2007,Suppressed
+06,California,06109,Tuolumne,2008,22.00
+06,California,06109,Tuolumne,2009,10.00
+06,California,06109,Tuolumne,2010,Suppressed
+06,California,06109,Tuolumne,2011,Suppressed
+06,California,06109,Tuolumne,2012,23.00
+06,California,06109,Tuolumne,2013,21.00
+06,California,06109,Tuolumne,2014,29.00
+06,California,06109,Tuolumne,2015,21.00
+06,California,06109,Tuolumne,2016,27.00
+06,California,06109,Tuolumne,2017,Suppressed
+06,California,06109,Tuolumne,2018,23.00
+06,California,06109,Tuolumne,2019,23.00
+06,California,06109,Tuolumne,2020,Suppressed
+06,California,06111,Ventura,2000,514.00
+06,California,06111,Ventura,2001,473.00
+06,California,06111,Ventura,2002,500.00
+06,California,06111,Ventura,2003,547.00
+06,California,06111,Ventura,2004,599.00
+06,California,06111,Ventura,2005,540.00
+06,California,06111,Ventura,2006,610.00
+06,California,06111,Ventura,2007,563.00
+06,California,06111,Ventura,2008,580.00
+06,California,06111,Ventura,2009,482.00
+06,California,06111,Ventura,2010,529.00
+06,California,06111,Ventura,2011,480.00
+06,California,06111,Ventura,2012,458.00
+06,California,06111,Ventura,2013,465.00
+06,California,06111,Ventura,2014,487.00
+06,California,06111,Ventura,2015,449.00
+06,California,06111,Ventura,2016,385.00
+06,California,06111,Ventura,2017,429.00
+06,California,06111,Ventura,2018,395.00
+06,California,06111,Ventura,2019,430.00
+06,California,06111,Ventura,2020,410.00
+06,California,06113,Yolo,2000,96.00
+06,California,06113,Yolo,2001,82.00
+06,California,06113,Yolo,2002,111.00
+06,California,06113,Yolo,2003,79.00
+06,California,06113,Yolo,2004,99.00
+06,California,06113,Yolo,2005,108.00
+06,California,06113,Yolo,2006,94.00
+06,California,06113,Yolo,2007,102.00
+06,California,06113,Yolo,2008,100.00
+06,California,06113,Yolo,2009,89.00
+06,California,06113,Yolo,2010,93.00
+06,California,06113,Yolo,2011,102.00
+06,California,06113,Yolo,2012,95.00
+06,California,06113,Yolo,2013,113.00
+06,California,06113,Yolo,2014,80.00
+06,California,06113,Yolo,2015,88.00
+06,California,06113,Yolo,2016,101.00
+06,California,06113,Yolo,2017,106.00
+06,California,06113,Yolo,2018,79.00
+06,California,06113,Yolo,2019,96.00
+06,California,06113,Yolo,2020,103.00
+06,California,06115,Yuba,2000,52.00
+06,California,06115,Yuba,2001,63.00
+06,California,06115,Yuba,2002,72.00
+06,California,06115,Yuba,2003,54.00
+06,California,06115,Yuba,2004,65.00
+06,California,06115,Yuba,2005,65.00
+06,California,06115,Yuba,2006,60.00
+06,California,06115,Yuba,2007,56.00
+06,California,06115,Yuba,2008,63.00
+06,California,06115,Yuba,2009,50.00
+06,California,06115,Yuba,2010,58.00
+06,California,06115,Yuba,2011,57.00
+06,California,06115,Yuba,2012,47.00
+06,California,06115,Yuba,2013,53.00
+06,California,06115,Yuba,2014,57.00
+06,California,06115,Yuba,2015,58.00
+06,California,06115,Yuba,2016,64.00
+06,California,06115,Yuba,2017,71.00
+06,California,06115,Yuba,2018,70.00
+06,California,06115,Yuba,2019,63.00
+06,California,06115,Yuba,2020,58.00

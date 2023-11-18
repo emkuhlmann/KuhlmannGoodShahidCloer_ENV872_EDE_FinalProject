@@ -1,0 +1,40 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library(here)
+library(tidyverse)
+library(ggplot2)
+library(naniar)
+library(eeptools)
+
+getwd()
+
+
+birthpercent.df <- read.csv(here('Data','Raw','BirthPercent.csv'),stringsAsFactors = TRUE, colClasses = c('CountyFIPS' = 'factor','StateFIPS'='factor'), na.strings = c("Suppressed","No Events"))
+
+```
+
+```{r}
+summary(birthpercent.df)
+```
+```{r}
+birthpercent_removed <- na.omit(birthpercent.df)
+summary(birthpercent_removed)
+```
+
+```{r}
+
+birthpercent_removed$Year <- as.factor(birthpercent_removed$Year)
+
+```
+
+```{r}
+Birthpercent_heatmap <- ggplot(birthpercent_removed, aes(x = Year, y = County, fill = Value)) +
+  geom_tile() +
+  scale_fill_distiller(name = "% Birthweight", palette = "RdYlGn", 
+                      direction = -1)
+Birthpercent_heatmap
+```
+

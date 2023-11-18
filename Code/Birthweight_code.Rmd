@@ -1,0 +1,58 @@
+---
+title: "Sakina Data Wrangling"
+date: "2023-11-17"
+---
+
+```{r Reading in Data}
+
+
+library(here)
+library(tidyverse)
+library(ggplot2)
+library(naniar)
+library(eeptools)
+
+getwd()
+
+
+birthweight.df <- read.csv(here('Data','Raw','BirthWeight.csv'),stringsAsFactors = TRUE, colClasses = c('CountyFIPS' = 'factor','StateFIPS'='factor'), na.strings = c("Suppressed","No Events"))
+
+
+
+```
+
+```{r Removing Missing Values}
+
+summary(birthweight.df)
+
+#279 NAs
+
+```
+```{r}
+birthweight_removed <- na.omit(birthweight.df)
+summary(birthweight_removed)
+```
+
+```{r}
+
+birthweight_removed$Year <- as.factor(birthweight_removed$Year)
+
+```
+
+```{r}
+LA.df<-filter(birthweight_removed,County=='Los Angeles')
+```
+
+```{r}
+noLA.df <- filter(birthweight_removed,County!='Los Angeles')
+```
+
+```{r}
+Birthweight_heatmap <- ggplot(noLA.df, aes(x = Year, y = County, fill = Value)) +
+  geom_tile() +
+  scale_fill_distiller(name = "ED Visits", palette = "RdYlGn", 
+                      breaks = c(0,500,1000,1500,2000),
+                      direction = -1)
+Birthweight_heatmap
+```
+
