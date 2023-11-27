@@ -50,4 +50,4 @@ for(i in seq_along(file_contents)) {
 
 # creating a data frame from the list 
 data_df <- rbindlist(data_list)
-save(data_df, file = "./Data/Processed/CA_AQ_processed.csv")
+write.csv(data_df, row.names = FALSE, file = "./Data/Processed/CA_AQ_processed.csv")
