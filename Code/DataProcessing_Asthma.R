@@ -30,6 +30,8 @@ Asthma_ED$Year <- as.factor(Asthma_ED$Year)
 Cal_pop <- read.csv("./Data/Processed/CA_population_data.csv", 
                     stringsAsFactors = T)
 
+Cal_pop$Year <- as.factor(Cal_pop$Year)
+
 #joining population and asthma data
 Asthma_visits_full <- Asthma_ED %>% 
   inner_join(Cal_pop, by = c("CountyFIPS", "Year")) %>% 
@@ -52,14 +54,25 @@ YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
 
 YearlyVisits
 
-#heatmap
-AsthmaVisits_heatmap <- ggplot(Asthma_vis_normalized, 
+#heatmap with normalized data
+AsthmaVisits_heatmap_norm <- ggplot(Asthma_vis_normalized, 
                                aes(x = Year, y = County, fill = visits_per100k)) +
   geom_tile() +
-  scale_fill_distiller(name = "ED Visits per 100k", palette = "RdYlGn", 
-                      breaks = c(100, 300, 500, 700),
+  scale_fill_distiller(name = "ED Visits per 100k", palette = "RdYlGn",
+                       breaks = c(100, 300, 500, 700),
                       direction = -1)
+AsthmaVisits_heatmap_norm
+
+#heatmap with raw visits
+AsthmaVisits_heatmap <- ggplot(Asthma_vis_normalized, 
+                               aes(x = Year, y = County, fill = Visits)) +
+  geom_tile() +
+  scale_fill_distiller(name = "ED Visits", palette = "RdYlGn", 
+                       breaks = c(100, 300, 500, 700),
+                       direction = -1)
 AsthmaVisits_heatmap
+
+
 
 #interactive heatmap
 int_heatmap <- ggplotly(AsthmaVisits_heatmap)

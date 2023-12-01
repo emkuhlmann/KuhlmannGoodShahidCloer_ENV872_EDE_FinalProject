@@ -38,7 +38,7 @@ CA_population <- population_data %>%
   select(GEOID, County, year, Population) %>% 
   rename(CountyFIPS = GEOID, Year = year)
 
-CA_population$Year <- as.factor(CA_population$Year)
+
 
 #saving processed population data
 write.csv(CA_population, row.names = FALSE, 
