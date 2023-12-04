@@ -48,6 +48,8 @@ ED_Visits <- ggplot(Asthma_ED, aes(x = factor(CountyFIPS), y = Visits, fill = Ye
   geom_col()
 ED_Visits
 
+unique(Asthma_vis_normalized$CountyFIPS)
+
 #annual visits across all counties
 YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
   geom_col()
