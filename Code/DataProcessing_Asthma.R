@@ -43,21 +43,18 @@ Asthma_vis_normalized <- Asthma_visits_full %>%
   mutate(visits_per100k = (Visits/Population)*100000) %>% 
   select(CountyFIPS:visits_per100k)
 
-#plotting annual visits by county
-ED_Visits <- ggplot(Asthma_ED, aes(x = factor(CountyFIPS), y = Visits, fill = Year)) +
-  geom_col()
-ED_Visits
+#selecting the correct counties
+ED_Visits_processed <- Asthma_vis_normalized[-c(46:60,166:195,241:255,541,587:601),]
 
-unique(Asthma_vis_normalized$CountyFIPS)
+unique(ED_Visits_processed$CountyFIPS)
 
-#annual visits across all counties
-YearlyVisits <- ggplot(Asthma_ED, aes(x = Year, y = Visits)) +
-  geom_col()
+#saving processed data
+write.csv(ED_Visits_processed, row.names = F, file = "./Data/Processed/Asthma_data_processed.csv")
 
-YearlyVisits
+##Plotting##
 
 #heatmap with normalized data
-AsthmaVisits_heatmap_norm <- ggplot(Asthma_vis_normalized, 
+AsthmaVisits_heatmap_norm <- ggplot(ED_Visits_processed, 
                                aes(x = Year, y = County, fill = visits_per100k)) +
   geom_tile() +
   scale_fill_distiller(name = "ED Visits per 100k", palette = "RdYlGn",
@@ -66,7 +63,7 @@ AsthmaVisits_heatmap_norm <- ggplot(Asthma_vis_normalized,
 AsthmaVisits_heatmap_norm
 
 #heatmap with raw visits
-AsthmaVisits_heatmap <- ggplot(Asthma_vis_normalized, 
+AsthmaVisits_heatmap <- ggplot(ED_Visits_processed, 
                                aes(x = Year, y = County, fill = Visits)) +
   geom_tile() +
   scale_fill_distiller(name = "ED Visits", palette = "RdYlGn", 
@@ -74,15 +71,8 @@ AsthmaVisits_heatmap <- ggplot(Asthma_vis_normalized,
                        direction = -1)
 AsthmaVisits_heatmap
 
-
-
 #interactive heatmap
 int_heatmap <- ggplotly(AsthmaVisits_heatmap)
 int_heatmap
-
-#saving processed data
-write.csv(Asthma_ED, row.names = FALSE, 
-          file = "./Data/Processed/Asthma_ED_Visits_Processed.csv")
-
 
 
