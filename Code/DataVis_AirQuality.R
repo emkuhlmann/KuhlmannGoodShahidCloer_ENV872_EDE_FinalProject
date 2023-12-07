@@ -50,3 +50,11 @@ PM_CA_avg_scatter <-
   geom_smooth(method=lm)
 
 PM_CA_avg_scatter
+
+PM_county_unique <- CA_AQ_processed %>%
+  filter(`Pollutant Standard` == "PM25 Annual 2012")
+
+PM_county_unique <- PM_county_unique %>%
+  na.omit(`Arithmetic Mean`)
+
+unique(PM_county_unique$`County Name`)
