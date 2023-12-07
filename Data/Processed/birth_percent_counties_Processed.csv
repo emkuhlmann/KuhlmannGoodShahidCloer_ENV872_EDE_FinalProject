@@ -1,0 +1,563 @@
+StateFIPS,State,CountyFIPS,County,Year,Value
+6,California,6001,Alameda,2005,5.4
+6,California,6001,Alameda,2006,5.7
+6,California,6001,Alameda,2007,5.3
+6,California,6001,Alameda,2008,5.3
+6,California,6001,Alameda,2009,5.5
+6,California,6001,Alameda,2010,5.4
+6,California,6001,Alameda,2011,5.6
+6,California,6001,Alameda,2012,5.8
+6,California,6001,Alameda,2013,5.6
+6,California,6001,Alameda,2014,5.4
+6,California,6001,Alameda,2015,5.4
+6,California,6001,Alameda,2016,5.4
+6,California,6001,Alameda,2017,5.8
+6,California,6001,Alameda,2018,5.7
+6,California,6001,Alameda,2019,5.9
+6,California,6001,Alameda,2020,5.7
+6,California,6005,Amador,2009,3.4
+6,California,6005,Amador,2020,3.7
+6,California,6007,Butte,2005,4.7
+6,California,6007,Butte,2006,4.6
+6,California,6007,Butte,2007,5.4
+6,California,6007,Butte,2008,4.2
+6,California,6007,Butte,2009,4.8
+6,California,6007,Butte,2010,4.3
+6,California,6007,Butte,2011,4.2
+6,California,6007,Butte,2012,4.5
+6,California,6007,Butte,2013,4.8
+6,California,6007,Butte,2014,4.8
+6,California,6007,Butte,2015,5.1
+6,California,6007,Butte,2016,4.3
+6,California,6007,Butte,2017,4.6
+6,California,6007,Butte,2018,4.4
+6,California,6007,Butte,2019,5.3
+6,California,6007,Butte,2020,4.5
+6,California,6013,Contra Costa,2005,4.9
+6,California,6013,Contra Costa,2006,5
+6,California,6013,Contra Costa,2007,4.7
+6,California,6013,Contra Costa,2008,4.8
+6,California,6013,Contra Costa,2009,4.9
+6,California,6013,Contra Costa,2010,5.2
+6,California,6013,Contra Costa,2011,5.3
+6,California,6013,Contra Costa,2012,5
+6,California,6013,Contra Costa,2013,5
+6,California,6013,Contra Costa,2014,4.9
+6,California,6013,Contra Costa,2015,4.9
+6,California,6013,Contra Costa,2016,5.3
+6,California,6013,Contra Costa,2017,5.5
+6,California,6013,Contra Costa,2018,5.3
+6,California,6013,Contra Costa,2019,5.9
+6,California,6013,Contra Costa,2020,5.4
+6,California,6019,Fresno,2005,5.6
+6,California,6019,Fresno,2006,5.7
+6,California,6019,Fresno,2007,6.1
+6,California,6019,Fresno,2008,6.5
+6,California,6019,Fresno,2009,6
+6,California,6019,Fresno,2010,6.2
+6,California,6019,Fresno,2011,6.2
+6,California,6019,Fresno,2012,6.4
+6,California,6019,Fresno,2013,6.3
+6,California,6019,Fresno,2014,6.5
+6,California,6019,Fresno,2015,6.2
+6,California,6019,Fresno,2016,5.7
+6,California,6019,Fresno,2017,5.6
+6,California,6019,Fresno,2018,6.1
+6,California,6019,Fresno,2019,6.6
+6,California,6019,Fresno,2020,6
+6,California,6023,Humboldt,2005,4.6
+6,California,6023,Humboldt,2006,4.7
+6,California,6023,Humboldt,2007,4.4
+6,California,6023,Humboldt,2008,4.4
+6,California,6023,Humboldt,2009,3.5
+6,California,6023,Humboldt,2010,4.6
+6,California,6023,Humboldt,2011,4
+6,California,6023,Humboldt,2012,4
+6,California,6023,Humboldt,2013,5
+6,California,6023,Humboldt,2014,4.7
+6,California,6023,Humboldt,2015,3.5
+6,California,6023,Humboldt,2016,4.6
+6,California,6023,Humboldt,2017,4.3
+6,California,6023,Humboldt,2018,5.4
+6,California,6023,Humboldt,2019,4.9
+6,California,6023,Humboldt,2020,4.5
+6,California,6025,Imperial,2005,4.6
+6,California,6025,Imperial,2006,4.6
+6,California,6025,Imperial,2007,5.3
+6,California,6025,Imperial,2008,4.9
+6,California,6025,Imperial,2009,4.4
+6,California,6025,Imperial,2010,4.6
+6,California,6025,Imperial,2011,4.1
+6,California,6025,Imperial,2012,4.7
+6,California,6025,Imperial,2013,4.3
+6,California,6025,Imperial,2014,4.5
+6,California,6025,Imperial,2015,3.9
+6,California,6025,Imperial,2016,4.7
+6,California,6025,Imperial,2017,4
+6,California,6025,Imperial,2018,4.6
+6,California,6025,Imperial,2019,4.9
+6,California,6025,Imperial,2020,4.7
+6,California,6029,Kern,2005,5.7
+6,California,6029,Kern,2006,5.7
+6,California,6029,Kern,2007,6
+6,California,6029,Kern,2008,5.6
+6,California,6029,Kern,2009,5.8
+6,California,6029,Kern,2010,5.7
+6,California,6029,Kern,2011,5.8
+6,California,6029,Kern,2012,5.4
+6,California,6029,Kern,2013,5.9
+6,California,6029,Kern,2014,5.5
+6,California,6029,Kern,2015,5.6
+6,California,6029,Kern,2016,5.9
+6,California,6029,Kern,2017,6.1
+6,California,6029,Kern,2018,5.7
+6,California,6029,Kern,2019,6
+6,California,6029,Kern,2020,5.8
+6,California,6031,Kings,2005,5.4
+6,California,6031,Kings,2006,5.2
+6,California,6031,Kings,2007,5.2
+6,California,6031,Kings,2008,5.3
+6,California,6031,Kings,2009,5.3
+6,California,6031,Kings,2010,5.3
+6,California,6031,Kings,2011,5.5
+6,California,6031,Kings,2012,4.3
+6,California,6031,Kings,2013,5
+6,California,6031,Kings,2014,4.7
+6,California,6031,Kings,2015,4.7
+6,California,6031,Kings,2016,5.4
+6,California,6031,Kings,2017,5
+6,California,6031,Kings,2018,5.3
+6,California,6031,Kings,2019,5.1
+6,California,6031,Kings,2020,4.8
+6,California,6033,Lake,2005,4.4
+6,California,6033,Lake,2006,4.6
+6,California,6033,Lake,2007,3.9
+6,California,6033,Lake,2008,5.3
+6,California,6033,Lake,2009,4
+6,California,6033,Lake,2010,5.1
+6,California,6033,Lake,2011,5.4
+6,California,6033,Lake,2012,4.3
+6,California,6033,Lake,2013,5.5
+6,California,6033,Lake,2014,6.5
+6,California,6033,Lake,2015,4.4
+6,California,6033,Lake,2016,4.7
+6,California,6033,Lake,2017,4.7
+6,California,6033,Lake,2018,5.3
+6,California,6033,Lake,2019,4.6
+6,California,6033,Lake,2020,5.7
+6,California,6037,Los Angeles,2005,5.7
+6,California,6037,Los Angeles,2006,5.8
+6,California,6037,Los Angeles,2007,5.7
+6,California,6037,Los Angeles,2008,5.7
+6,California,6037,Los Angeles,2009,5.6
+6,California,6037,Los Angeles,2010,5.7
+6,California,6037,Los Angeles,2011,5.5
+6,California,6037,Los Angeles,2012,5.5
+6,California,6037,Los Angeles,2013,5.5
+6,California,6037,Los Angeles,2014,5.4
+6,California,6037,Los Angeles,2015,5.7
+6,California,6037,Los Angeles,2016,5.6
+6,California,6037,Los Angeles,2017,5.7
+6,California,6037,Los Angeles,2018,5.8
+6,California,6037,Los Angeles,2019,5.9
+6,California,6037,Los Angeles,2020,5.8
+6,California,6045,Mendocino,2005,4.6
+6,California,6045,Mendocino,2006,6.3
+6,California,6045,Mendocino,2007,4.6
+6,California,6045,Mendocino,2008,5
+6,California,6045,Mendocino,2009,4.4
+6,California,6045,Mendocino,2010,4
+6,California,6045,Mendocino,2011,4.7
+6,California,6045,Mendocino,2012,5.1
+6,California,6045,Mendocino,2013,4.5
+6,California,6045,Mendocino,2014,5.1
+6,California,6045,Mendocino,2015,5.4
+6,California,6045,Mendocino,2016,5.3
+6,California,6045,Mendocino,2017,5.9
+6,California,6045,Mendocino,2018,5.1
+6,California,6045,Mendocino,2019,6.5
+6,California,6045,Mendocino,2020,6.2
+6,California,6047,Merced,2005,5.1
+6,California,6047,Merced,2006,4.6
+6,California,6047,Merced,2007,4.9
+6,California,6047,Merced,2008,5.2
+6,California,6047,Merced,2009,5.6
+6,California,6047,Merced,2010,5.4
+6,California,6047,Merced,2011,5.5
+6,California,6047,Merced,2012,5.5
+6,California,6047,Merced,2013,5.3
+6,California,6047,Merced,2014,4.7
+6,California,6047,Merced,2015,4.9
+6,California,6047,Merced,2016,4.9
+6,California,6047,Merced,2017,5.7
+6,California,6047,Merced,2018,4.2
+6,California,6047,Merced,2019,4.5
+6,California,6047,Merced,2020,4.2
+6,California,6053,Monterey,2005,5.1
+6,California,6053,Monterey,2006,4.8
+6,California,6053,Monterey,2007,4.3
+6,California,6053,Monterey,2008,4.7
+6,California,6053,Monterey,2009,4.4
+6,California,6053,Monterey,2010,4.4
+6,California,6053,Monterey,2011,4.7
+6,California,6053,Monterey,2012,4.7
+6,California,6053,Monterey,2013,4.6
+6,California,6053,Monterey,2014,4.7
+6,California,6053,Monterey,2015,4.9
+6,California,6053,Monterey,2016,4.4
+6,California,6053,Monterey,2017,4.8
+6,California,6053,Monterey,2018,5.4
+6,California,6053,Monterey,2019,5.1
+6,California,6053,Monterey,2020,4.9
+6,California,6057,Nevada,2005,5
+6,California,6057,Nevada,2006,5.3
+6,California,6057,Nevada,2007,5.7
+6,California,6057,Nevada,2008,3.5
+6,California,6057,Nevada,2009,3.6
+6,California,6057,Nevada,2010,3.6
+6,California,6057,Nevada,2011,4.6
+6,California,6057,Nevada,2012,4.4
+6,California,6057,Nevada,2013,5.3
+6,California,6057,Nevada,2014,4.1
+6,California,6057,Nevada,2015,4.6
+6,California,6057,Nevada,2016,4.4
+6,California,6057,Nevada,2017,5
+6,California,6057,Nevada,2018,3.8
+6,California,6057,Nevada,2019,5.2
+6,California,6057,Nevada,2020,4.9
+6,California,6059,Orange,2005,4.6
+6,California,6059,Orange,2006,4.6
+6,California,6059,Orange,2007,4.9
+6,California,6059,Orange,2008,4.7
+6,California,6059,Orange,2009,4.9
+6,California,6059,Orange,2010,4.8
+6,California,6059,Orange,2011,4.9
+6,California,6059,Orange,2012,4.6
+6,California,6059,Orange,2013,4.6
+6,California,6059,Orange,2014,4.6
+6,California,6059,Orange,2015,4.7
+6,California,6059,Orange,2016,4.8
+6,California,6059,Orange,2017,4.5
+6,California,6059,Orange,2018,4.7
+6,California,6059,Orange,2019,5.1
+6,California,6059,Orange,2020,4.9
+6,California,6061,Placer,2005,4.2
+6,California,6061,Placer,2006,3.9
+6,California,6061,Placer,2007,4.3
+6,California,6061,Placer,2008,3.4
+6,California,6061,Placer,2009,3.6
+6,California,6061,Placer,2010,3.5
+6,California,6061,Placer,2011,4.2
+6,California,6061,Placer,2012,4.5
+6,California,6061,Placer,2013,3.2
+6,California,6061,Placer,2014,3.9
+6,California,6061,Placer,2015,4
+6,California,6061,Placer,2016,3.8
+6,California,6061,Placer,2017,4.4
+6,California,6061,Placer,2018,3.9
+6,California,6061,Placer,2019,4.4
+6,California,6061,Placer,2020,4.1
+6,California,6065,Riverside,2005,5.2
+6,California,6065,Riverside,2006,5.1
+6,California,6065,Riverside,2007,5.1
+6,California,6065,Riverside,2008,5
+6,California,6065,Riverside,2009,5
+6,California,6065,Riverside,2010,5.1
+6,California,6065,Riverside,2011,4.9
+6,California,6065,Riverside,2012,5.1
+6,California,6065,Riverside,2013,5.1
+6,California,6065,Riverside,2014,5
+6,California,6065,Riverside,2015,5.2
+6,California,6065,Riverside,2016,5.4
+6,California,6065,Riverside,2017,5.3
+6,California,6065,Riverside,2018,5.5
+6,California,6065,Riverside,2019,5.5
+6,California,6065,Riverside,2020,5.4
+6,California,6067,Sacramento,2005,5.2
+6,California,6067,Sacramento,2006,5.6
+6,California,6067,Sacramento,2007,5.4
+6,California,6067,Sacramento,2008,5.2
+6,California,6067,Sacramento,2009,5.3
+6,California,6067,Sacramento,2010,5.5
+6,California,6067,Sacramento,2011,5.1
+6,California,6067,Sacramento,2012,5.3
+6,California,6067,Sacramento,2013,5.3
+6,California,6067,Sacramento,2014,5.4
+6,California,6067,Sacramento,2015,5.5
+6,California,6067,Sacramento,2016,5.3
+6,California,6067,Sacramento,2017,5.7
+6,California,6067,Sacramento,2018,5.4
+6,California,6067,Sacramento,2019,5.6
+6,California,6067,Sacramento,2020,6.1
+6,California,6071,San Bernardino,2005,5.7
+6,California,6071,San Bernardino,2006,5.4
+6,California,6071,San Bernardino,2007,5.6
+6,California,6071,San Bernardino,2008,5.7
+6,California,6071,San Bernardino,2009,5.6
+6,California,6071,San Bernardino,2010,5.7
+6,California,6071,San Bernardino,2011,5.6
+6,California,6071,San Bernardino,2012,5.8
+6,California,6071,San Bernardino,2013,5.9
+6,California,6071,San Bernardino,2014,5.5
+6,California,6071,San Bernardino,2015,5.8
+6,California,6071,San Bernardino,2016,5.8
+6,California,6071,San Bernardino,2017,5.8
+6,California,6071,San Bernardino,2018,6.1
+6,California,6071,San Bernardino,2019,6.4
+6,California,6071,San Bernardino,2020,6.5
+6,California,6073,San Diego,2005,5
+6,California,6073,San Diego,2006,4.7
+6,California,6073,San Diego,2007,5.1
+6,California,6073,San Diego,2008,5
+6,California,6073,San Diego,2009,4.9
+6,California,6073,San Diego,2010,4.9
+6,California,6073,San Diego,2011,4.9
+6,California,6073,San Diego,2012,4.8
+6,California,6073,San Diego,2013,4.7
+6,California,6073,San Diego,2014,4.8
+6,California,6073,San Diego,2015,4.8
+6,California,6073,San Diego,2016,5
+6,California,6073,San Diego,2017,5
+6,California,6073,San Diego,2018,5.5
+6,California,6073,San Diego,2019,5.3
+6,California,6073,San Diego,2020,5.3
+6,California,6075,San Francisco,2005,5.2
+6,California,6075,San Francisco,2006,5.1
+6,California,6075,San Francisco,2007,5.3
+6,California,6075,San Francisco,2008,5.1
+6,California,6075,San Francisco,2009,4.8
+6,California,6075,San Francisco,2010,5.1
+6,California,6075,San Francisco,2011,5.1
+6,California,6075,San Francisco,2012,5.3
+6,California,6075,San Francisco,2013,5.4
+6,California,6075,San Francisco,2014,5
+6,California,6075,San Francisco,2015,5.1
+6,California,6075,San Francisco,2016,5.4
+6,California,6075,San Francisco,2017,5.2
+6,California,6075,San Francisco,2018,5.1
+6,California,6075,San Francisco,2019,5.6
+6,California,6075,San Francisco,2020,5.6
+6,California,6077,San Joaquin,2005,5.5
+6,California,6077,San Joaquin,2006,5.6
+6,California,6077,San Joaquin,2007,5.4
+6,California,6077,San Joaquin,2008,5.8
+6,California,6077,San Joaquin,2009,5.5
+6,California,6077,San Joaquin,2010,5.7
+6,California,6077,San Joaquin,2011,5.5
+6,California,6077,San Joaquin,2012,5.7
+6,California,6077,San Joaquin,2013,5.8
+6,California,6077,San Joaquin,2014,5.4
+6,California,6077,San Joaquin,2015,6.2
+6,California,6077,San Joaquin,2016,6.2
+6,California,6077,San Joaquin,2017,6.1
+6,California,6077,San Joaquin,2018,6
+6,California,6077,San Joaquin,2019,6.4
+6,California,6077,San Joaquin,2020,5.9
+6,California,6079,San Luis Obispo,2005,5
+6,California,6079,San Luis Obispo,2006,4.3
+6,California,6079,San Luis Obispo,2007,4.6
+6,California,6079,San Luis Obispo,2008,4.5
+6,California,6079,San Luis Obispo,2009,4
+6,California,6079,San Luis Obispo,2010,3.8
+6,California,6079,San Luis Obispo,2011,3.8
+6,California,6079,San Luis Obispo,2012,3.4
+6,California,6079,San Luis Obispo,2013,5.3
+6,California,6079,San Luis Obispo,2014,4
+6,California,6079,San Luis Obispo,2015,4.6
+6,California,6079,San Luis Obispo,2016,4.3
+6,California,6079,San Luis Obispo,2017,4.4
+6,California,6079,San Luis Obispo,2018,4.3
+6,California,6079,San Luis Obispo,2019,4.5
+6,California,6079,San Luis Obispo,2020,4.5
+6,California,6081,San Mateo,2005,4.8
+6,California,6081,San Mateo,2006,4.9
+6,California,6081,San Mateo,2007,4.9
+6,California,6081,San Mateo,2008,4.7
+6,California,6081,San Mateo,2009,4.9
+6,California,6081,San Mateo,2010,5.5
+6,California,6081,San Mateo,2011,4.8
+6,California,6081,San Mateo,2012,4.9
+6,California,6081,San Mateo,2013,4.8
+6,California,6081,San Mateo,2014,5
+6,California,6081,San Mateo,2015,5.4
+6,California,6081,San Mateo,2016,4.8
+6,California,6081,San Mateo,2017,5.4
+6,California,6081,San Mateo,2018,5
+6,California,6081,San Mateo,2019,4.9
+6,California,6081,San Mateo,2020,5.4
+6,California,6083,Santa Barbara,2005,4.8
+6,California,6083,Santa Barbara,2006,4.8
+6,California,6083,Santa Barbara,2007,4.7
+6,California,6083,Santa Barbara,2008,4.6
+6,California,6083,Santa Barbara,2009,4.6
+6,California,6083,Santa Barbara,2010,4.5
+6,California,6083,Santa Barbara,2011,4.7
+6,California,6083,Santa Barbara,2012,4.9
+6,California,6083,Santa Barbara,2013,4.9
+6,California,6083,Santa Barbara,2014,4.9
+6,California,6083,Santa Barbara,2015,5
+6,California,6083,Santa Barbara,2016,5.5
+6,California,6083,Santa Barbara,2017,6.1
+6,California,6083,Santa Barbara,2018,5.8
+6,California,6083,Santa Barbara,2019,5
+6,California,6083,Santa Barbara,2020,5.6
+6,California,6085,Santa Clara,2005,4.9
+6,California,6085,Santa Clara,2006,5.1
+6,California,6085,Santa Clara,2007,4.9
+6,California,6085,Santa Clara,2008,4.8
+6,California,6085,Santa Clara,2009,5.3
+6,California,6085,Santa Clara,2010,5.1
+6,California,6085,Santa Clara,2011,5.2
+6,California,6085,Santa Clara,2012,5.1
+6,California,6085,Santa Clara,2013,5.4
+6,California,6085,Santa Clara,2014,5.2
+6,California,6085,Santa Clara,2015,5.3
+6,California,6085,Santa Clara,2016,5.4
+6,California,6085,Santa Clara,2017,5.3
+6,California,6085,Santa Clara,2018,5.4
+6,California,6085,Santa Clara,2019,5.7
+6,California,6085,Santa Clara,2020,5.8
+6,California,6087,Santa Cruz,2005,4.3
+6,California,6087,Santa Cruz,2006,4.3
+6,California,6087,Santa Cruz,2007,4.6
+6,California,6087,Santa Cruz,2008,4.5
+6,California,6087,Santa Cruz,2009,4.3
+6,California,6087,Santa Cruz,2010,3.9
+6,California,6087,Santa Cruz,2011,3.8
+6,California,6087,Santa Cruz,2012,4.4
+6,California,6087,Santa Cruz,2013,4.2
+6,California,6087,Santa Cruz,2014,3.8
+6,California,6087,Santa Cruz,2015,5.3
+6,California,6087,Santa Cruz,2016,4.2
+6,California,6087,Santa Cruz,2017,4.7
+6,California,6087,Santa Cruz,2018,4.9
+6,California,6087,Santa Cruz,2019,5.1
+6,California,6087,Santa Cruz,2020,4.2
+6,California,6089,Shasta,2005,5.8
+6,California,6089,Shasta,2006,4.6
+6,California,6089,Shasta,2007,5.5
+6,California,6089,Shasta,2008,4.6
+6,California,6089,Shasta,2009,4.5
+6,California,6089,Shasta,2010,4.7
+6,California,6089,Shasta,2011,5.5
+6,California,6089,Shasta,2012,4.5
+6,California,6089,Shasta,2013,4.8
+6,California,6089,Shasta,2014,4.3
+6,California,6089,Shasta,2015,4.5
+6,California,6089,Shasta,2016,6
+6,California,6089,Shasta,2017,5.9
+6,California,6089,Shasta,2018,4.5
+6,California,6089,Shasta,2019,5.7
+6,California,6089,Shasta,2020,5.5
+6,California,6095,Solano,2005,5.4
+6,California,6095,Solano,2006,5.7
+6,California,6095,Solano,2007,5.2
+6,California,6095,Solano,2008,5.7
+6,California,6095,Solano,2009,5.4
+6,California,6095,Solano,2010,5.1
+6,California,6095,Solano,2011,5.4
+6,California,6095,Solano,2012,5.4
+6,California,6095,Solano,2013,5.3
+6,California,6095,Solano,2014,5.4
+6,California,6095,Solano,2015,4.8
+6,California,6095,Solano,2016,5.1
+6,California,6095,Solano,2017,5.1
+6,California,6095,Solano,2018,6.2
+6,California,6095,Solano,2019,6
+6,California,6095,Solano,2020,5
+6,California,6097,Sonoma,2005,4.6
+6,California,6097,Sonoma,2006,4.1
+6,California,6097,Sonoma,2007,4.2
+6,California,6097,Sonoma,2008,4.2
+6,California,6097,Sonoma,2009,4.1
+6,California,6097,Sonoma,2010,4.2
+6,California,6097,Sonoma,2011,3.5
+6,California,6097,Sonoma,2012,4.2
+6,California,6097,Sonoma,2013,4.2
+6,California,6097,Sonoma,2014,4.2
+6,California,6097,Sonoma,2015,4
+6,California,6097,Sonoma,2016,4.5
+6,California,6097,Sonoma,2017,4.3
+6,California,6097,Sonoma,2018,4.6
+6,California,6097,Sonoma,2019,4.2
+6,California,6097,Sonoma,2020,4.4
+6,California,6099,Stanislaus,2005,4.8
+6,California,6099,Stanislaus,2006,5.3
+6,California,6099,Stanislaus,2007,5.1
+6,California,6099,Stanislaus,2008,4.8
+6,California,6099,Stanislaus,2009,5
+6,California,6099,Stanislaus,2010,4.9
+6,California,6099,Stanislaus,2011,4.4
+6,California,6099,Stanislaus,2012,5.1
+6,California,6099,Stanislaus,2013,5
+6,California,6099,Stanislaus,2014,5
+6,California,6099,Stanislaus,2015,4.9
+6,California,6099,Stanislaus,2016,5.4
+6,California,6099,Stanislaus,2017,5.6
+6,California,6099,Stanislaus,2018,4.8
+6,California,6099,Stanislaus,2019,4.6
+6,California,6099,Stanislaus,2020,5.4
+6,California,6101,Sutter,2005,4.6
+6,California,6101,Sutter,2006,4.4
+6,California,6101,Sutter,2007,3.9
+6,California,6101,Sutter,2008,5.2
+6,California,6101,Sutter,2009,4.4
+6,California,6101,Sutter,2010,4.1
+6,California,6101,Sutter,2011,4.6
+6,California,6101,Sutter,2012,4.3
+6,California,6101,Sutter,2013,4.6
+6,California,6101,Sutter,2014,5.2
+6,California,6101,Sutter,2015,4.8
+6,California,6101,Sutter,2016,6.3
+6,California,6101,Sutter,2017,4.7
+6,California,6101,Sutter,2018,5.5
+6,California,6101,Sutter,2019,5.7
+6,California,6101,Sutter,2020,4.5
+6,California,6107,Tulare,2005,5.2
+6,California,6107,Tulare,2006,5.3
+6,California,6107,Tulare,2007,4.9
+6,California,6107,Tulare,2008,5.1
+6,California,6107,Tulare,2009,4.9
+6,California,6107,Tulare,2010,5.2
+6,California,6107,Tulare,2011,5.2
+6,California,6107,Tulare,2012,4.5
+6,California,6107,Tulare,2013,5.6
+6,California,6107,Tulare,2014,5.4
+6,California,6107,Tulare,2015,5.4
+6,California,6107,Tulare,2016,5.5
+6,California,6107,Tulare,2017,6.1
+6,California,6107,Tulare,2018,5.6
+6,California,6107,Tulare,2019,5.6
+6,California,6107,Tulare,2020,5.4
+6,California,6111,Ventura,2005,4.6
+6,California,6111,Ventura,2006,5.1
+6,California,6111,Ventura,2007,4.8
+6,California,6111,Ventura,2008,5
+6,California,6111,Ventura,2009,4.4
+6,California,6111,Ventura,2010,4.9
+6,California,6111,Ventura,2011,4.7
+6,California,6111,Ventura,2012,4.5
+6,California,6111,Ventura,2013,4.6
+6,California,6111,Ventura,2014,4.8
+6,California,6111,Ventura,2015,4.6
+6,California,6111,Ventura,2016,4.2
+6,California,6111,Ventura,2017,4.7
+6,California,6111,Ventura,2018,4.5
+6,California,6111,Ventura,2019,5.1
+6,California,6111,Ventura,2020,5.1
+6,California,6113,Yolo,2005,4.5
+6,California,6113,Yolo,2006,3.7
+6,California,6113,Yolo,2007,4.2
+6,California,6113,Yolo,2008,3.9
+6,California,6113,Yolo,2009,3.7
+6,California,6113,Yolo,2010,4
+6,California,6113,Yolo,2011,4.5
+6,California,6113,Yolo,2012,4
+6,California,6113,Yolo,2013,4.7
+6,California,6113,Yolo,2014,3.5
+6,California,6113,Yolo,2015,3.8
+6,California,6113,Yolo,2016,4.3
+6,California,6113,Yolo,2017,4.8
+6,California,6113,Yolo,2018,3.8
+6,California,6113,Yolo,2019,4.8
+6,California,6113,Yolo,2020,5.4
