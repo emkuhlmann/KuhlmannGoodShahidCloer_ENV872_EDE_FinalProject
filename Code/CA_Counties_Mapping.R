@@ -41,6 +41,20 @@ counties_all <- mapview(ca_counties, zcol = "NAME", col.regions = "plum1",
                         legend = F, map.types = mapviewGetOption("CartoDB.Positron"),
                         alpha.regions = 0.5) +
   mapview(filtered_ca_counties, zcol = "County", col.regions = "darkmagenta", 
-          alpha.regions = 2)
+          alpha.regions = 2, layer.name = "Counties Included in the Anaysis")
 
 counties_all
+
+#----------------------------Mapping with ggplot-------------------------------
+# Define the colors and labels for the legend
+legend_colors <- c("All Counties" = "thistle", "Counties Included in Analysis" = "orchid4")
+
+#mapping
+gg_counties_all <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("California Counties Included in this Analysis")
+
+gg_counties_all
