@@ -30,7 +30,9 @@ library
 
 # Rationale and Research Questions
 
+Wildfires are a prevalent risk in the state of California and have been shown to burn nearly half a million acres of land annually. Peak fire events can cause an increase in air pollutants–PM2.5 specifically has been found to increase tenfold after burning (Gupta et al, 2017). PM2.5 concentrations are also affected by socioeconomic status (SES), whereas premature deaths attributable to PM2.5 have been found to increase as household income decreases (Sohrabi et al, 2020). This suggests that as household income decreases, families are unable to afford to reside in areas with cleaner air (Neidell, 2004). PM2.5 is attributed with causing higher incidence rates in asthma. A California based study found that decreases in PM2.5 concentrations significantly contributed towards reductions in asthma rates (Garcia et al, 2019). While recent policies have been passed with the intentions of reducing air pollutants in the state, trends in asthma rates have increased between 1993 and 2014 (Garcia et al, 2019). PM2.5 has also been correlated with the prevalence of term low birth weights (tLBW). Increased exposure to PM2.5 during pregnancy has been shown to increase the chance of tLBW (Ha et al, 2017). 
 
+Our objective is to analyze asthma rates and term low birth weights in California, over the years 2005 to 2019, to determine if there are any trends in the association between our two study objectives and PM2.5 concentrations. We will create two models to represent how wildfire rates, PM2.5 concentrations, and socioeconomic status impact the prevalence of both health effects in California counties. 
 
 \newpage
 
