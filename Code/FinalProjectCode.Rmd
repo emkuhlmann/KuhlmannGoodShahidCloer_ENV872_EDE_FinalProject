@@ -1,0 +1,73 @@
+---
+title: "Exploring Variables Impacting Asthma and Low Birth Weights in California"
+subtitle: "Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid"
+date: "https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+\newpage
+\tableofcontents 
+\newpage
+\listoftables 
+\newpage
+\listoffigures 
+\newpage
+
+```{r setup, include=FALSE}
+# Set your working directory
+getwd()
+
+# Load your packages
+library
+
+# Set your ggplot theme
+
+# Load your datasets
+
+```
+
+
+# Rationale and Research Questions
+
+
+
+\newpage
+
+# Dataset Information
+
+| Detail| Description                               |
+|----------:|:-------------------------------------|
+|Data Source| CDC National Environmental Public Health Tracking Network |
+| Retrieved From| https://ephtracking.cdc.gov/DataExplorer/ |
+|  Variables Used|Annual Number of Emergency Department Visits for Asthma,Percent of Low Birthweight (<2500g) Live Singleton Births by county, Percent of the population living in poverty by county|
+|  Data Range|2005-2019 |
+
+\newpage
+
+# Exploratory Analysis 
+
+
+
+\newpage
+
+# Analysis
+
+
+
+## Question 1: <insert specific question here and add additional subsections for additional questions below, if needed>
+
+## Question 2: 
+
+
+
+
+\newpage
+
+# Summary and Conclusions
+
+
+\newpage
+
+# References
+<add references here if relevant, otherwise delete this section> 

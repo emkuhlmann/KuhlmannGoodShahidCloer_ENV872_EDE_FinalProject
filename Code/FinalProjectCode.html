@@ -10,9 +10,8 @@
 
 
 
-<meta name="date" content="2023-11-17" />
 
-<title>Sakina Data Wrangling</title>
+<title>Exploring Variables Impacting Asthma and Low Birth Weights in California</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -349,69 +348,80 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Sakina Data Wrangling</h1>
-<h4 class="date">2023-11-17</h4>
+<h1 class="title toc-ignore">Exploring Variables Impacting Asthma and
+Low Birth Weights in California</h1>
+<h3 class="subtitle">Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina
+Shahid</h3>
+<h4 class="date"><a href="https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject" class="uri">https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject</a></h4>
 
 </div>
 
 
-<pre class="r"><code>library(here)</code></pre>
-<pre><code>## here() starts at /home/guest/Final Project</code></pre>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-## ✔ dplyr     1.1.3     ✔ readr     2.1.4
-## ✔ forcats   1.0.0     ✔ stringr   1.5.0
-## ✔ ggplot2   3.4.3     ✔ tibble    3.2.1
-## ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-## ✔ purrr     1.0.2</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()
-## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(naniar)
-
-getwd()</code></pre>
-<pre><code>## [1] &quot;/home/guest/Final Project&quot;</code></pre>
-<pre class="r"><code>birthweight.df &lt;- read.csv(here(&#39;Data&#39;,&#39;Raw&#39;,&#39;BirthWeight.csv&#39;),stringsAsFactors = TRUE, colClasses = c(&#39;CountyFIPS&#39; = &#39;factor&#39;,&#39;StateFIPS&#39;=&#39;factor&#39;), na.strings = c(&quot;Suppressed&quot;,&quot;No Events&quot;))</code></pre>
-<pre class="r"><code>summary(birthweight.df)</code></pre>
-<pre><code>##  StateFIPS        State        CountyFIPS         County          Year     
-##  06:2436   California:2436   06001  :  42   Alameda  :  42   Min.   :2000  
-##                              06003  :  42   Alpine   :  42   1st Qu.:2005  
-##                              06005  :  42   Amador   :  42   Median :2010  
-##                              06007  :  42   Butte    :  42   Mean   :2010  
-##                              06009  :  42   Calaveras:  42   3rd Qu.:2015  
-##                              06011  :  42   Colusa   :  42   Max.   :2020  
-##                              (Other):2184   (Other)  :2184                 
-##      Value      Infant.Gender
-##  10     :  32   Female:1218  
-##  17     :  27   Male  :1218  
-##  20     :  27                
-##  12     :  25                
-##  15     :  25                
-##  (Other):1721                
-##  NA&#39;s   : 579</code></pre>
-<pre class="r"><code>#579 NAs</code></pre>
-<pre class="r"><code>birthweight_removed &lt;- na.omit(birthweight.df)
-
-summary(birthweight_removed)</code></pre>
-<pre><code>##  StateFIPS        State        CountyFIPS            County          Year     
-##  06:1857   California:1857   06001  :  42   Alameda     :  42   Min.   :2000  
-##                              06007  :  42   Butte       :  42   1st Qu.:2005  
-##                              06013  :  42   Contra Costa:  42   Median :2010  
-##                              06017  :  42   El Dorado   :  42   Mean   :2010  
-##                              06019  :  42   Fresno      :  42   3rd Qu.:2015  
-##                              06023  :  42   Humboldt    :  42   Max.   :2020  
-##                              (Other):1605   (Other)     :1605                 
-##      Value      Infant.Gender
-##  10     :  32   Female:934   
-##  17     :  27   Male  :923   
-##  20     :  27                
-##  12     :  25                
-##  15     :  25                
-##  59     :  24                
-##  (Other):1697</code></pre>
-<pre class="r"><code>birthweight_removed$Value &lt;- as.numeric(birthweight_removed$Value)</code></pre>
+<div id="rationale-and-research-questions" class="section level1">
+<h1>Rationale and Research Questions</h1>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="dataset-information" class="section level1">
+<h1>Dataset Information</h1>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Detail</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Data Source</td>
+<td align="left">CDC National Environmental Public Health Tracking
+Network</td>
+</tr>
+<tr class="even">
+<td align="right">Retrieved From</td>
+<td align="left"><a href="https://ephtracking.cdc.gov/DataExplorer/" class="uri">https://ephtracking.cdc.gov/DataExplorer/</a></td>
+</tr>
+<tr class="odd">
+<td align="right">Variables Used</td>
+<td align="left">Annual Number of Emergency Department Visits for
+Asthma,Percent of Low Birthweight (&lt;2500g) Live Singleton Births by
+county, Percent of the population living in poverty by county</td>
+</tr>
+<tr class="even">
+<td align="right">Data Range</td>
+<td align="left">2005-2019</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="exploratory-analysis" class="section level1">
+<h1>Exploratory Analysis</h1>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="analysis" class="section level1">
+<h1>Analysis</h1>
+<div id="question-1-insert-specific-question-here-and-add-additional-subsections-for-additional-questions-below-if-needed" class="section level2">
+<h2>Question 1: &lt;insert specific question here and add additional
+subsections for additional questions below, if needed&gt;</h2>
+</div>
+<div id="question-2" class="section level2">
+<h2>Question 2:</h2>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div id="summary-and-conclusions" class="section level1">
+<h1>Summary and Conclusions</h1>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>&lt;add references here if relevant, otherwise delete this
+section&gt;</p>
+</div>
 
 
 
