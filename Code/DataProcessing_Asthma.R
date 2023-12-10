@@ -74,5 +74,3 @@ AsthmaVisits_heatmap
 #interactive heatmap
 int_heatmap <- ggplotly(AsthmaVisits_heatmap)
 int_heatmap
-
-
