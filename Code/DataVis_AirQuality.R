@@ -8,6 +8,8 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 library(Kendall)
+library(agricolae)
+library(ggpubr)
 
 airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
 
@@ -31,7 +33,7 @@ airquality_ozone <- airquality_df %>%
   group_by(County, Year) %>%
   summarise(mean_annual_ozone = mean(mean_annual_ozone))
 
-# ----- PM2.5 boxplot by county ------------------------------------------------
+# ----- PM2.5 box and whiskers plot by county ----------------------------------
 
 pm_plot <- ggplot(airquality_pm, 
                   aes(x = County, y = mean_annual_PM25)) +
@@ -42,7 +44,7 @@ pm_plot <- ggplot(airquality_pm,
   ylim(0,30)
 print(pm_plot)
 
-# ----- ozone boxplot by county ------------------------------------------------
+# ----- ozone box and whiskers plot by county ----------------------------------
 
 ozone_plot <- ggplot(airquality_ozone, 
                   aes(x = County, y = mean_annual_ozone)) +
@@ -53,6 +55,11 @@ ozone_plot <- ggplot(airquality_ozone,
   ylim(0,0.07)
 print(ozone_plot)
 
+# ----- stacked box and whiskers plots -----------------------------------------
+
+ggarrange(pm_plot, 
+          ozone_plot,
+          nrow = 2)
 
 # ----- PM2.5 time series ------------------------------------------------------
 
@@ -84,6 +91,10 @@ pm_ts <- ts(pm_annual_avg$mean_annual_pm,
 MannKendall(pm_ts)
 # 2-sided pvalue = 0.022822
 
+pm_regression <- lm(data = pm_annual_avg,
+                    mean_annual_pm ~ Year)
+summary(pm_regression)
+
 # ----- ozone time series ------------------------------------------------------
 
 ozone_annual_avg <- airquality_ozone %>%
@@ -113,3 +124,29 @@ ozone_ts <- ts(ozone_annual_avg$mean_annual_ozone,
 
 MannKendall(ozone_ts)
 # 2-sided pvalue = 0.37305
+
+# ----- stacked time series plots ----------------------------------------------
+
+ggarrange(pm_timeseries_plot,
+          ozone_timeseries_plot,
+          nrow = 2)
+
+# ----- PM2.5 ANOVA by county --------------------------------------------------
+
+pm_anova <- aov(data = airquality_pm,
+                mean_annual_PM25 ~ County)
+
+pm_county_groups <- HSD.test(pm_anova, 
+                             "County", 
+                            group = TRUE)
+pm_county_groups
+
+# ----- ozone ANOVA by county --------------------------------------------------
+
+ozone_anova <- aov(data = airquality_ozone,
+                   mean_annual_ozone ~ County)
+
+ozone_county_groups <- HSD.test(ozone_anova, 
+                                "County", 
+                                group = TRUE)
+ozone_county_groups

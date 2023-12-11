@@ -22,7 +22,7 @@ wildfire_heatmap <- ggplot(wildfire_df,
                            aes(x = Year, y = County, fill = acres_burned)) +
   geom_tile() +
   scale_fill_distiller(name = "Acres Burned",
-                       palette = "RdYlGn",
+                       palette = "YlOrBr",
                        direction = -1) +
   theme(legend.title = element_text(size = 10),
         legend.text = element_text(size = 8),

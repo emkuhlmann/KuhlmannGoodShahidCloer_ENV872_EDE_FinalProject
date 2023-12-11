@@ -83,7 +83,7 @@ gg_counties_pm <- ggplot() +
   geom_sf(data = pm_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of PM2.5 Monitors Used for Air Quality Analysis")
+  ggtitle("PM2.5 Monitors Used for Air Quality Analysis")
 
 gg_counties_pm
 
@@ -93,6 +93,14 @@ gg_counties_ozone <- ggplot() +
   geom_sf(data = ozone_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of Ozone Monitors Used for Air Quality Analysis")
+  ggtitle("Ozone Monitors Used for Air Quality Analysis")
 
 gg_counties_ozone
+
+# ----- side by side air quality monitor maps ----------------------------------
+
+ggarrange(gg_counties_pm,
+          gg_counties_ozone,
+          nrow = 1,
+          common.legend = TRUE,
+          legend = "bottom")
