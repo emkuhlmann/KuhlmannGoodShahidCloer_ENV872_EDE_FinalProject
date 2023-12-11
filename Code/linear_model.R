@@ -1,6 +1,8 @@
 library(dplyr)
 library(here)
 library(tidyverse)
+library(sjPlot)
+library(agricolae)
 
 # ----- load datasets ----------------------------------------------------------
 
@@ -18,8 +20,9 @@ airquality_pm <- airquality_df %>%
            County.Name,
            Arithmetic.Mean)) %>%
   rename(County = County.Name) %>%
+  rename(mean_annual_PM25 = Arithmetic.Mean) %>%
   group_by(County, Year) %>%
-  summarise(mean_pm = mean(Arithmetic.Mean))
+  summarise(mean_annual_PM25 = mean(mean_annual_PM25))
 
 airquality_ozone <- airquality_df %>%
   filter(Pollutant.Standard == "Ozone 8-hour 2015") %>%
@@ -27,19 +30,21 @@ airquality_ozone <- airquality_df %>%
            County.Name,
            Arithmetic.Mean)) %>%
   rename(County = County.Name) %>%
+  rename(mean_annual_ozone = Arithmetic.Mean) %>%
   group_by(County, Year) %>%
-  summarise(mean_ozone = mean(Arithmetic.Mean))
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
 
 asthma_df <- asthma_df %>%
   select(c(Year,
            County,
-           visits_per100k))
+           visits_per100k)) %>%
+  rename(ER_asthma_visits_per_100k = visits_per100k)
 
 poverty_df <- poverty_df %>%
   select(c(Year,
            County,
-           Percent_Poverty))
-# poverty is missing San Bernardino county
+           Percent_Poverty)) %>%
+  rename(percent_poverty = Percent_Poverty)
 
 wildfire_df <- wildfire_df %>%
   rename(County = UNIT,
@@ -54,7 +59,7 @@ births_df <- births_df %>%
            Value)) %>%
   filter(Year != "2020") %>%
   filter(County != "Amador") %>%
-  rename(births_percent = "Value")
+  rename(percent_underweight_births = "Value")
 
 # ----- join into one data frame -----------------------------------------------
 
@@ -70,46 +75,78 @@ joined_df <- listed_df %>%
 
 # ----- testing out the asthma MLR ---------------------------------------------
 
-# first pass using everything as predictors 
 asthma_regression <- lm(data = joined_df,
-                        visits_per100k ~ Year + 
-                        County +
-                        mean_ozone +
-                        mean_pm +
-                        Percent_Poverty +
-                        acres_burned)
-summary(asthma_regression)
-  # this looks crazy - not sure how to interpret the counties as predictors?
-  # might make more sense to try and anova - see how asthma is difference across
-  # counties 
-
-# how does removing Year and County affect regression?
-asthma_regression_2 <- lm(data = joined_df,
-                        visits_per100k ~  
-                          mean_ozone +
-                          mean_pm +
-                          Percent_Poverty +
+                        ER_asthma_visits_per_100k ~  
+                          mean_annual_ozone +
+                          mean_annual_PM25 +
+                          percent_poverty +
                           acres_burned)
-summary(asthma_regression_2)
-  # now air quality and poverty are significant predictors; wildfire is not 
+summary(asthma_regression)
+
+tab_model(asthma_regression)
 
 # ----- testing out births MLR -------------------------------------------------
 
-# first pass using everything as predictors 
 births_regression <- lm(data = joined_df,
-                        births_percent ~ Year + 
-                          County +
-                          mean_ozone +
-                          mean_pm +
-                          Percent_Poverty +
-                          acres_burned)
+                          percent_underweight_births ~  
+                            mean_annual_ozone +
+                            mean_annual_PM25 +
+                            percent_poverty +
+                            acres_burned)
 summary(births_regression)
 
-# how does removing Year and County affect regression?
-births_regression_2 <- lm(data = joined_df,
-                          births_percent ~  
-                            mean_ozone +
-                            mean_pm +
-                            Percent_Poverty +
-                            acres_burned)
-summary(births_regression_2)
+tab_model(births_regression)
+
+# ----- anova by county for asthma ---------------------------------------------
+
+asthma_county_anova <- aov(data = joined_df,
+                           ER_asthma_visits_per_100k ~ County)
+
+asthma_county_groups <- HSD.test(asthma_county_anova, 
+                                 "County", 
+                                 group = TRUE)
+asthma_county_groups
+
+# Graph the results
+asthma_tukey_plot <- ggplot(joined_df, 
+                            aes(x = County, y = ER_asthma_visits_per_100k)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  stat_summary(geom = "text", fun = max, vjust = -1, size = 3.5,
+               label = c("i", "fg", "i", "hi", "b", "i", "i", "gh", "a", "i",
+                         "b", "hi", "i", "c", "i", "hi", "i", "i", "i", "i",
+                         "i", "hi", "ef", "i", "i", "i", "ef", "ef", "hi", "i",
+                         "i", "cd", "i", "i", "de"
+               )) +
+  labs(title = "Tukey test groups for annual average ER visits for asthma by county",
+       x = "County", y = "Asthma ER Visits per 100k") +
+  ylim(0, 800)
+print(asthma_tukey_plot)
+
+# ----- anova by county for births ---------------------------------------------
+
+births_anova <- aov(data = joined_df,
+                    percent_underweight_births ~ County)
+
+births_county_groups <- HSD.test(births_anova, 
+                                 "County", 
+                                 group = TRUE)
+births_county_groups
+
+# Graph the results
+births_tukey_plot <- ggplot(joined_df, 
+                            aes(x = County, y = percent_underweight_births)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  stat_summary(geom = "text", fun = max, vjust = -1, size = 3,
+               label = c("bcde", "ijklmno", "defghi", "a", "klmnop", "jklmno",
+                         "abc", "defghi", "ghijklm", "abcd", "defghi", "efghij", 
+                         "ijklmn", "jklmno", "ijhlmn", "p", "defghi", "bcdefg", 
+                         "abc", "fghijkl", "defhgi", "ab", "mnop", "fghijk", 
+                         "fghijk", "cdefghi", "lmnop", "efghij", "bcdef", "nop",
+                         "fghijk", "hijklm", "bcdefgh", "ijklmno", "op"
+               )) +
+  labs(title = "Tukey test groups for annual percent of low weight births by county",
+       x = "County", y = "percent low birth weight") +
+  ylim(3, 7)
+print(births_tukey_plot)

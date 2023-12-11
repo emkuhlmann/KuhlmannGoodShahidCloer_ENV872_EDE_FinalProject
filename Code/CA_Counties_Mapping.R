@@ -58,3 +58,41 @@ gg_counties_all <- ggplot() +
   ggtitle("California Counties Included in this Analysis")
 
 gg_counties_all
+
+# ----- including the air monitor sites on the maps ----------------------------
+
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
+
+pm_df <- airquality_df %>%
+  filter(Pollutant.Standard == "PM25 Annual 2012")
+
+ozone_df <- airquality_df %>%
+  filter(Pollutant.Standard == "Ozone 8-hour 2015")
+
+pm_sf <- pm_df %>%
+  st_as_sf(coords = c('Longitude', 'Latitude'),
+           crs = 4326)
+
+ozone_sf <- ozone_df %>%
+  st_as_sf(coords = c('Longitude', 'Latitude'),
+           crs = 4326)
+
+gg_counties_pm <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  geom_sf(data = pm_sf) +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("Location of PM2.5 Monitors Used for Air Quality Analysis")
+
+gg_counties_pm
+
+gg_counties_ozone <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  geom_sf(data = ozone_sf) +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("Location of Ozone Monitors Used for Air Quality Analysis")
+
+gg_counties_ozone

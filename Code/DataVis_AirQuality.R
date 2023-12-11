@@ -3,43 +3,68 @@
 # working directory set to be KuhlmannGoodShahidCloer_ENV872_FinalProject  
 
 library(readr)
+library(here)
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
+library(Kendall)
 
-CA_AQ_processed <- read_csv("Data/Processed/CA_AQ_processed.csv")
-CA_AQ_processed$Year <- as.factor(CA_AQ_processed$Year)
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
 
-# get a count of each pollutant type 
-table(CA_AQ_processed$`Pollutant Standard`)
+airquality_pm <- airquality_df %>%
+  filter(Pollutant.Standard == "PM25 Annual 2012") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_PM25 = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_PM25 = mean(mean_annual_PM25))
 
-# CO 1-hour 1971   NO2 1-hour 2010 Ozone 8-hour 2015  PM25 Annual 2012   SO2 1-hour 2010 
-# 1123             1589            2941               2407               514
+airquality_ozone <- airquality_df %>%
+  filter(Pollutant.Standard == "Ozone 8-hour 2015") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_ozone = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
 
-# example PM2.5 heatmap
-PM_heatmap <- ggplot(CA_AQ_processed %>%
-                       filter(`Pollutant Standard` == "PM25 Annual 2012"), 
-                     aes(x = `Year`, y = `County Name`, fill = `Arithmetic Mean`)) +
-  geom_tile() +
-  scale_fill_distiller(name = "PM2.5 (ug/m3)", palette = "Spectral",
-                       direction = -1)
-PM_heatmap
+# ----- PM2.5 boxplot by county ------------------------------------------------
 
-# example group by and summarize for annual PM2.5 for whole state 
-# read in CA_AQ_processed again so year is as numeric 
-CA_pm25 <- CA_AQ_processed %>%
-  select(c(`Pollutant Standard`, Year, `Arithmetic Mean`)) %>%
-  filter(`Pollutant Standard` == "PM25 Annual 2012") %>%
-  group_by(`Year`) %>%
-  filter(!is.na(`Arithmetic Mean`)) %>%
-  summarise(meanPM25 = mean(`Arithmetic Mean`))
+pm_plot <- ggplot(airquality_pm, 
+                  aes(x = County, y = mean_annual_PM25)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Annual mean PM2.5 concentrations for each county, 2005 - 2019",
+       x = "County", y = "Annual mean PM2.5 (ug/m3)") +
+  ylim(0,30)
+print(pm_plot)
 
-# plot time series of PM2.5 for whole state
-PM_CA_avg_scatter <- 
-  ggplot(CA_pm25,
+# ----- ozone boxplot by county ------------------------------------------------
+
+ozone_plot <- ggplot(airquality_ozone, 
+                  aes(x = County, y = mean_annual_ozone)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Annual mean ozone concentrations for each county, 2005 - 2019",
+       x = "County", y = "Annual mean ozone (ppm)") +
+  ylim(0,0.07)
+print(ozone_plot)
+
+
+# ----- PM2.5 time series ------------------------------------------------------
+
+pm_annual_avg <- airquality_pm %>%
+  group_by(Year) %>%
+  summarise(mean_annual_pm = mean(mean_annual_PM25))
+
+pm_timeseries_plot <- 
+  ggplot(pm_annual_avg,
          aes(x = Year,
-             y = meanPM25)) +
-  labs(title = "Annual average PM2.5 across all CA counties",
+             y = mean_annual_pm)) +
+  labs(title = "Annual average PM2.5 across all CA counties, 2005 - 2019",
        y = "Avg PM2.5 (ug/m3)") +
   ylim(0,13) +
   theme(axis.text.x = element_text(size = 14)) +
@@ -49,12 +74,42 @@ PM_CA_avg_scatter <-
   geom_point(size = 2) +
   geom_smooth(method=lm)
 
-PM_CA_avg_scatter
+print(pm_timeseries_plot)
 
-PM_county_unique <- CA_AQ_processed %>%
-  filter(`Pollutant Standard` == "PM25 Annual 2012")
+pm_ts <- ts(pm_annual_avg$mean_annual_pm,
+            start = 2005,
+            end = 2019,
+            frequency = 1)
 
-PM_county_unique <- PM_county_unique %>%
-  na.omit(`Arithmetic Mean`)
+MannKendall(pm_ts)
+# 2-sided pvalue = 0.022822
 
-unique(PM_county_unique$`County Name`)
+# ----- ozone time series ------------------------------------------------------
+
+ozone_annual_avg <- airquality_ozone %>%
+  group_by(Year) %>%
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
+
+ozone_timeseries_plot <- 
+  ggplot(ozone_annual_avg,
+         aes(x = Year,
+             y = mean_annual_ozone)) +
+  labs(title = "Annual average ozone across all CA counties, 2005 - 2019",
+       y = "Avg ozone (ppm)") +
+  ylim(0,0.1) +
+  theme(axis.text.x = element_text(size = 14)) +
+  theme(axis.text.y = element_text(size = 14)) +
+  theme(axis.title.x = element_text(size = 14)) +
+  theme(axis.title.y = element_text(size = 14)) +
+  geom_point(size = 2) +
+  geom_smooth(method=lm)
+
+print(ozone_timeseries_plot)
+
+ozone_ts <- ts(ozone_annual_avg$mean_annual_ozone,
+            start = 2005,
+            end = 2019,
+            frequency = 1)
+
+MannKendall(ozone_ts)
+# 2-sided pvalue = 0.37305
