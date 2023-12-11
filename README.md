@@ -119,7 +119,10 @@ Processed/poverty_byyear_processed
 <list any software scripts/code contained in the repository and a description of their purpose.>
 
 1. DataProcessing_SocioEco.RMD: This RMD was used for data wrangling the socioeconomic data, normalizing the data, removing unnecessary counties, saving processed data files, and testing visualization and exploratory data techniques for the final project.
-2. FinalCodeforSocio.RMD: Used to communicate final code needed for the final project that represents the socioeconomic data and exploratory analysis. 
+2. FinalCodeforSocio.RMD: Used to communicate final code needed for the final project that represents the socioeconomic data and exploratory analysis.
+3. DataProcessing_Asthma.R: This code was used to wrangle the emergency department visits for asthma dataset from the CDC, join it with the processed county population data, normalize the number of emergency department visits by county population, and do initial data visualization.
+4. DataVis_Asthma.R: This code provides the processed asthma data and creates the heatmap used in the final PDF.
+5. PopulationData.R: This code was used to pull population data for California counties from 2005-2019 using the tidycensus package. It was also used to wrangle the data to inlude the necessary counties and other information. 
 
 ## Quality assurance/quality control
 
