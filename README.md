@@ -54,6 +54,40 @@ For individual variables, the file name contains the variable name, CA, and will
 
 <For each data file in the repository, describe the data contained in each column. Include the column name, a description of the information, the class of data, and any units associated with the data. Create a list or table for each data file.> 
 
+Raw/CA_Asthma_EDVisits.csv: 
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| StateFIPS | one-digit state FIPS number (6 for CA) | integer | NA |
+| State | California  | factor | NA |
+| CountyFIPS | 4-digit county FIPS number  | integer | NA |
+| County | county name  | factor | NA |
+| Year | year of data | integer | NA |
+| Value | number of emergency department visits for asthma  | factor | number of visits |
+| Data Comment | empty column for comments  | logi | NA |
+
+Processed/Asthma_data_processed.csv:
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| CountyFIPS | 4-digit county FIPS number  | integer | NA |
+| County | county name  | factor | NA |
+| Year | year of data | integer | NA |
+| Visits | number of emergency department visits for asthma  | integer | number of visits |
+| Population | annual population for each county | integer | number of people |
+| visits_per100k | number of emergency department visits for asthma per 100k people in the county | numeric | number of visits per 100k |
+
+Processed/CA_population_data.csv:
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| CountyFIPS | 4-digit county FIPS number  | integer | NA |
+| County | county name  | factor | NA |
+| Year | year of data | integer | NA |
+| Population | annual population for each county | integer | number of people |
+
+Processed/CAcounties
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| County | names of all counties included in all datasets | factor | NA |
+
 ## Scripts and code
 
 <list any software scripts/code contained in the repository and a description of their purpose.>
