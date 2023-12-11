@@ -1,0 +1,53 @@
+---
+title: "FinalCodeforSocio"
+output: html_document
+date: "2023-12-11"
+---
+```{r, setting graph theme}
+mytheme_ash <- theme_gray(
+  base_size = 14, 
+  base_family = "Times") +
+  theme(
+    axis.text = element_text(
+      color = "gray"), 
+        legend.position = "bottom")
+theme_set(mytheme_ash)
+```
+
+```{r, reading in data}
+poverty1.df <- read.csv("Data/Processed/Poverty1_processed.csv", stringsAsFactors = TRUE)
+poverty_byyear.df <- read.csv("Data/Processed/Percent_poverty_byyear_processed.csv", stringsAsFactors = TRUE)
+```
+
+```{r, testing whether different counties have different percent in poverty}
+anova_povertyrate_bycounty <- aov(
+  data = poverty1.df, 
+  Percent_Poverty ~ County)
+summary(anova_povertyrate_bycounty)
+```
+
+```{r, Tukey test}
+TukeyHSD(anova_povertyrate_bycounty)
+```
+
+```{r, Tukey test}
+test1 <- HSD.test(anova_povertyrate_bycounty, "County", group = TRUE)
+
+print(test1)
+```
+
+```{r, graph for analysis}
+Poverty_year <- 
+  ggplot(poverty_byyear.df, 
+         aes(x = Year, y = mean_percent)) +
+  geom_point() +
+  #geom_smooth(method = 'lm') + 
+  #ylim(430000,620000) +
+  labs(x = "Year", 
+       y = "Average Poverty Rate") +
+  ggtitle(
+    "Average Poverty Rate in Californian Counties from 2005 to 2019") +
+  mytheme_ash
+print(Poverty_year)
+```
+
