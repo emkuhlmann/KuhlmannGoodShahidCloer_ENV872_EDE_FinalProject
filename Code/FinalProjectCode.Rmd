@@ -1,9 +1,11 @@
 ---
 title: "Exploring Variables Impacting Asthma and Low Birth Weights in California"
-subtitle: "Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid"
+subtitle: Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid
 date: "https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject"
-output: html_document
-editor_options: 
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
   chunk_output_type: inline
 ---
 \newpage
@@ -16,14 +18,49 @@ editor_options:
 
 ```{r setup, include=FALSE}
 # Set your working directory
-getwd()
+library(here)
+setwd(here())
 
 # Load your packages
-library
+
+library(tidyverse)
+library(agricolae)
+library(mapview)
+library(tidycensus)
+library(sjPlot)
+library(ggeasy)
 
 # Set your ggplot theme
+mytheme <- theme_gray(
+  base_size = 14, 
+  base_family = "Times") +
+  theme(
+    axis.text = element_text(
+      color = "gray"), 
+        legend.position = "bottom") 
+theme_set(mytheme)
+
 
 # Load your datasets
+#Air Quality dataframe
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
+
+#Asthma dataframe
+Asthma_data_processed <- read.csv("Data/Processed/Asthma_data_processed.csv", 
+                                  stringsAsFactors = T)
+#Wildfire data frame
+wildfire_df <- read.csv(here("Data/Processed/CA_wildfire_processed.csv"))
+wildfire_df <- wildfire_df %>%
+  rename(County = UNIT,
+         Year = YEAR,
+         acres_burned = mean)
+
+#Socioeconomic status data
+poverty1.df <- read.csv("Data/Processed/Poverty1_processed.csv", stringsAsFactors = TRUE)
+poverty_byyear.df <- read.csv("Data/Processed/Percent_poverty_byyear_processed.csv", stringsAsFactors = TRUE)
+
+#Low Birth Weight by percent per county
+births_df <- read.csv(here("Data/Processed/birth_percent_counties_Processed.csv"))
 
 ```
 
@@ -38,6 +75,8 @@ Our objective is to analyze asthma rates and term low birth weights in Californi
 
 # Dataset Information
 
+Table: Information for Low Birthweight Percent, Asthma and Socioeconomic status
+
 | Detail| Description                               |
 |----------:|:-------------------------------------|
 |Data Source| CDC National Environmental Public Health Tracking Network |
@@ -45,9 +84,137 @@ Our objective is to analyze asthma rates and term low birth weights in Californi
 |  Variables Used|Annual Number of Emergency Department Visits for Asthma,Percent of Low Birthweight (<2500g) Live Singleton Births by county, Percent of the population living in poverty by county|
 |  Data Range|2005-2019 |
 
+
+Table: Information for Wildfire Rates
+
+| Detail| Description                               |
+|----------:|:-------------------------------------|
+|Data Source| California Department of Forestry and Fire Protection (CalFire) |
+| Retrieved From| CalFire Wildfire Activity Statistics publications (Redbooks)|
+|  Variables Used|Acres burned during large fire events (300 acres and greater) in areas that fall within CalFire direct protection areas|
+|  Data Range|2008-2019 |
+
+
+Table: Information for Ozone and PM 2.5
+
+| Detail| Description                               |
+|----------:|:-------------------------------------|
+|Data Source| U.S. EPA Air Data Pre-generated Data Files |
+|Retrieved From|U.S. EPA Air Data Pre-generated Data Files; Annual Summary Data|
+|Variables Used|Ozone 8-hour 2015 Arithmetic Mean and PM25 Annual 2012 Arithmetic Mean|
+|  Data Range|2005-2019 |
+
+
+#### Data Wrangling Process \
+
+
+**SES (Socioeconomic status)** - The data was downloaded as csv files from the CDC National Public Health Tracking Network Data Explorer and were read into R studio. There were no NAs present in the dataset. The column titled value was renamed to Percent_Poverty and was changed to a numeric column. Column Year and CountyFIPS were changed to factors. Column County and State were changed to characters. California population data was downloaded from our project's Git Repository. Columns for CountyFIPS and Year were changed to factors to match the socioeconomic dataframe. Next, the population and socioeconomic data frame were joined. In the combined data frame, a column was added that used Percent_Poverty to normalize the number of individual’s living in poverty per 100k residents. Finally, the counties in the dataframe were reduced to the 35 included across all datasets in the project. Two additional datasets were created for analysis, one that averaged the Percent_Poverty by County and one that averaged the Percent_Poverty by year. All datasets were saved and uploaded to the Git Repository. 
+
+**Wildfire Rates** - Csv files were downloaded from the US EPA Air Data website for each year from 2015 through 2019. Each file was loaded into R and filtered for the most recent NAAQS standard, the state of California, and the 35 counties of interest. Then the variables of interest were selected, including location information for the air quality monitors, the pollutant standard, unit, and arithmetic mean, and the year. The files were then compiled into one complete data frame. To analyze ozone and PM2.5 data, the compiled data was filtered for the pollutant of interest, grouped by county and year, and a mean pollutant concentration was calculated. 
+
+**PM 2.5 and Ozone Concentrations** - Pdf redbooks of wildfire statistics for each year from 2008 through 2019 were downloaded from CalFire’s website. The table of interest (Large Fires 300 Acres and Greater - State and Contract Counties Direct Protection Area) was loaded into Excel using the get data from pdf tool. Once each data table was loaded into its own excel sheet, only the columns for unit (the county in which the fire occurred), year, and acres burned and only the entries for fires that were managed by CalFire were kept. The choice to filter for only fires managed by CalFire was made due to the disclaimer included in the pdf data files, which stated that data was compiled from FEMA incident reports, and other federal or local agencies are not obligated to provide reports to CalFire for annual statistics, making the data an incomplete list of other agency large fires. Files were saved as csv files and were then read into R. For each file, data was grouped by county and year and the annual mean acreage burned was calculated. The files were compiled into one data frame and filtered for the 35 counties of interest.
+
+**Asthma Rates** - The asthma dataset was retrieved from the CDC National Environmental Public Health Tracking Network Data Explorer and the CSV file was read into R Studio. There were NAs present in the dataset from Sierra and Alpine counties. These counties were removed from the dataframe. The visits column was changed from factor to numeric and year was changed from integer to factor. Next, the tidycensus R package was used to retrieve county population data for California from 2005-2019. ChatGPT was used to help write the code to create a for loop to fetch the data for each year and create a dataframe including all years. Annual population data was only available for California counties with populations greater than 65,000 residents. This dataframe was wrangled by changing column names to match the asthma dataframe and selecting the CountyFIPS, County, year and Population columns. This processed dataset was saved as a CSV and joined to the asthma dataframe. The number of annual asthma visits was then normalized by the county population for each year and multiplied by 100,000 to calculate the number of emergency department visits for asthma per year per 100,000 residents of each county. Finally, the counties in this dataframe were reduced to only include the 35 counties present across all datasets being used in this analysis. 
+
+**Low Birthweight** - Low Birthweights for California were retrieved from the CDC National Environmental Public Health Tracking Network and the CSV file was read into R Studio. 
+
+
+```{r Map of Counties, echo=FALSE, fig.align ='center',message=FALSE, warning=FALSE}
+library(mapview)
+library(sf)
+#install.packages("tigris")
+library(tigris)
+
+# Load California counties data
+ca_counties <- tigris::counties(state = "CA", cb = TRUE)
+
+# Simplify the geometry for better performance
+ca_counties <- st_simplify(ca_counties, dTolerance = 0.01)
+
+# List of counties to include
+counties_to_include <- c(
+  "Alameda", "Butte", "Contra Costa", "Fresno", "Humboldt", "Imperial", "Kern",
+  "Kings", "Lake", "Los Angeles", "Mendocino", "Merced", "Monterey", "Nevada",
+  "Orange", "Placer", "Riverside", "Sacramento", "San Bernardino", "San Diego",
+  "San Francisco", "San Joaquin", "San Luis Obispo", "San Mateo", "Santa Barbara",
+  "Santa Clara", "Santa Cruz", "Shasta", "Solano", "Sonoma", "Stanislaus", 
+  "Sutter", "Tulare", "Ventura", "Yolo"
+)
+
+# Filter the dataframe
+filtered_ca_counties <- ca_counties[ca_counties$NAME %in% counties_to_include, ]
+
+filtered_ca_counties <- filtered_ca_counties %>% 
+  rename(County = NAME)
+filtered_ca_counties$County <- as.factor(filtered_ca_counties$County)
+
+#install.packages("Polychrome")
+library(Polychrome)
+P35 = createPalette(35,  c("#ff0000", "#00ff00", "#0000ff"))
+
+
+#----------------------------Mapping with ggplot-------------------------------
+# Define the colors and labels for the legend
+legend_colors <- c("All Counties" = "thistle", "Counties Included in Analysis" = "orchid4")
+
+#mapping
+gg_counties_all <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("California Counties Included in this Analysis") + easy_center_title()
+
+gg_counties_all
+
+```
+
+
+```{r Map of Counties with Air Monitor Sites, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
+
+pm_df <- airquality_df %>%
+  filter(Pollutant.Standard == "PM25 Annual 2012")
+
+ozone_df <- airquality_df %>%
+  filter(Pollutant.Standard == "Ozone 8-hour 2015")
+
+pm_sf <- pm_df %>%
+  st_as_sf(coords = c('Longitude', 'Latitude'),
+           crs = 4326)
+
+ozone_sf <- ozone_df %>%
+  st_as_sf(coords = c('Longitude', 'Latitude'),
+           crs = 4326)
+
+gg_counties_pm <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  geom_sf(data = pm_sf) +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("Location of PM2.5 Monitors Used for Air Quality Analysis")
+
+gg_counties_pm
+
+gg_counties_ozone <- ggplot() +
+  geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
+  geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
+  geom_sf(data = ozone_sf) +
+  labs(fill = "County") + 
+  scale_fill_manual(name = "County", values = legend_colors) +
+  ggtitle("Location of Ozone Monitors Used for Air Quality Analysis")
+
+gg_counties_ozone
+
+```
+
 \newpage
 
 # Exploratory Analysis 
+
+
+
 
 
 
@@ -57,12 +224,22 @@ Our objective is to analyze asthma rates and term low birth weights in Californi
 
 
 
-## Question 1: <insert specific question here and add additional subsections for additional questions below, if needed>
-
-## Question 2: 
 
 
+## Question 1: Have ozone and PM2.5 concentrations changed in California counties from 2005 to 2019?
 
+Null Hypothesis: Ozone and PM2.5 concentrations have not changed significantly in California counties from 2005 to 2019. 
+Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantly in California counties from 2005 to 2019.
+
+## Question 2: Do PM2.5 and ozone concentrations impact asthma rates in California counties?
+
+Null Hypothesis: Ozone and PM2.5 concentrations have not changed significantly in California counties from 2005 to 2019. 
+Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantly in California counties from 2005 to 2019.
+
+## Question 3: Do PM2.5 and ozone concentrations impact the incidence of low birth weights in California counties?
+
+Null Hypothesis: PM 2.5 and Ozone concentrations do not impact birth weights in California counties. 
+Alternative Hypothesis: PM 2.5 and Ozone concentrations impact birth weights in California counties.
 
 \newpage
 
@@ -72,4 +249,14 @@ Our objective is to analyze asthma rates and term low birth weights in Californi
 \newpage
 
 # References
-<add references here if relevant, otherwise delete this section> 
+Garcia, E., Berhane, K., Islam, T., McConnell, R., Urman, R., Zhanghue, C., Gilliland, F. 2019. Association of changes in air quality with incident asthma in children in California, 1993-2014. JAMA Network, 321(19). https://jamanetwork.com/journals/jama/article-abstract/2733972. 
+
+Gupta, P., Doraiswamy, P., Levy, R., Pikelnaya, O., Maibach, J., Feenstra, B., Polidori, A., Kiros, F., Mills, C. 2018. Impact of California fires on local and regional air quality: the role of a low-cost sensor network and satellite observations. GeoHealth, 2(6). https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GH000136.
+
+Ha, S., Zhu, Y., Liu, D., Sherman, S., and Mendola, P. 2017. Ambient temperature and air quality in relation to small for gestational age and term low birthweight. Environmental Research, 155. https://www.sciencedirect.com/science/article/pii/S0013935116307332?casa_token=s4b6BG9ZTAoAAAAA:V3seg2IniGknqc3bX9z4FukGwF0NexfAVv--VGpyzrdjQAYYRcRIs1YfHVzYuScyPLmue5xErcA.
+
+Neidell, M. 2004. Air pollution, health, and socioeconomic status: the effect of outdoor air quality on childhood asthma. Journal of Health Economics, 23(6). https://www.sciencedirect.com/science/article/pii/S0167629604000864?casa_token=6is2hlKvma4AAAAA:iCgz317RhRJVyQTcX--eg0qeWlnxWgf4u8eWko1hJLIigxlrmwdsNXsb0k5k6OxvMH--NKy3KTM.
+
+Sohrabi, S., Zietsman, J., and Khreis, H. 2020. Burden of disease assessment of ambient air pollution and premature mortality in urban areas: the role of socioeconomic status and transportation. International Journal of Environmental Research of Public Health, 17(4). https://www.mdpi.com/1660-4601/17/4/1166.
+
+U.S. EPA. 2023. Air Pollution: Current and Future Challenges. https://www.epa.gov/clean-air-act-overview/air-pollution-current-and-future-challenges 

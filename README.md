@@ -50,6 +50,7 @@ The repository contains a Code folder which has all data processing R files for 
 The data files are all in .csv format and the code are in R files or RMD files. 
 <describe your file naming conventions>
 For individual variables, the file name contains the variable name, CA, and will say if it is processed. Similarly, the code files are named after the variable and the purpose of the file (e.g. data visualization or data processing). 
+
 ## Metadata
 
 <For each data file in the repository, describe the data contained in each column. Include the column name, a description of the information, the class of data, and any units associated with the data. Create a list or table for each data file.> 

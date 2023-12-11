@@ -4,6 +4,8 @@ output: html_document
 date: "2023-12-11"
 ---
 ```{r, setting graph theme}
+library(ggplot2)
+
 mytheme_ash <- theme_gray(
   base_size = 14, 
   base_family = "Times") +
