@@ -88,9 +88,38 @@ Processed/CAcounties
 | ------------- | ------------- | ------------- | ------------- |
 | County | names of all counties included in all datasets | factor | NA |
 
+Raw/poverty05_19
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| StateFIPS | one-digit state FIPS number (6 for CA) | integer | NA |
+| State | California | factor | NA |
+| CountyFIPS | 4-digit county FIPS number | factor | NA |
+| County | names of all counties included in all datasets | character | NA |
+| Year | year of data | numeric | NA |
+| Value | poverty rate for each county | numeric | percent |
+
+Processed/poverty1_processed
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| CountyFIPS | 4-digit county FIPS number | factor | NA |
+| County | names of all counties included in all datasets | character | NA |
+| Year | year of data | numeric | NA |
+| Percent_Poverty | poverty rate for each county | numeric | percent |
+| Population | annual population for each county | integer | number of people |
+| Poverty_per100k | poverty rate for each county normalized | numeric | number of people per 100k |
+
+Processed/poverty_byyear_processed
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| Year | year of data | numeric | NA |
+| mean_percent | average poverty rate per year | numeric | percent |
+
 ## Scripts and code
 
 <list any software scripts/code contained in the repository and a description of their purpose.>
+
+1. DataProcessing_SocioEco.RMD: This RMD was used for data wrangling the socioeconomic data, normalizing the data, removing unnecessary counties, saving processed data files, and testing visualization and exploratory data techniques for the final project.
+2. FinalCodeforSocio.RMD: Used to communicate final code needed for the final project that represents the socioeconomic data and exploratory analysis. 
 
 ## Quality assurance/quality control
 
@@ -100,3 +129,5 @@ Processed/CAcounties
 <https://www.dataone.org/best-practices/communicate-data-quality>
 <https://www.dataone.org/best-practices/identify-outliers>
 <https://www.dataone.org/best-practices/identify-values-are-estimated>
+
+To maintain QA/QC in our analysis, datasets were first checked individually for NAs and were noted amongst a list of counties to be removed. When combining individual datasets, the counties noted with NAs were removed and datasets were joined using variables with the same name, such as Year, CountyFIPS, and County. Secondly, variables of interest, such as poverty and asthma rates, were normalized as per 100k residents. Lastly, this repository was used to facilitate sharing code and the workload amongst the group members.  
