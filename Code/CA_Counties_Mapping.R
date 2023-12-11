@@ -83,7 +83,7 @@ gg_counties_pm <- ggplot() +
   geom_sf(data = pm_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("PM2.5 Monitors Used for Air Quality Analysis")
+  ggtitle("Location of PM2.5 Monitors")
 
 gg_counties_pm
 
@@ -93,7 +93,7 @@ gg_counties_ozone <- ggplot() +
   geom_sf(data = ozone_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Ozone Monitors Used for Air Quality Analysis")
+  ggtitle("Location of Ozone Monitors")
 
 gg_counties_ozone
 
