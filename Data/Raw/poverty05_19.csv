@@ -1,0 +1,871 @@
+"StateFIPS","State","CountyFIPS","County","Year","Value"
+6,"California",6001,"Alameda",2005,11.8
+6,"California",6003,"Alpine",2005,16.6
+6,"California",6005,"Amador",2005,10
+6,"California",6007,"Butte",2005,19.2
+6,"California",6009,"Calaveras",2005,10.5
+6,"California",6011,"Colusa",2005,14.2
+6,"California",6013,"Contra Costa",2005,8.1
+6,"California",6015,"Del Norte",2005,22.5
+6,"California",6017,"El Dorado",2005,7.4
+6,"California",6019,"Fresno",2005,20.8
+6,"California",6021,"Glenn",2005,17.5
+6,"California",6023,"Humboldt",2005,16.5
+6,"California",6025,"Imperial",2005,21.3
+6,"California",6027,"Inyo",2005,11.6
+6,"California",6029,"Kern",2005,20.8
+6,"California",6031,"Kings",2005,20.6
+6,"California",6033,"Lake",2005,18.3
+6,"California",6035,"Lassen",2005,16.9
+6,"California",6037,"Los Angeles",2005,16.2
+6,"California",6039,"Madera",2005,18.3
+6,"California",6041,"Marin",2005,6.5
+6,"California",6043,"Mariposa",2005,12.7
+6,"California",6045,"Mendocino",2005,17
+6,"California",6047,"Merced",2005,18.6
+6,"California",6049,"Modoc",2005,20.4
+6,"California",6051,"Mono",2005,9.3
+6,"California",6053,"Monterey",2005,14.1
+6,"California",6055,"Napa",2005,7.5
+6,"California",6057,"Nevada",2005,7.5
+6,"California",6059,"Orange",2005,8.9
+6,"California",6061,"Placer",2005,5.6
+6,"California",6063,"Plumas",2005,11.6
+6,"California",6065,"Riverside",2005,11.5
+6,"California",6067,"Sacramento",2005,13.6
+6,"California",6069,"San Benito",2005,10.1
+6,"California",6071,"San Bernardino",2005,15
+6,"California",6073,"San Diego",2005,11
+6,"California",6075,"San Francisco",2005,12.2
+6,"California",6077,"San Joaquin",2005,14.7
+6,"California",6079,"San Luis Obispo",2005,13.5
+6,"California",6081,"San Mateo",2005,6.9
+6,"California",6083,"Santa Barbara",2005,12.7
+6,"California",6085,"Santa Clara",2005,8.4
+6,"California",6087,"Santa Cruz",2005,11.8
+6,"California",6089,"Shasta",2005,13.8
+6,"California",6091,"Sierra",2005,10.7
+6,"California",6093,"Siskiyou",2005,17.5
+6,"California",6095,"Solano",2005,9.2
+6,"California",6097,"Sonoma",2005,8.9
+6,"California",6099,"Stanislaus",2005,14.5
+6,"California",6101,"Sutter",2005,11.9
+6,"California",6103,"Tehama",2005,17.8
+6,"California",6105,"Trinity",2005,16
+6,"California",6107,"Tulare",2005,23.2
+6,"California",6109,"Tuolumne",2005,12.2
+6,"California",6111,"Ventura",2005,9.7
+6,"California",6113,"Yolo",2005,15.2
+6,"California",6115,"Yuba",2005,17.1
+6,"California",6001,"Alameda",2006,11.1
+6,"California",6003,"Alpine",2006,16.4
+6,"California",6005,"Amador",2006,9
+6,"California",6007,"Butte",2006,16.7
+6,"California",6009,"Calaveras",2006,10.8
+6,"California",6011,"Colusa",2006,13.7
+6,"California",6013,"Contra Costa",2006,7.9
+6,"California",6015,"Del Norte",2006,21.8
+6,"California",6017,"El Dorado",2006,7.6
+6,"California",6019,"Fresno",2006,20.8
+6,"California",6021,"Glenn",2006,17.8
+6,"California",6023,"Humboldt",2006,18
+6,"California",6025,"Imperial",2006,19.4
+6,"California",6027,"Inyo",2006,11.5
+6,"California",6029,"Kern",2006,20.5
+6,"California",6031,"Kings",2006,21.3
+6,"California",6033,"Lake",2006,17.1
+6,"California",6035,"Lassen",2006,15.6
+6,"California",6037,"Los Angeles",2006,15.4
+6,"California",6039,"Madera",2006,21.1
+6,"California",6041,"Marin",2006,8.3
+6,"California",6043,"Mariposa",2006,13.4
+6,"California",6045,"Mendocino",2006,16.8
+6,"California",6047,"Merced",2006,20.7
+6,"California",6049,"Modoc",2006,18.7
+6,"California",6051,"Mono",2006,9.7
+6,"California",6053,"Monterey",2006,11.6
+6,"California",6055,"Napa",2006,10.3
+6,"California",6057,"Nevada",2006,7.9
+6,"California",6059,"Orange",2006,9.8
+6,"California",6061,"Placer",2006,5.7
+6,"California",6063,"Plumas",2006,10.8
+6,"California",6065,"Riverside",2006,12.2
+6,"California",6067,"Sacramento",2006,12.1
+6,"California",6069,"San Benito",2006,9.6
+6,"California",6071,"San Bernardino",2006,13.8
+6,"California",6073,"San Diego",2006,11.7
+6,"California",6075,"San Francisco",2006,12.1
+6,"California",6077,"San Joaquin",2006,14.4
+6,"California",6079,"San Luis Obispo",2006,13.1
+6,"California",6081,"San Mateo",2006,7.2
+6,"California",6083,"Santa Barbara",2006,15.8
+6,"California",6085,"Santa Clara",2006,9
+6,"California",6087,"Santa Cruz",2006,11.9
+6,"California",6089,"Shasta",2006,16.7
+6,"California",6091,"Sierra",2006,11.4
+6,"California",6093,"Siskiyou",2006,17.6
+6,"California",6095,"Solano",2006,10.4
+6,"California",6097,"Sonoma",2006,9.6
+6,"California",6099,"Stanislaus",2006,14.4
+6,"California",6101,"Sutter",2006,13.3
+6,"California",6103,"Tehama",2006,17.6
+6,"California",6105,"Trinity",2006,16.6
+6,"California",6107,"Tulare",2006,21.6
+6,"California",6109,"Tuolumne",2006,11.4
+6,"California",6111,"Ventura",2006,9
+6,"California",6113,"Yolo",2006,16.9
+6,"California",6115,"Yuba",2006,19
+6,"California",6001,"Alameda",2007,11
+6,"California",6003,"Alpine",2007,15.9
+6,"California",6005,"Amador",2007,10.1
+6,"California",6007,"Butte",2007,17.1
+6,"California",6009,"Calaveras",2007,10.3
+6,"California",6011,"Colusa",2007,12.7
+6,"California",6013,"Contra Costa",2007,8.7
+6,"California",6015,"Del Norte",2007,22.3
+6,"California",6017,"El Dorado",2007,8.2
+6,"California",6019,"Fresno",2007,20
+6,"California",6021,"Glenn",2007,15.8
+6,"California",6023,"Humboldt",2007,16.9
+6,"California",6025,"Imperial",2007,21
+6,"California",6027,"Inyo",2007,11.4
+6,"California",6029,"Kern",2007,18.1
+6,"California",6031,"Kings",2007,17.2
+6,"California",6033,"Lake",2007,16.4
+6,"California",6035,"Lassen",2007,17.2
+6,"California",6037,"Los Angeles",2007,14.6
+6,"California",6039,"Madera",2007,16.9
+6,"California",6041,"Marin",2007,6.8
+6,"California",6043,"Mariposa",2007,12.5
+6,"California",6045,"Mendocino",2007,15.4
+6,"California",6047,"Merced",2007,19.3
+6,"California",6049,"Modoc",2007,19.6
+6,"California",6051,"Mono",2007,9.6
+6,"California",6053,"Monterey",2007,12.1
+6,"California",6055,"Napa",2007,8.6
+6,"California",6057,"Nevada",2007,8.8
+6,"California",6059,"Orange",2007,8.9
+6,"California",6061,"Placer",2007,6
+6,"California",6063,"Plumas",2007,11.5
+6,"California",6065,"Riverside",2007,11.7
+6,"California",6067,"Sacramento",2007,12.2
+6,"California",6069,"San Benito",2007,11.7
+6,"California",6071,"San Bernardino",2007,12.1
+6,"California",6073,"San Diego",2007,11.1
+6,"California",6075,"San Francisco",2007,10.6
+6,"California",6077,"San Joaquin",2007,14.2
+6,"California",6079,"San Luis Obispo",2007,11.5
+6,"California",6081,"San Mateo",2007,6
+6,"California",6083,"Santa Barbara",2007,12.2
+6,"California",6085,"Santa Clara",2007,8.3
+6,"California",6087,"Santa Cruz",2007,10.6
+6,"California",6089,"Shasta",2007,13.4
+6,"California",6091,"Sierra",2007,11.7
+6,"California",6093,"Siskiyou",2007,17.7
+6,"California",6095,"Solano",2007,9.6
+6,"California",6097,"Sonoma",2007,8.9
+6,"California",6099,"Stanislaus",2007,13.6
+6,"California",6101,"Sutter",2007,12.2
+6,"California",6103,"Tehama",2007,19.3
+6,"California",6105,"Trinity",2007,17
+6,"California",6107,"Tulare",2007,23.2
+6,"California",6109,"Tuolumne",2007,12.5
+6,"California",6111,"Ventura",2007,8.7
+6,"California",6113,"Yolo",2007,14.5
+6,"California",6115,"Yuba",2007,19.2
+6,"California",6001,"Alameda",2008,10.4
+6,"California",6003,"Alpine",2008,15.7
+6,"California",6005,"Amador",2008,9.8
+6,"California",6007,"Butte",2008,20.7
+6,"California",6009,"Calaveras",2008,11.5
+6,"California",6011,"Colusa",2008,13.5
+6,"California",6013,"Contra Costa",2008,9.4
+6,"California",6015,"Del Norte",2008,23.6
+6,"California",6017,"El Dorado",2008,7.8
+6,"California",6019,"Fresno",2008,22.1
+6,"California",6021,"Glenn",2008,16.9
+6,"California",6023,"Humboldt",2008,19.8
+6,"California",6025,"Imperial",2008,21.5
+6,"California",6027,"Inyo",2008,11.6
+6,"California",6029,"Kern",2008,20.5
+6,"California",6031,"Kings",2008,17.9
+6,"California",6033,"Lake",2008,17.9
+6,"California",6035,"Lassen",2008,20.7
+6,"California",6037,"Los Angeles",2008,15.3
+6,"California",6039,"Madera",2008,18.2
+6,"California",6041,"Marin",2008,7.1
+6,"California",6043,"Mariposa",2008,13.5
+6,"California",6045,"Mendocino",2008,17.7
+6,"California",6047,"Merced",2008,21.5
+6,"California",6049,"Modoc",2008,17.4
+6,"California",6051,"Mono",2008,9.6
+6,"California",6053,"Monterey",2008,12.7
+6,"California",6055,"Napa",2008,9
+6,"California",6057,"Nevada",2008,9.2
+6,"California",6059,"Orange",2008,9.9
+6,"California",6061,"Placer",2008,6.7
+6,"California",6063,"Plumas",2008,12
+6,"California",6065,"Riverside",2008,12.6
+6,"California",6067,"Sacramento",2008,13.3
+6,"California",6069,"San Benito",2008,10.4
+6,"California",6071,"San Bernardino",2008,14.7
+6,"California",6073,"San Diego",2008,12.6
+6,"California",6075,"San Francisco",2008,11.2
+6,"California",6077,"San Joaquin",2008,16.5
+6,"California",6079,"San Luis Obispo",2008,12.1
+6,"California",6081,"San Mateo",2008,6.5
+6,"California",6083,"Santa Barbara",2008,12.7
+6,"California",6085,"Santa Clara",2008,7.6
+6,"California",6087,"Santa Cruz",2008,13.3
+6,"California",6089,"Shasta",2008,17.7
+6,"California",6091,"Sierra",2008,12.7
+6,"California",6093,"Siskiyou",2008,16.4
+6,"California",6095,"Solano",2008,9
+6,"California",6097,"Sonoma",2008,10.4
+6,"California",6099,"Stanislaus",2008,14.4
+6,"California",6101,"Sutter",2008,15.5
+6,"California",6103,"Tehama",2008,16.5
+6,"California",6105,"Trinity",2008,19.9
+6,"California",6107,"Tulare",2008,21.5
+6,"California",6109,"Tuolumne",2008,12.5
+6,"California",6111,"Ventura",2008,8.7
+6,"California",6113,"Yolo",2008,14.6
+6,"California",6115,"Yuba",2008,16.6
+6,"California",6001,"Alameda",2009,10.8
+6,"California",6003,"Alpine",2009,17.3
+6,"California",6005,"Amador",2009,11.3
+6,"California",6007,"Butte",2009,18.5
+6,"California",6009,"Calaveras",2009,11.3
+6,"California",6011,"Colusa",2009,13.4
+6,"California",6013,"Contra Costa",2009,9.5
+6,"California",6015,"Del Norte",2009,23.1
+6,"California",6017,"El Dorado",2009,7.6
+6,"California",6019,"Fresno",2009,21.5
+6,"California",6021,"Glenn",2009,15.8
+6,"California",6023,"Humboldt",2009,19
+6,"California",6025,"Imperial",2009,22.8
+6,"California",6027,"Inyo",2009,12.5
+6,"California",6029,"Kern",2009,22.2
+6,"California",6031,"Kings",2009,19.5
+6,"California",6033,"Lake",2009,22.1
+6,"California",6035,"Lassen",2009,18.2
+6,"California",6037,"Los Angeles",2009,16
+6,"California",6039,"Madera",2009,20.6
+6,"California",6041,"Marin",2009,7.3
+6,"California",6043,"Mariposa",2009,13.5
+6,"California",6045,"Mendocino",2009,17.5
+6,"California",6047,"Merced",2009,24.6
+6,"California",6049,"Modoc",2009,19
+6,"California",6051,"Mono",2009,11.7
+6,"California",6053,"Monterey",2009,17.2
+6,"California",6055,"Napa",2009,8.6
+6,"California",6057,"Nevada",2009,10.1
+6,"California",6059,"Orange",2009,10.7
+6,"California",6061,"Placer",2009,7.2
+6,"California",6063,"Plumas",2009,12.3
+6,"California",6065,"Riverside",2009,13.9
+6,"California",6067,"Sacramento",2009,15.3
+6,"California",6069,"San Benito",2009,13.9
+6,"California",6071,"San Bernardino",2009,17
+6,"California",6073,"San Diego",2009,12.5
+6,"California",6075,"San Francisco",2009,11.7
+6,"California",6077,"San Joaquin",2009,15.7
+6,"California",6079,"San Luis Obispo",2009,13.2
+6,"California",6081,"San Mateo",2009,7.6
+6,"California",6083,"Santa Barbara",2009,15
+6,"California",6085,"Santa Clara",2009,9.1
+6,"California",6087,"Santa Cruz",2009,13.9
+6,"California",6089,"Shasta",2009,15.5
+6,"California",6091,"Sierra",2009,13.1
+6,"California",6093,"Siskiyou",2009,16.1
+6,"California",6095,"Solano",2009,10.7
+6,"California",6097,"Sonoma",2009,9.5
+6,"California",6099,"Stanislaus",2009,17
+6,"California",6101,"Sutter",2009,14.8
+6,"California",6103,"Tehama",2009,18.9
+6,"California",6105,"Trinity",2009,18.2
+6,"California",6107,"Tulare",2009,23
+6,"California",6109,"Tuolumne",2009,14.2
+6,"California",6111,"Ventura",2009,10.5
+6,"California",6113,"Yolo",2009,15.7
+6,"California",6115,"Yuba",2009,19.5
+6,"California",6001,"Alameda",2010,13.5
+6,"California",6003,"Alpine",2010,16.9
+6,"California",6005,"Amador",2010,12.8
+6,"California",6007,"Butte",2010,20.1
+6,"California",6009,"Calaveras",2010,11.1
+6,"California",6011,"Colusa",2010,14.9
+6,"California",6013,"Contra Costa",2010,9.3
+6,"California",6015,"Del Norte",2010,23.5
+6,"California",6017,"El Dorado",2010,9.4
+6,"California",6019,"Fresno",2010,26.8
+6,"California",6021,"Glenn",2010,17.6
+6,"California",6023,"Humboldt",2010,18
+6,"California",6025,"Imperial",2010,22.3
+6,"California",6027,"Inyo",2010,13.9
+6,"California",6029,"Kern",2010,21.4
+6,"California",6031,"Kings",2010,22.5
+6,"California",6033,"Lake",2010,21
+6,"California",6035,"Lassen",2010,16.8
+6,"California",6037,"Los Angeles",2010,17.6
+6,"California",6039,"Madera",2010,21.7
+6,"California",6041,"Marin",2010,9.2
+6,"California",6043,"Mariposa",2010,14.8
+6,"California",6045,"Mendocino",2010,19.6
+6,"California",6047,"Merced",2010,23.1
+6,"California",6049,"Modoc",2010,21.9
+6,"California",6051,"Mono",2010,10.8
+6,"California",6053,"Monterey",2010,17.1
+6,"California",6055,"Napa",2010,10.7
+6,"California",6057,"Nevada",2010,11.7
+6,"California",6059,"Orange",2010,12.2
+6,"California",6061,"Placer",2010,9.1
+6,"California",6063,"Plumas",2010,15.3
+6,"California",6065,"Riverside",2010,16.4
+6,"California",6067,"Sacramento",2010,16.7
+6,"California",6069,"San Benito",2010,12.7
+6,"California",6071,"San Bernardino",2010,18.1
+6,"California",6073,"San Diego",2010,14.8
+6,"California",6075,"San Francisco",2010,12.8
+6,"California",6077,"San Joaquin",2010,19
+6,"California",6079,"San Luis Obispo",2010,14.3
+6,"California",6081,"San Mateo",2010,7
+6,"California",6083,"Santa Barbara",2010,17.7
+6,"California",6085,"Santa Clara",2010,10.6
+6,"California",6087,"Santa Cruz",2010,14.2
+6,"California",6089,"Shasta",2010,18.2
+6,"California",6091,"Sierra",2010,13.4
+6,"California",6093,"Siskiyou",2010,21.5
+6,"California",6095,"Solano",2010,12.2
+6,"California",6097,"Sonoma",2010,12.8
+6,"California",6099,"Stanislaus",2010,19.7
+6,"California",6101,"Sutter",2010,16.8
+6,"California",6103,"Tehama",2010,20.4
+6,"California",6105,"Trinity",2010,18.4
+6,"California",6107,"Tulare",2010,24.6
+6,"California",6109,"Tuolumne",2010,15.2
+6,"California",6111,"Ventura",2010,11
+6,"California",6113,"Yolo",2010,16.4
+6,"California",6115,"Yuba",2010,20.7
+6,"California",6001,"Alameda",2011,13.2
+6,"California",6003,"Alpine",2011,17.4
+6,"California",6005,"Amador",2011,14
+6,"California",6007,"Butte",2011,22.6
+6,"California",6009,"Calaveras",2011,12.5
+6,"California",6011,"Colusa",2011,13.2
+6,"California",6013,"Contra Costa",2011,11.9
+6,"California",6015,"Del Norte",2011,25.4
+6,"California",6017,"El Dorado",2011,10.3
+6,"California",6019,"Fresno",2011,25.8
+6,"California",6021,"Glenn",2011,19.2
+6,"California",6023,"Humboldt",2011,21.1
+6,"California",6025,"Imperial",2011,26
+6,"California",6027,"Inyo",2011,12.7
+6,"California",6029,"Kern",2011,24.6
+6,"California",6031,"Kings",2011,21.2
+6,"California",6033,"Lake",2011,23
+6,"California",6035,"Lassen",2011,19.3
+6,"California",6037,"Los Angeles",2011,18.4
+6,"California",6039,"Madera",2011,23.6
+6,"California",6041,"Marin",2011,9.4
+6,"California",6043,"Mariposa",2011,15.7
+6,"California",6045,"Mendocino",2011,20.2
+6,"California",6047,"Merced",2011,26.8
+6,"California",6049,"Modoc",2011,21.5
+6,"California",6051,"Mono",2011,10.8
+6,"California",6053,"Monterey",2011,17.1
+6,"California",6055,"Napa",2011,12
+6,"California",6057,"Nevada",2011,12.1
+6,"California",6059,"Orange",2011,13
+6,"California",6061,"Placer",2011,8.5
+6,"California",6063,"Plumas",2011,14.8
+6,"California",6065,"Riverside",2011,16.9
+6,"California",6067,"Sacramento",2011,17.7
+6,"California",6069,"San Benito",2011,12.4
+6,"California",6071,"San Bernardino",2011,19.4
+6,"California",6073,"San Diego",2011,15.2
+6,"California",6075,"San Francisco",2011,13.8
+6,"California",6077,"San Joaquin",2011,18.2
+6,"California",6079,"San Luis Obispo",2011,15.1
+6,"California",6081,"San Mateo",2011,7.9
+6,"California",6083,"Santa Barbara",2011,15.4
+6,"California",6085,"Santa Clara",2011,10.7
+6,"California",6087,"Santa Cruz",2011,14.9
+6,"California",6089,"Shasta",2011,19.4
+6,"California",6091,"Sierra",2011,13.6
+6,"California",6093,"Siskiyou",2011,24.4
+6,"California",6095,"Solano",2011,13.6
+6,"California",6097,"Sonoma",2011,12.2
+6,"California",6099,"Stanislaus",2011,23.3
+6,"California",6101,"Sutter",2011,15.8
+6,"California",6103,"Tehama",2011,19.5
+6,"California",6105,"Trinity",2011,21.4
+6,"California",6107,"Tulare",2011,25.6
+6,"California",6109,"Tuolumne",2011,16.6
+6,"California",6111,"Ventura",2011,11.5
+6,"California",6113,"Yolo",2011,21.3
+6,"California",6115,"Yuba",2011,19.6
+6,"California",6001,"Alameda",2012,13.1
+6,"California",6003,"Alpine",2012,19.3
+6,"California",6005,"Amador",2012,13.3
+6,"California",6007,"Butte",2012,21.8
+6,"California",6009,"Calaveras",2012,14.1
+6,"California",6011,"Colusa",2012,13.4
+6,"California",6013,"Contra Costa",2012,11.1
+6,"California",6015,"Del Norte",2012,24.2
+6,"California",6017,"El Dorado",2012,9.3
+6,"California",6019,"Fresno",2012,28.2
+6,"California",6021,"Glenn",2012,17.3
+6,"California",6023,"Humboldt",2012,22
+6,"California",6025,"Imperial",2012,22.8
+6,"California",6027,"Inyo",2012,11.8
+6,"California",6029,"Kern",2012,23.7
+6,"California",6031,"Kings",2012,21.5
+6,"California",6033,"Lake",2012,25.1
+6,"California",6035,"Lassen",2012,22.4
+6,"California",6037,"Los Angeles",2012,19.1
+6,"California",6039,"Madera",2012,23.3
+6,"California",6041,"Marin",2012,8.5
+6,"California",6043,"Mariposa",2012,18.4
+6,"California",6045,"Mendocino",2012,21.3
+6,"California",6047,"Merced",2012,24.2
+6,"California",6049,"Modoc",2012,19.6
+6,"California",6051,"Mono",2012,11.5
+6,"California",6053,"Monterey",2012,18.1
+6,"California",6055,"Napa",2012,9.7
+6,"California",6057,"Nevada",2012,11.9
+6,"California",6059,"Orange",2012,13
+6,"California",6061,"Placer",2012,9.1
+6,"California",6063,"Plumas",2012,14.9
+6,"California",6065,"Riverside",2012,17.8
+6,"California",6067,"Sacramento",2012,19.5
+6,"California",6069,"San Benito",2012,12.8
+6,"California",6071,"San Bernardino",2012,20.4
+6,"California",6073,"San Diego",2012,15.1
+6,"California",6075,"San Francisco",2012,14.9
+6,"California",6077,"San Joaquin",2012,18.5
+6,"California",6079,"San Luis Obispo",2012,14
+6,"California",6081,"San Mateo",2012,8.4
+6,"California",6083,"Santa Barbara",2012,16.3
+6,"California",6085,"Santa Clara",2012,10.8
+6,"California",6087,"Santa Cruz",2012,13.9
+6,"California",6089,"Shasta",2012,17.1
+6,"California",6091,"Sierra",2012,13.7
+6,"California",6093,"Siskiyou",2012,21.2
+6,"California",6095,"Solano",2012,14.2
+6,"California",6097,"Sonoma",2012,12.1
+6,"California",6099,"Stanislaus",2012,20.1
+6,"California",6101,"Sutter",2012,18.8
+6,"California",6103,"Tehama",2012,22.3
+6,"California",6105,"Trinity",2012,21.7
+6,"California",6107,"Tulare",2012,29.7
+6,"California",6109,"Tuolumne",2012,14.8
+6,"California",6111,"Ventura",2012,11.6
+6,"California",6113,"Yolo",2012,17.1
+6,"California",6115,"Yuba",2012,22.4
+6,"California",6001,"Alameda",2013,13
+6,"California",6003,"Alpine",2013,19.7
+6,"California",6005,"Amador",2013,14.3
+6,"California",6007,"Butte",2013,21.4
+6,"California",6009,"Calaveras",2013,15
+6,"California",6011,"Colusa",2013,13
+6,"California",6013,"Contra Costa",2013,10.8
+6,"California",6015,"Del Norte",2013,23.7
+6,"California",6017,"El Dorado",2013,11.4
+6,"California",6019,"Fresno",2013,28.6
+6,"California",6021,"Glenn",2013,19.1
+6,"California",6023,"Humboldt",2013,21.5
+6,"California",6025,"Imperial",2013,22.7
+6,"California",6027,"Inyo",2013,15.7
+6,"California",6029,"Kern",2013,22.7
+6,"California",6031,"Kings",2013,21.8
+6,"California",6033,"Lake",2013,23.3
+6,"California",6035,"Lassen",2013,19.1
+6,"California",6037,"Los Angeles",2013,19
+6,"California",6039,"Madera",2013,23.4
+6,"California",6041,"Marin",2013,8.7
+6,"California",6043,"Mariposa",2013,16.4
+6,"California",6045,"Mendocino",2013,20.9
+6,"California",6047,"Merced",2013,24.8
+6,"California",6049,"Modoc",2013,20
+6,"California",6051,"Mono",2013,11.8
+6,"California",6053,"Monterey",2013,17.5
+6,"California",6055,"Napa",2013,9.7
+6,"California",6057,"Nevada",2013,12.8
+6,"California",6059,"Orange",2013,13.5
+6,"California",6061,"Placer",2013,8.3
+6,"California",6063,"Plumas",2013,15.7
+6,"California",6065,"Riverside",2013,17.4
+6,"California",6067,"Sacramento",2013,18.9
+6,"California",6069,"San Benito",2013,12.7
+6,"California",6071,"San Bernardino",2013,19.2
+6,"California",6073,"San Diego",2013,15.3
+6,"California",6075,"San Francisco",2013,13.8
+6,"California",6077,"San Joaquin",2013,19.8
+6,"California",6079,"San Luis Obispo",2013,15
+6,"California",6081,"San Mateo",2013,8
+6,"California",6083,"Santa Barbara",2013,16.2
+6,"California",6085,"Santa Clara",2013,10.5
+6,"California",6087,"Santa Cruz",2013,14.9
+6,"California",6089,"Shasta",2013,19.7
+6,"California",6091,"Sierra",2013,14.5
+6,"California",6093,"Siskiyou",2013,20.4
+6,"California",6095,"Solano",2013,12.9
+6,"California",6097,"Sonoma",2013,12.4
+6,"California",6099,"Stanislaus",2013,21.8
+6,"California",6101,"Sutter",2013,17.2
+6,"California",6103,"Tehama",2013,17.9
+6,"California",6105,"Trinity",2013,22.1
+6,"California",6107,"Tulare",2013,29.6
+6,"California",6109,"Tuolumne",2013,14.6
+6,"California",6111,"Ventura",2013,12
+6,"California",6113,"Yolo",2013,17.8
+6,"California",6115,"Yuba",2013,20.6
+6,"California",6001,"Alameda",2014,12.5
+6,"California",6003,"Alpine",2014,19
+6,"California",6005,"Amador",2014,12.9
+6,"California",6007,"Butte",2014,21.9
+6,"California",6009,"Calaveras",2014,13.7
+6,"California",6011,"Colusa",2014,14.3
+6,"California",6013,"Contra Costa",2014,10.5
+6,"California",6015,"Del Norte",2014,22.4
+6,"California",6017,"El Dorado",2014,11.4
+6,"California",6019,"Fresno",2014,27.5
+6,"California",6021,"Glenn",2014,17.1
+6,"California",6023,"Humboldt",2014,21
+6,"California",6025,"Imperial",2014,23.6
+6,"California",6027,"Inyo",2014,14
+6,"California",6029,"Kern",2014,24.5
+6,"California",6031,"Kings",2014,24.9
+6,"California",6033,"Lake",2014,24.3
+6,"California",6035,"Lassen",2014,19.4
+6,"California",6037,"Los Angeles",2014,18.7
+6,"California",6039,"Madera",2014,22.3
+6,"California",6041,"Marin",2014,8.8
+6,"California",6043,"Mariposa",2014,16.2
+6,"California",6045,"Mendocino",2014,18.8
+6,"California",6047,"Merced",2014,24.8
+6,"California",6049,"Modoc",2014,20.2
+6,"California",6051,"Mono",2014,11.3
+6,"California",6053,"Monterey",2014,17
+6,"California",6055,"Napa",2014,9
+6,"California",6057,"Nevada",2014,11.4
+6,"California",6059,"Orange",2014,12.9
+6,"California",6061,"Placer",2014,8.3
+6,"California",6063,"Plumas",2014,14
+6,"California",6065,"Riverside",2014,17.1
+6,"California",6067,"Sacramento",2014,18.1
+6,"California",6069,"San Benito",2014,14.1
+6,"California",6071,"San Bernardino",2014,20.4
+6,"California",6073,"San Diego",2014,14.7
+6,"California",6075,"San Francisco",2014,12.1
+6,"California",6077,"San Joaquin",2014,20.7
+6,"California",6079,"San Luis Obispo",2014,14.5
+6,"California",6081,"San Mateo",2014,7.5
+6,"California",6083,"Santa Barbara",2014,17.4
+6,"California",6085,"Santa Clara",2014,8.5
+6,"California",6087,"Santa Cruz",2014,16.1
+6,"California",6089,"Shasta",2014,14.7
+6,"California",6091,"Sierra",2014,13.8
+6,"California",6093,"Siskiyou",2014,21.1
+6,"California",6095,"Solano",2014,12.3
+6,"California",6097,"Sonoma",2014,11.3
+6,"California",6099,"Stanislaus",2014,18.1
+6,"California",6101,"Sutter",2014,15.2
+6,"California",6103,"Tehama",2014,18.2
+6,"California",6105,"Trinity",2014,19.9
+6,"California",6107,"Tulare",2014,28.1
+6,"California",6109,"Tuolumne",2014,14.3
+6,"California",6111,"Ventura",2014,11.5
+6,"California",6113,"Yolo",2014,19.5
+6,"California",6115,"Yuba",2014,21.6
+6,"California",6001,"Alameda",2015,11.5
+6,"California",6003,"Alpine",2015,19
+6,"California",6005,"Amador",2015,13.1
+6,"California",6007,"Butte",2015,21.4
+6,"California",6009,"Calaveras",2015,13
+6,"California",6011,"Colusa",2015,13.2
+6,"California",6013,"Contra Costa",2015,10.2
+6,"California",6015,"Del Norte",2015,23.3
+6,"California",6017,"El Dorado",2015,9.1
+6,"California",6019,"Fresno",2015,25.2
+6,"California",6021,"Glenn",2015,18.5
+6,"California",6023,"Humboldt",2015,20.9
+6,"California",6025,"Imperial",2015,24.3
+6,"California",6027,"Inyo",2015,12.4
+6,"California",6029,"Kern",2015,21.9
+6,"California",6031,"Kings",2015,22.4
+6,"California",6033,"Lake",2015,20.5
+6,"California",6035,"Lassen",2015,17.1
+6,"California",6037,"Los Angeles",2015,16.7
+6,"California",6039,"Madera",2015,22.6
+6,"California",6041,"Marin",2015,7.5
+6,"California",6043,"Mariposa",2015,15.2
+6,"California",6045,"Mendocino",2015,20.3
+6,"California",6047,"Merced",2015,25.9
+6,"California",6049,"Modoc",2015,20.3
+6,"California",6051,"Mono",2015,11.2
+6,"California",6053,"Monterey",2015,15.3
+6,"California",6055,"Napa",2015,10.1
+6,"California",6057,"Nevada",2015,12.4
+6,"California",6059,"Orange",2015,12.7
+6,"California",6061,"Placer",2015,8.6
+6,"California",6063,"Plumas",2015,13.8
+6,"California",6065,"Riverside",2015,16.2
+6,"California",6067,"Sacramento",2015,16.9
+6,"California",6069,"San Benito",2015,9.3
+6,"California",6071,"San Bernardino",2015,18.9
+6,"California",6073,"San Diego",2015,13.9
+6,"California",6075,"San Francisco",2015,12.4
+6,"California",6077,"San Joaquin",2015,17.5
+6,"California",6079,"San Luis Obispo",2015,14.4
+6,"California",6081,"San Mateo",2015,8.4
+6,"California",6083,"Santa Barbara",2015,15.6
+6,"California",6085,"Santa Clara",2015,8.3
+6,"California",6087,"Santa Cruz",2015,15.4
+6,"California",6089,"Shasta",2015,19
+6,"California",6091,"Sierra",2015,13.8
+6,"California",6093,"Siskiyou",2015,22.6
+6,"California",6095,"Solano",2015,12
+6,"California",6097,"Sonoma",2015,11
+6,"California",6099,"Stanislaus",2015,19.5
+6,"California",6101,"Sutter",2015,17.5
+6,"California",6103,"Tehama",2015,22.5
+6,"California",6105,"Trinity",2015,19.7
+6,"California",6107,"Tulare",2015,27.2
+6,"California",6109,"Tuolumne",2015,14.5
+6,"California",6111,"Ventura",2015,9.9
+6,"California",6113,"Yolo",2015,17.5
+6,"California",6115,"Yuba",2015,21.6
+6,"California",6001,"Alameda",2016,10.7
+6,"California",6003,"Alpine",2016,18.6
+6,"California",6005,"Amador",2016,11.3
+6,"California",6007,"Butte",2016,19.5
+6,"California",6009,"Calaveras",2016,13.1
+6,"California",6011,"Colusa",2016,11.1
+6,"California",6013,"Contra Costa",2016,8.7
+6,"California",6015,"Del Norte",2016,23.7
+6,"California",6017,"El Dorado",2016,8.7
+6,"California",6019,"Fresno",2016,25.5
+6,"California",6021,"Glenn",2016,16.7
+6,"California",6023,"Humboldt",2016,20
+6,"California",6025,"Imperial",2016,23.6
+6,"California",6027,"Inyo",2016,12.3
+6,"California",6029,"Kern",2016,22.4
+6,"California",6031,"Kings",2016,17.4
+6,"California",6033,"Lake",2016,20.7
+6,"California",6035,"Lassen",2016,17.6
+6,"California",6037,"Los Angeles",2016,16.3
+6,"California",6039,"Madera",2016,20.4
+6,"California",6041,"Marin",2016,7.8
+6,"California",6043,"Mariposa",2016,17.9
+6,"California",6045,"Mendocino",2016,19
+6,"California",6047,"Merced",2016,20.3
+6,"California",6049,"Modoc",2016,18.4
+6,"California",6051,"Mono",2016,11.5
+6,"California",6053,"Monterey",2016,12.9
+6,"California",6055,"Napa",2016,7.9
+6,"California",6057,"Nevada",2016,10.9
+6,"California",6059,"Orange",2016,11.1
+6,"California",6061,"Placer",2016,7.2
+6,"California",6063,"Plumas",2016,12.6
+6,"California",6065,"Riverside",2016,15.3
+6,"California",6067,"Sacramento",2016,16.3
+6,"California",6069,"San Benito",2016,10.5
+6,"California",6071,"San Bernardino",2016,17.6
+6,"California",6073,"San Diego",2016,12.4
+6,"California",6075,"San Francisco",2016,10.2
+6,"California",6077,"San Joaquin",2016,14.6
+6,"California",6079,"San Luis Obispo",2016,11
+6,"California",6081,"San Mateo",2016,6.6
+6,"California",6083,"Santa Barbara",2016,13.9
+6,"California",6085,"Santa Clara",2016,9.3
+6,"California",6087,"Santa Cruz",2016,13.4
+6,"California",6089,"Shasta",2016,17.2
+6,"California",6091,"Sierra",2016,14.4
+6,"California",6093,"Siskiyou",2016,18.8
+6,"California",6095,"Solano",2016,11.4
+6,"California",6097,"Sonoma",2016,9.4
+6,"California",6099,"Stanislaus",2016,14.5
+6,"California",6101,"Sutter",2016,17.1
+6,"California",6103,"Tehama",2016,20.9
+6,"California",6105,"Trinity",2016,21.3
+6,"California",6107,"Tulare",2016,24.7
+6,"California",6109,"Tuolumne",2016,15.4
+6,"California",6111,"Ventura",2016,9.8
+6,"California",6113,"Yolo",2016,19
+6,"California",6115,"Yuba",2016,16.6
+6,"California",6001,"Alameda",2017,9.3
+6,"California",6003,"Alpine",2017,18.1
+6,"California",6005,"Amador",2017,10.9
+6,"California",6007,"Butte",2017,18.1
+6,"California",6009,"Calaveras",2017,13.1
+6,"California",6011,"Colusa",2017,12.2
+6,"California",6013,"Contra Costa",2017,9.1
+6,"California",6015,"Del Norte",2017,24.6
+6,"California",6017,"El Dorado",2017,8.3
+6,"California",6019,"Fresno",2017,21.1
+6,"California",6021,"Glenn",2017,14.8
+6,"California",6023,"Humboldt",2017,19.7
+6,"California",6025,"Imperial",2017,20.7
+6,"California",6027,"Inyo",2017,11.8
+6,"California",6029,"Kern",2017,21.2
+6,"California",6031,"Kings",2017,18.4
+6,"California",6033,"Lake",2017,20.2
+6,"California",6035,"Lassen",2017,16.3
+6,"California",6037,"Los Angeles",2017,14.9
+6,"California",6039,"Madera",2017,21.2
+6,"California",6041,"Marin",2017,7.9
+6,"California",6043,"Mariposa",2017,15.2
+6,"California",6045,"Mendocino",2017,16.3
+6,"California",6047,"Merced",2017,23
+6,"California",6049,"Modoc",2017,19.2
+6,"California",6051,"Mono",2017,9.3
+6,"California",6053,"Monterey",2017,11.9
+6,"California",6055,"Napa",2017,6.8
+6,"California",6057,"Nevada",2017,11
+6,"California",6059,"Orange",2017,11.5
+6,"California",6061,"Placer",2017,7.8
+6,"California",6063,"Plumas",2017,14.3
+6,"California",6065,"Riverside",2017,12.9
+6,"California",6067,"Sacramento",2017,14.1
+6,"California",6069,"San Benito",2017,8.4
+6,"California",6071,"San Bernardino",2017,16
+6,"California",6073,"San Diego",2017,11.9
+6,"California",6075,"San Francisco",2017,10.1
+6,"California",6077,"San Joaquin",2017,15.5
+6,"California",6079,"San Luis Obispo",2017,11.9
+6,"California",6081,"San Mateo",2017,6.4
+6,"California",6083,"Santa Barbara",2017,14.2
+6,"California",6085,"Santa Clara",2017,7.5
+6,"California",6087,"Santa Cruz",2017,12.6
+6,"California",6089,"Shasta",2017,17
+6,"California",6091,"Sierra",2017,13.7
+6,"California",6093,"Siskiyou",2017,17.7
+6,"California",6095,"Solano",2017,10
+6,"California",6097,"Sonoma",2017,9.3
+6,"California",6099,"Stanislaus",2017,14
+6,"California",6101,"Sutter",2017,13.2
+6,"California",6103,"Tehama",2017,20.1
+6,"California",6105,"Trinity",2017,20.3
+6,"California",6107,"Tulare",2017,24
+6,"California",6109,"Tuolumne",2017,12.2
+6,"California",6111,"Ventura",2017,9.5
+6,"California",6113,"Yolo",2017,17.5
+6,"California",6115,"Yuba",2017,15.3
+6,"California",6001,"Alameda",2018,9
+6,"California",6003,"Alpine",2018,17.3
+6,"California",6005,"Amador",2018,11.8
+6,"California",6007,"Butte",2018,18.5
+6,"California",6009,"Calaveras",2018,12.1
+6,"California",6011,"Colusa",2018,11
+6,"California",6013,"Contra Costa",2018,7.8
+6,"California",6015,"Del Norte",2018,20.4
+6,"California",6017,"El Dorado",2018,8.1
+6,"California",6019,"Fresno",2018,21.3
+6,"California",6021,"Glenn",2018,15.4
+6,"California",6023,"Humboldt",2018,20.3
+6,"California",6025,"Imperial",2018,21.4
+6,"California",6027,"Inyo",2018,12.3
+6,"California",6029,"Kern",2018,20.5
+6,"California",6031,"Kings",2018,18.8
+6,"California",6033,"Lake",2018,18.4
+6,"California",6035,"Lassen",2018,15.8
+6,"California",6037,"Los Angeles",2018,14.2
+6,"California",6039,"Madera",2018,20.2
+6,"California",6041,"Marin",2018,6.6
+6,"California",6043,"Mariposa",2018,14.9
+6,"California",6045,"Mendocino",2018,17.5
+6,"California",6047,"Merced",2018,21.2
+6,"California",6049,"Modoc",2018,19.1
+6,"California",6051,"Mono",2018,9.3
+6,"California",6053,"Monterey",2018,13.3
+6,"California",6055,"Napa",2018,8.8
+6,"California",6057,"Nevada",2018,10.3
+6,"California",6059,"Orange",2018,10.5
+6,"California",6061,"Placer",2018,7.1
+6,"California",6063,"Plumas",2018,12.5
+6,"California",6065,"Riverside",2018,12.7
+6,"California",6067,"Sacramento",2018,14.3
+6,"California",6069,"San Benito",2018,8.6
+6,"California",6071,"San Bernardino",2018,14.9
+6,"California",6073,"San Diego",2018,11.5
+6,"California",6075,"San Francisco",2018,10.1
+6,"California",6077,"San Joaquin",2018,14.3
+6,"California",6079,"San Luis Obispo",2018,12.7
+6,"California",6081,"San Mateo",2018,6.8
+6,"California",6083,"Santa Barbara",2018,12.6
+6,"California",6085,"Santa Clara",2018,7.3
+6,"California",6087,"Santa Cruz",2018,12.2
+6,"California",6089,"Shasta",2018,15.2
+6,"California",6091,"Sierra",2018,13.3
+6,"California",6093,"Siskiyou",2018,17.1
+6,"California",6095,"Solano",2018,7.9
+6,"California",6097,"Sonoma",2018,9.9
+6,"California",6099,"Stanislaus",2018,15.6
+6,"California",6101,"Sutter",2018,13.5
+6,"California",6103,"Tehama",2018,17
+6,"California",6105,"Trinity",2018,21.6
+6,"California",6107,"Tulare",2018,22.2
+6,"California",6109,"Tuolumne",2018,12.5
+6,"California",6111,"Ventura",2018,9.1
+6,"California",6113,"Yolo",2018,20.1
+6,"California",6115,"Yuba",2018,17.2
+6,"California",6001,"Alameda",2019,8.9
+6,"California",6003,"Alpine",2019,17.2
+6,"California",6005,"Amador",2019,9.8
+6,"California",6007,"Butte",2019,16.1
+6,"California",6009,"Calaveras",2019,12.1
+6,"California",6011,"Colusa",2019,12
+6,"California",6013,"Contra Costa",2019,7.9
+6,"California",6015,"Del Norte",2019,17.9
+6,"California",6017,"El Dorado",2019,8.7
+6,"California",6019,"Fresno",2019,20.5
+6,"California",6021,"Glenn",2019,12.1
+6,"California",6023,"Humboldt",2019,19.1
+6,"California",6025,"Imperial",2019,22
+6,"California",6027,"Inyo",2019,11.7
+6,"California",6029,"Kern",2019,19
+6,"California",6031,"Kings",2019,16
+6,"California",6033,"Lake",2019,18.3
+6,"California",6035,"Lassen",2019,16.5
+6,"California",6037,"Los Angeles",2019,13.4
+6,"California",6039,"Madera",2019,17.6
+6,"California",6041,"Marin",2019,6.9
+6,"California",6043,"Mariposa",2019,15.1
+6,"California",6045,"Mendocino",2019,14
+6,"California",6047,"Merced",2019,17
+6,"California",6049,"Modoc",2019,20.5
+6,"California",6051,"Mono",2019,10.1
+6,"California",6053,"Monterey",2019,12.6
+6,"California",6055,"Napa",2019,7.4
+6,"California",6057,"Nevada",2019,9.4
+6,"California",6059,"Orange",2019,9.5
+6,"California",6061,"Placer",2019,6.6
+6,"California",6063,"Plumas",2019,13.2
+6,"California",6065,"Riverside",2019,11.3
+6,"California",6067,"Sacramento",2019,12.6
+6,"California",6069,"San Benito",2019,10.4
+6,"California",6071,"San Bernardino",2019,13.3
+6,"California",6073,"San Diego",2019,10.3
+6,"California",6075,"San Francisco",2019,9.5
+6,"California",6077,"San Joaquin",2019,13.6
+6,"California",6079,"San Luis Obispo",2019,11.6
+6,"California",6081,"San Mateo",2019,6.1
+6,"California",6083,"Santa Barbara",2019,12
+6,"California",6085,"Santa Clara",2019,6.1
+6,"California",6087,"Santa Cruz",2019,10.6
+6,"California",6089,"Shasta",2019,13.3
+6,"California",6091,"Sierra",2019,12.7
+6,"California",6093,"Siskiyou",2019,17.4
+6,"California",6095,"Solano",2019,9
+6,"California",6097,"Sonoma",2019,7.2
+6,"California",6099,"Stanislaus",2019,13
+6,"California",6101,"Sutter",2019,12.8
+6,"California",6103,"Tehama",2019,16.3
+6,"California",6105,"Trinity",2019,16.5
+6,"California",6107,"Tulare",2019,18.9
+6,"California",6109,"Tuolumne",2019,11.3
+6,"California",6111,"Ventura",2019,8.2
+6,"California",6113,"Yolo",2019,16.9
+6,"California",6115,"Yuba",2019,15.2
