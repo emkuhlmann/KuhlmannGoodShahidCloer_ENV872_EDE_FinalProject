@@ -196,7 +196,8 @@ gg_counties_pm <- ggplot() +
   geom_sf(data = pm_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of PM2.5 Monitors Used for Air Quality Analysis")
+  ggtitle("Location of PM2.5 Monitors per County")+
+  theme(plot.title = element_text(size=12))
 
 gg_counties_ozone <- ggplot() +
   geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
@@ -204,7 +205,8 @@ gg_counties_ozone <- ggplot() +
   geom_sf(data = ozone_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of Ozone Monitors Used for Air Quality Analysis")
+  ggtitle("Location of Ozone Monitors Used per County")+
+  theme(plot.title = element_text(size=12))
 
 ggarrange(gg_counties_pm,
           gg_counties_ozone,
