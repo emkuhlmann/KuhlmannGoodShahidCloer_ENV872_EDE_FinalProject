@@ -78,13 +78,6 @@ birth_percent_county <- birthpercentfinal %>%
 ```
 
 ```{r}
-Birthpercent_heatmap <- ggplot(birthpercent_removed, aes(x = Year, y = County, fill = Value)) +
-  geom_tile() +
-  scale_fill_distiller(name = "% Birthweight", palette = "RdYlGn", 
-                      direction = -1)
-Birthpercent_heatmap
-```
-```{r}
 
 write.csv(birthpercentfinal, row.names = FALSE, 
           file = "./Data/Processed/birth_percent_Processed.csv")

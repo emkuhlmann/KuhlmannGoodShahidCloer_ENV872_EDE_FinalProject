@@ -115,6 +115,27 @@ Processed/poverty_byyear_processed
 | Year | year of data | numeric | NA |
 | mean_percent | average poverty rate per year | numeric | percent |
 
+
+Raw/BirthPercent
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| StateFIPS | one-digit state FIPS number (6 for CA) | factor | NA |
+| State | California | factor | NA |
+| CountyFIPS | 4-digit county FIPS number | factor | NA |
+| County | Name of County | factor | NA |
+| Year | year of data | integer | NA |
+| Value | poverty rate for each county | numeric | NA |
+
+Processed/BirthPercent_counties
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| StateFIPS | one-digit state FIPS number (6 for CA) | factor | NA |
+| State | California | factor | NA |
+| CountyFIPS | 4-digit county FIPS number | factor | NA |
+| County | Name of County | factor | NA |
+| Year | year of data | factor | NA |
+| Value | poverty rate for each county | numeric | NA |
+
 ## Scripts and code
 
 <list any software scripts/code contained in the repository and a description of their purpose.>
@@ -124,6 +145,9 @@ Processed/poverty_byyear_processed
 3. DataProcessing_Asthma.R: This code was used to wrangle the emergency department visits for asthma dataset from the CDC, join it with the processed county population data, normalize the number of emergency department visits by county population, and do initial data visualization.
 4. DataVis_Asthma.R: This code provides the processed asthma data and creates the heatmap used in the final PDF.
 5. PopulationData.R: This code was used to pull population data for California counties from 2005-2019 using the tidycensus package. It was also used to wrangle the data to inlude the necessary counties and other information. 
+6. DataProcessing_BirthPercent.RMD: This code was used to upload the raw data to R and wrangled to tidy the dataset to include relevant counties, years and information. 
+7. DataVis_BirthPercent.RMD: The code here was used to visualize the heatmap for low birth weight by county from 2005-2019. 
+8. FinalPorjectCode.RMD: This is the code used to create the PDF document which contains all of the necessary graphs, visualizations and analysis pertaining to our project. 
 
 ## Quality assurance/quality control
 

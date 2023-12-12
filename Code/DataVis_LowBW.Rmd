@@ -1,0 +1,22 @@
+
+
+
+```{r Birthweight Visualization}
+
+#Reading in data from the processed file
+bp_processed <- read.csv("./Data/Processed/birth_percent_counties_Processed.csv", 
+                         stringsAsFactors = T) %>%
+  filter(County != "Amador")
+
+#Creating heatmap
+Birthpercent_heatmap <- ggplot(bp_processed, aes(x = Year, y = County, fill = Value)) +
+  geom_tile() +
+  scale_fill_distiller(name = "% Low Birthweight by County", palette = "YlOrBr",direction=1) + 
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8),
+        legend.key.size = unit(1, "lines"))
+
+Birthpercent_heatmap
+```
+
+
