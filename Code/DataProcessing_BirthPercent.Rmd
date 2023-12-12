@@ -35,6 +35,46 @@ birthpercent_removed$Year <- as.factor(birthpercent_removed$Year)
 
 ```{r}
 birthpercentfinal <- filter(birthpercent_removed,Year!="2001",Year!="2002",Year!="2000",Year!="2003",Year!="2004")
+
+counties <- c("Amador",
+              "Alameda",
+              "Butte",
+              "Contra Costa",
+              "Fresno",
+              "Humboldt",
+              "Imperial",
+              "Kern",
+              "Kings",
+              "Lake",
+              "Los Angeles",
+              "Mendocino",
+              "Merced",
+              "Monterey",
+              "Nevada",
+              "Orange",
+              "Placer",
+              "Riverside",
+              "Sacramento",
+              "San Bernardino",
+              "San Diego",
+              "San Francisco",
+              "San Joaquin",
+              "San Luis Obispo",
+              "San Mateo",
+              "Santa Barbara",
+              "Santa Clara",
+              "Santa Cruz",
+              "Shasta",
+              "Solano",
+              "Sonoma",
+              "Stanislaus",
+              "Sutter",
+              "Tulare",
+              "Ventura",
+              "Yolo")
+
+birth_percent_county <- birthpercentfinal %>%
+  filter(`County` %in% counties)
 ```
 
 ```{r}
@@ -48,6 +88,9 @@ Birthpercent_heatmap
 
 write.csv(birthpercentfinal, row.names = FALSE, 
           file = "./Data/Processed/birth_percent_Processed.csv")
+
+write.csv(birth_percent_county, row.names = FALSE, 
+          file = "./Data/Processed/birth_percent_counties_Processed.csv")
 
 ```
 

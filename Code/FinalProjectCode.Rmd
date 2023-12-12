@@ -29,10 +29,13 @@ library(mapview)
 library(tidycensus)
 library(sjPlot)
 library(ggeasy)
+library(tigris)
+library(ggpubr)
+library(Kendall)
 
 # Set your ggplot theme
 mytheme <- theme_gray(
-  base_size = 14, 
+  base_size = 12, 
   base_family = "Times") +
   theme(
     axis.text = element_text(
@@ -105,21 +108,22 @@ Table: Information for Ozone and PM 2.5
 |  Data Range|2005-2019 |
 
 
-#### Data Wrangling Process \
+**Data Wrangling Process**\
 
-
-**SES (Socioeconomic status)** - The data was downloaded as csv files from the CDC National Public Health Tracking Network Data Explorer and were read into R studio. There were no NAs present in the dataset. The column titled value was renamed to Percent_Poverty and was changed to a numeric column. Column Year and CountyFIPS were changed to factors. Column County and State were changed to characters. California population data was downloaded from our project's Git Repository. Columns for CountyFIPS and Year were changed to factors to match the socioeconomic dataframe. Next, the population and socioeconomic data frame were joined. In the combined data frame, a column was added that used Percent_Poverty to normalize the number of individual’s living in poverty per 100k residents. Finally, the counties in the dataframe were reduced to the 35 included across all datasets in the project. Two additional datasets were created for analysis, one that averaged the Percent_Poverty by County and one that averaged the Percent_Poverty by year. All datasets were saved and uploaded to the Git Repository. 
 
 **Wildfire Rates** - Csv files were downloaded from the US EPA Air Data website for each year from 2015 through 2019. Each file was loaded into R and filtered for the most recent NAAQS standard, the state of California, and the 35 counties of interest. Then the variables of interest were selected, including location information for the air quality monitors, the pollutant standard, unit, and arithmetic mean, and the year. The files were then compiled into one complete data frame. To analyze ozone and PM2.5 data, the compiled data was filtered for the pollutant of interest, grouped by county and year, and a mean pollutant concentration was calculated. 
 
 **PM 2.5 and Ozone Concentrations** - Pdf redbooks of wildfire statistics for each year from 2008 through 2019 were downloaded from CalFire’s website. The table of interest (Large Fires 300 Acres and Greater - State and Contract Counties Direct Protection Area) was loaded into Excel using the get data from pdf tool. Once each data table was loaded into its own excel sheet, only the columns for unit (the county in which the fire occurred), year, and acres burned and only the entries for fires that were managed by CalFire were kept. The choice to filter for only fires managed by CalFire was made due to the disclaimer included in the pdf data files, which stated that data was compiled from FEMA incident reports, and other federal or local agencies are not obligated to provide reports to CalFire for annual statistics, making the data an incomplete list of other agency large fires. Files were saved as csv files and were then read into R. For each file, data was grouped by county and year and the annual mean acreage burned was calculated. The files were compiled into one data frame and filtered for the 35 counties of interest.
 
+**SES (Socioeconomic status)** - The data was downloaded as csv files from the CDC National Public Health Tracking Network Data Explorer and were read into R studio. There were no NAs present in the dataset. The column titled value was renamed to Percent_Poverty and was changed to a numeric column. Column Year and CountyFIPS were changed to factors. Column County and State were changed to characters. California population data was downloaded from our project's Git Repository. Columns for CountyFIPS and Year were changed to factors to match the socioeconomic dataframe. Next, the population and socioeconomic data frame were joined. In the combined data frame, a column was added that used Percent_Poverty to normalize the number of individual’s living in poverty per 100k residents. Finally, the counties in the dataframe were reduced to the 35 included across all datasets in the project. Two additional datasets were created for analysis, one that averaged the Percent_Poverty by County and one that averaged the Percent_Poverty by year. All datasets were saved and uploaded to the Git Repository. 
+
 **Asthma Rates** - The asthma dataset was retrieved from the CDC National Environmental Public Health Tracking Network Data Explorer and the CSV file was read into R Studio. There were NAs present in the dataset from Sierra and Alpine counties. These counties were removed from the dataframe. The visits column was changed from factor to numeric and year was changed from integer to factor. Next, the tidycensus R package was used to retrieve county population data for California from 2005-2019. ChatGPT was used to help write the code to create a for loop to fetch the data for each year and create a dataframe including all years. Annual population data was only available for California counties with populations greater than 65,000 residents. This dataframe was wrangled by changing column names to match the asthma dataframe and selecting the CountyFIPS, County, year and Population columns. This processed dataset was saved as a CSV and joined to the asthma dataframe. The number of annual asthma visits was then normalized by the county population for each year and multiplied by 100,000 to calculate the number of emergency department visits for asthma per year per 100,000 residents of each county. Finally, the counties in this dataframe were reduced to only include the 35 counties present across all datasets being used in this analysis. 
 
-**Low Birthweight** - Low Birthweights for California were retrieved from the CDC National Environmental Public Health Tracking Network and the CSV file was read into R Studio. 
+**Low Birthweight** - Low Birthweights for California were retrieved from the CDC National Environmental Public Health Tracking Network and the CSV file was read into R Studio. The data was read in to show missing values as NA, and these counties and data points were omitted. County FIPS, State FIPS and Year were read in as factors. Data for years 2000 to 2005 and 2020 was filtered out to match the other datasets. The data was read in as a percent of the population in each California county so it was not normalized for 100k per population that give birth. This file was then filtered to remove counties to match the other datasets. 
 
 
-```{r Map of Counties, echo=FALSE, fig.align ='center',message=FALSE, warning=FALSE}
+```{r Map of Counties, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, fig.cap="Map of Counties"}
+
 library(mapview)
 library(sf)
 #install.packages("tigris")
@@ -153,7 +157,6 @@ library(Polychrome)
 P35 = createPalette(35,  c("#ff0000", "#00ff00", "#0000ff"))
 
 
-#----------------------------Mapping with ggplot-------------------------------
 # Define the colors and labels for the legend
 legend_colors <- c("All Counties" = "thistle", "Counties Included in Analysis" = "orchid4")
 
@@ -167,10 +170,10 @@ gg_counties_all <- ggplot() +
 
 gg_counties_all
 
+
 ```
 
-
-```{r Map of Counties with Air Monitor Sites, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+```{r Map of Counties by Monitors, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, fig.cap="Map of Counties by Monitoring Sites"}
 airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
 
 pm_df <- airquality_df %>%
@@ -195,8 +198,6 @@ gg_counties_pm <- ggplot() +
   scale_fill_manual(name = "County", values = legend_colors) +
   ggtitle("Location of PM2.5 Monitors Used for Air Quality Analysis")
 
-gg_counties_pm
-
 gg_counties_ozone <- ggplot() +
   geom_sf(data = ca_counties, aes(fill = "All Counties"), color = "white") +
   geom_sf(data = filtered_ca_counties, aes(fill = "Counties Included in Analysis"), color = "white") +
@@ -205,7 +206,11 @@ gg_counties_ozone <- ggplot() +
   scale_fill_manual(name = "County", values = legend_colors) +
   ggtitle("Location of Ozone Monitors Used for Air Quality Analysis")
 
-gg_counties_ozone
+ggarrange(gg_counties_pm,
+          gg_counties_ozone,
+          nrow = 1,
+          common.legend = TRUE,
+          legend = "bottom")
 
 ```
 
@@ -213,16 +218,386 @@ gg_counties_ozone
 
 # Exploratory Analysis 
 
+To understand the spread of the data, exploratory analysis were conducted on each of the variables utilising various tools 
+
+## Wildfire Rates
+
+```{r Wildfire Rates Heatmap, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Wildfire Rates Heatmap"}
+wildfire_df <- read.csv(here("Data/Processed/CA_wildfire_processed.csv"))
 
 
+wildfire_df <- wildfire_df %>%
+  rename(County = UNIT,
+         Year = YEAR,
+         acres_burned = mean)
 
+# ----- wildfire heatmap by county ---------------------------------------------
+
+wildfire_heatmap <- ggplot(wildfire_df, 
+                           aes(x = Year, y = County, fill = acres_burned)) +
+  geom_tile() +
+  scale_fill_distiller(name = "Acres Burned",
+                       palette = "YlOrBr",
+                       direction = -1) +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8),
+        legend.key.size = unit(1, "lines")) +
+  scale_x_continuous(limits = c(2007, 2020), 
+                     breaks = c(2008, 2010, 2012, 2014, 2016, 2018, 2020)) +
+  labs(title = "Acres burned by wildfire in each CA county, 2008 - 2019")
+
+print(wildfire_heatmap)
+
+```
+
+The heat map visualizes the average acreage burned in wildfires managed by CalFire for each California county of interest from 2008 through 2019. Blocks missing data had no significant wildfires managed by CalFire in that year, indicating zero acres burned. Ventura county in 2017 has by far the highest acreage burned represented on the map at 281893 acres. Otherwise, the median acreage burned in a county in one year is around 1000 acres. 
+
+\newpage
+
+## Ozone and PM 2.5 Concentrations
+
+```{r Air Quality Data Visualizations, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Ozone and PM 2.5 Visualiations"}
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
+
+airquality_pm <- airquality_df %>%
+  filter(Pollutant.Standard == "PM25 Annual 2012") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_PM25 = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_PM25 = mean(mean_annual_PM25))
+
+airquality_ozone <- airquality_df %>%
+  filter(Pollutant.Standard == "Ozone 8-hour 2015") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_ozone = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
+
+# ----- PM2.5 box and whiskers plot by county ----------------------------------
+
+pm_plot <- ggplot(airquality_pm, 
+                  aes(x = County, y = mean_annual_PM25)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Annual mean PM2.5 concentrations for each county, 2005 - 2019",
+       x = "County", y = "Annual mean PM2.5 (ug/m3)") +
+  ylim(0,30)
+#print(pm_plot)
+
+# ----- ozone box and whiskers plot by county ----------------------------------
+
+ozone_plot <- ggplot(airquality_ozone, 
+                  aes(x = County, y = mean_annual_ozone)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Annual mean ozone concentrations for each county, 2005 - 2019",
+       x = "County", y = "Annual mean ozone (ppm)") +
+  ylim(0,0.07)
+#print(ozone_plot)
+
+# ----- stacked box and whiskers plots -----------------------------------------
+
+ggarrange(pm_plot, 
+          ozone_plot,
+          nrow = 2)
+
+# ----- PM2.5 time series ------------------------------------------------------
+
+pm_annual_avg <- airquality_pm %>%
+  group_by(Year) %>%
+  summarise(mean_annual_pm = mean(mean_annual_PM25))
+
+pm_timeseries_plot <- 
+  ggplot(pm_annual_avg,
+         aes(x = Year,
+             y = mean_annual_pm)) +
+  labs(title = "Annual average PM2.5 across all CA counties, 2005 - 2019",
+       y = "Avg PM2.5 (ug/m3)") +
+  ylim(0,13) +
+  theme(axis.text.x = element_text(size = 14)) +
+  theme(axis.text.y = element_text(size = 14)) +
+  theme(axis.title.x = element_text(size = 14)) +
+  theme(axis.title.y = element_text(size = 14)) +
+  geom_point(size = 2) +
+  geom_smooth(method=lm)
+
+#print(pm_timeseries_plot)
+
+#pm_ts <- ts(pm_annual_avg$mean_annual_pm,
+           # start = 2005,
+           # end = 2019,
+           # frequency = 1)
+
+#MannKendall(pm_ts)
+# 2-sided pvalue = 0.022822
+
+#pm_regression <- lm(data = pm_annual_avg,
+                   # mean_annual_pm ~ Year)
+#summary(pm_regression)
+
+# ----- ozone time series ------------------------------------------------------
+
+ozone_annual_avg <- airquality_ozone %>%
+  group_by(Year) %>%
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
+
+ozone_timeseries_plot <- 
+  ggplot(ozone_annual_avg,
+         aes(x = Year,
+             y = mean_annual_ozone)) +
+  labs(title = "Annual average ozone across all CA counties, 2005 - 2019",
+       y = "Avg ozone (ppm)") +
+  ylim(0,0.1) +
+  theme(axis.text.x = element_text(size = 14)) +
+  theme(axis.text.y = element_text(size = 14)) +
+  theme(axis.title.x = element_text(size = 14)) +
+  theme(axis.title.y = element_text(size = 14)) +
+  geom_point(size = 2) +
+  geom_smooth(method=lm)
+
+#print(ozone_timeseries_plot)
+
+ozone_ts <- ts(ozone_annual_avg$mean_annual_ozone,
+            start = 2005,
+            end = 2019,
+            frequency = 1)
+
+#MannKendall(ozone_ts)
+# 2-sided pvalue = 0.37305
+
+# ----- stacked time series plots ----------------------------------------------
+
+ggarrange(pm_timeseries_plot,
+          ozone_timeseries_plot,
+          nrow = 2)
+
+
+# ----- PM2.5 ANOVA by county --------------------------------------------------
+
+#pm_anova <- aov(data = airquality_pm,
+#                mean_annual_PM25 ~ County)
+
+#pm_county_groups <- HSD.test(pm_anova, 
+#                             "County", 
+#                            group = TRUE)
+#pm_county_groups
+
+# ----- ozone ANOVA by county --------------------------------------------------
+
+#ozone_anova <- aov(data = airquality_ozone,
+#                   mean_annual_ozone ~ County)
+
+#ozone_county_groups <- HSD.test(ozone_anova, 
+#                                "County", 
+#                                group = TRUE)
+#ozone_county_groups
+
+```
+
+For Ozone, following a Tukey HSD test, San Bernardino, Tulare, and Kern counties were grouped as having the highest annual average ozone concentrations ranging from 0.051 to 0.053 ppm. Five counties (San Francisco, Humboldt, San Mateo, Mendocino, and Sonoma) were grouped as having the lowest annual average ozone concentrations ranging from 0.028 to 0.031 ppm. 
+
+For PM 2.5, following a Tukey HSD test, Kings, Tulare, and Fresno counties were grouped as having the highest annual average PM2.5 concentrations ranging from 15.7 to 17.8 ug/m3. Monterey, Nevada, and Lake counties were grouped as having the lowest annual average PM2.5 concentrations ranging from 4.4 to 6.0 ug/m3. 
+
+\newpage
+
+## Socioeconomic Status
+
+```{r Socioeconomic Status,fig.align='center', echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Socioeconomic Status Visualization"}
+
+#Reading in Data
+poverty1.df <- read.csv("Data/Processed/Poverty1_processed.csv", stringsAsFactors = TRUE)
+poverty_byyear.df <- read.csv("Data/Processed/Percent_poverty_byyear_processed.csv", stringsAsFactors = TRUE)
+
+#testing whether different counties have different percent in poverty
+
+#anova_povertyrate_bycounty <- aov(
+#  data = poverty1.df, 
+#  Percent_Poverty ~ County)
+#summary(anova_povertyrate_bycounty)
+
+#Tukey Test by County
+#TukeyHSD(anova_povertyrate_bycounty)
+#test1 <- HSD.test(anova_povertyrate_bycounty, "County", group = TRUE)
+
+#print(test1)
+
+#Analysis Graph
+Poverty_year <- 
+  ggplot(poverty_byyear.df, 
+         aes(x = Year, y = mean_percent)) +
+  geom_point() +
+  #geom_smooth(method = 'lm') + 
+  #ylim(430000,620000) +
+  labs(x = "Year", 
+       y = "Average Poverty Rate") +
+  ggtitle(
+    "Average Poverty Rate in Californian Counties from 2005 to 2019") +
+  mytheme
+print(Poverty_year)
+```
+
+The average poverty rate in California counties, between the years 2005 to 2019, showed a quadratic pattern. The average poverty rate peaked from 2011 to 2013 at over 18% and reached its lowest in 2019 at 12.5%.
+
+There was a significant difference between the mean poverty rate between the 35 test counties in California. Tulare county stood out at having the highest poverty rate at 24.47% while San Mateo had the lowest at 7.15%, both were statistically significant.
+
+\newpage
+
+## Asthma Rates
+
+```{r Asthma Data Visualization, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, fig.cap="Asthma Rates Heatmap"}
+Asthma_data_processed <- read.csv("./Data/Processed/Asthma_data_processed.csv", 
+                                  stringsAsFactors = T)
+
+#regular heatmap
+AsthmaVisits_heatmap <- ggplot(Asthma_data_processed, 
+                               aes(x = Year, y = County, fill = visits_per100k)) +
+  geom_tile() +
+  scale_fill_distiller(name = "ED Visits for Asthma per 100k",
+                       palette = "YlOrBr",
+                       breaks = c(100, 300, 500, 700),
+                       direction = 1) +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8),
+        legend.key.size = unit(1, "lines"))
+
+AsthmaVisits_heatmap
+```
+
+From a Tukey HSD test analyzing ER visits for asthma by California county, Lake County stands out as the county with the highest average ER visit rate for asthma of 634 per 100k residents. 23 of the 35 counties included in the analysis were grouped together to have a statistically non-significant difference between their mean ER visit rates for asthma ranging from 4 to 67 ER visits per 100k. 
+
+The heatmap shows that most counties have annual emergency department visits for asthma below 300 per 100k residents. Three counties, Mendocino, Humboldt, and Lake, appear to have consistently higher numbers of ED visits for asthma for all years included in the analysis. Most counties have fairly consistent numbers of visits across the study period. However, Shasta, Kings, and Butte counties have periods where the annual visits jump up by several hundred, and there is some overlap in the periods of these jumps between the three counties. 
+
+\newpage
+
+## Low Birthweight
+
+```{r Birthweight Visualization, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, fig.cap="Low Birthweight Heatmap"}
+bp_processed <- read.csv("./Data/Processed/birth_percent_counties_Processed.csv", 
+                                  stringsAsFactors = T) %>%
+  filter(County != "Amador")
+
+
+Birthpercent_heatmap <- ggplot(bp_processed, aes(x = Year, y = County, fill = Value)) +
+  geom_tile() +
+  scale_fill_distiller(name = "% Low Birthweight by County", palette = "YlOrBr",direction=1) + 
+   theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8),
+        legend.key.size = unit(1, "lines"))
+
+Birthpercent_heatmap
+```
+
+There was minimal difference between percentages of low birth weight births among California counties according to a Tukey HSD test. However, Fresno County stood out as the county with the highest percent of births at a low birth weight (6.1%), and this was statistically significantly higher than the other 34 counties analyzed. Placer County stood out as the county with the lowest percent of births at a low birth weight (3.9%), which was statistically significantly lower than the other 34 counties.
+
+The heatmap shows the change in % of Low Birthweight per county throughout the years 2005-2019. % Low Birthweight is reported based on a persons' residence address and not where they were hospitalized. Some counties like Fresno, San Joaquin, Bernardino and Solano have high % of Low Birthweights. Placer has a relatively low amount of % low birthweights. Overall, there is variability in low birthweight for all counties for all years but a general increase in % low birthweight rates in the time period 2016-2020.  
 
 
 \newpage
 
 # Analysis
 
+## Multiple Linear Regression Models
 
+```{r MLR analysis , echo=FALSE, message=FALSE, warning=FALSE}
+# ----- load datasets ----------------------------------------------------------
+
+airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
+asthma_df <- read.csv(here("Data/Processed/Asthma_data_processed.csv"))
+poverty_df <- read.csv(here("Data/Processed/Poverty1_processed.csv"))
+wildfire_df <- read.csv(here("Data/Processed/CA_wildfire_processed.csv"))
+births_df <- read.csv(here("Data/Processed/birth_percent_counties_Processed.csv"))
+
+# ----- a little bit of reordering and renaming --------------------------------
+
+airquality_pm <- airquality_df %>%
+  filter(Pollutant.Standard == "PM25 Annual 2012") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_PM25 = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_PM25 = mean(mean_annual_PM25))
+
+airquality_ozone <- airquality_df %>%
+  filter(Pollutant.Standard == "Ozone 8-hour 2015") %>%
+  select(c(Year,
+           County.Name,
+           Arithmetic.Mean)) %>%
+  rename(County = County.Name) %>%
+  rename(mean_annual_ozone = Arithmetic.Mean) %>%
+  group_by(County, Year) %>%
+  summarise(mean_annual_ozone = mean(mean_annual_ozone))
+
+asthma_df <- asthma_df %>%
+  select(c(Year,
+           County,
+           visits_per100k)) %>%
+  rename(ER_asthma_visits_per_100k = visits_per100k)
+
+poverty_df <- poverty_df %>%
+  select(c(Year,
+           County,
+           Percent_Poverty)) %>%
+  rename(percent_poverty = Percent_Poverty)
+
+wildfire_df <- wildfire_df %>%
+  rename(County = UNIT,
+         Year = YEAR,
+         acres_burned = mean)
+# note that data is 2008 through 2019 and if a county doesn't have a year it's 
+# because no acreage was burned 
+
+births_df <- births_df %>%
+  select(c(Year,
+           County,
+           Value)) %>%
+  filter(Year != "2020") %>%
+  filter(County != "Amador") %>%
+  rename(percent_underweight_births = "Value")
+
+# ----- join into one data frame -----------------------------------------------
+
+listed_df <- list(airquality_ozone,
+                  airquality_pm,
+                  asthma_df,
+                  poverty_df,
+                  wildfire_df,
+                  births_df)
+
+joined_df <- listed_df %>%
+  reduce(full_join, by = c("Year", "County"))
+
+# ----- testing out the asthma MLR ---------------------------------------------
+
+asthma_regression <- lm(data = joined_df,
+                        ER_asthma_visits_per_100k ~  
+                          mean_annual_ozone +
+                          mean_annual_PM25 +
+                          percent_poverty +
+                          acres_burned)
+summary(asthma_regression)
+
+tab_model(asthma_regression)
+
+# ----- testing out births MLR -------------------------------------------------
+
+births_regression <- lm(data = joined_df,
+                          percent_underweight_births ~  
+                            mean_annual_ozone +
+                            mean_annual_PM25 +
+                            percent_poverty +
+                            acres_burned)
+summary(births_regression)
+
+tab_model(births_regression)
+```
 
 
 
@@ -231,15 +606,37 @@ gg_counties_ozone
 Null Hypothesis: Ozone and PM2.5 concentrations have not changed significantly in California counties from 2005 to 2019. 
 Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantly in California counties from 2005 to 2019.
 
+
+Based on statistical models, we conclude the following:
+
+There has been no statistically significant trend in ozone concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall p value = 0.37).
+
+There has been a statistically significant trend in PM2.5 concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall p value = 0.023). A one year increase is associated with a 0.16 ug/m3 decrease in PM2.5 concentrations (p value < 0.05).
+
 ## Question 2: Do PM2.5 and ozone concentrations impact asthma rates in California counties?
 
 Null Hypothesis: Ozone and PM2.5 concentrations have not changed significantly in California counties from 2005 to 2019. 
 Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantly in California counties from 2005 to 2019.
 
+
+Based on statistical models, we conclude the following:
+A one ppm decrease in ozone concentration is associated with a 7367 unit increase in ER visits for asthma per 100k (p < 0.001). 
+
+A one ug/m3 decrease in PM2.5 concentration is associated with a 27 unit increase in ER visits for asthma per 100k (p < 0.001).
+
+A one unit increase in percent poverty is associated with a 19 unit increase in ER visits for asthma per 100k (p < 0.001). 
+
+
+
 ## Question 3: Do PM2.5 and ozone concentrations impact the incidence of low birth weights in California counties?
 
 Null Hypothesis: PM 2.5 and Ozone concentrations do not impact birth weights in California counties. 
 Alternative Hypothesis: PM 2.5 and Ozone concentrations impact birth weights in California counties.
+
+
+Based on statistical models, we conclude the following:
+
+A one ug/m3 increase in PM2.5 concentration is associated with a 0.07 unit increase in percent underweight births (p < 0.001). 
 
 \newpage
 
