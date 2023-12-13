@@ -1,6 +1,6 @@
 ---
 title: "Exploring Variables Impacting Asthma and Low Birth Weights in California"
-subtitle: Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid
+subtitle: Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid/
 date: "https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject"
 output:
   pdf_document: default
