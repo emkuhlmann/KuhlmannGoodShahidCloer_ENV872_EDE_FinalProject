@@ -32,6 +32,9 @@ library(ggeasy)
 library(tigris)
 library(ggpubr)
 library(Kendall)
+library(knitr)
+library(tidyr)
+library(broom)
 
 # Set your ggplot theme
 mytheme <- theme_gray(
@@ -196,7 +199,7 @@ gg_counties_pm <- ggplot() +
   geom_sf(data = pm_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of PM2.5 Monitors per County")+
+  ggtitle("PM2.5 Monitor Locations")+
   theme(plot.title = element_text(size=12))
 
 gg_counties_ozone <- ggplot() +
@@ -205,7 +208,7 @@ gg_counties_ozone <- ggplot() +
   geom_sf(data = ozone_sf) +
   labs(fill = "County") + 
   scale_fill_manual(name = "County", values = legend_colors) +
-  ggtitle("Location of Ozone Monitors per County")+
+  ggtitle("Ozone Monitor Locations")+
   theme(plot.title = element_text(size=12))
 
 ggarrange(gg_counties_pm,
@@ -240,7 +243,7 @@ wildfire_heatmap <- ggplot(wildfire_df,
   geom_tile() +
   scale_fill_distiller(name = "Acres Burned",
                        palette = "YlOrBr",
-                       direction = -1) +
+                       direction = 1) +
   theme(legend.title = element_text(size = 10),
         legend.text = element_text(size = 8),
         legend.key.size = unit(1, "lines")) +
@@ -257,8 +260,7 @@ The heat map visualizes the average acreage burned in wildfires managed by CalFi
 \newpage
 
 ## Ozone and PM 2.5 Concentrations
-
-```{r Air Quality Data Visualizations, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Ozone and PM 2.5 Visualiations"}
+```{r Air Quality Data Visualizations, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Ozone and PM 2.5 Box and Whiskers Plots Show Annual Summary Statistics by County", fig.height = 6.7}
 airquality_df <- read.csv(here("Data/Processed/CA_AQ_processed.csv"))
 
 airquality_pm <- airquality_df %>%
@@ -307,7 +309,18 @@ ozone_plot <- ggplot(airquality_ozone,
 
 ggarrange(pm_plot, 
           ozone_plot,
-          nrow = 2)
+          nrow = 2) +
+  theme(plot.margin = unit(c(0,0,0,0), "cm"))
+```
+
+
+\newpage
+
+For Ozone, following a Tukey HSD test, San Bernardino, Tulare, and Kern counties were grouped as having the highest annual average ozone concentrations ranging from 0.051 to 0.053 ppm. Five counties (San Francisco, Humboldt, San Mateo, Mendocino, and Sonoma) were grouped as having the lowest annual average ozone concentrations ranging from 0.028 to 0.031 ppm. 
+
+For PM 2.5, following a Tukey HSD test, Kings, Tulare, and Fresno counties were grouped as having the highest annual average PM2.5 concentrations ranging from 15.7 to 17.8 ug/m3. Monterey, Nevada, and Lake counties were grouped as having the lowest annual average PM2.5 concentrations ranging from 4.4 to 6.0 ug/m3. 
+
+```{r Air Quality Time Series, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Ozone and PM 2.5 Time Series", fig.height = 6.5}
 
 # ----- PM2.5 time series ------------------------------------------------------
 
@@ -402,9 +415,6 @@ ggarrange(pm_timeseries_plot,
 
 ```
 
-For Ozone, following a Tukey HSD test, San Bernardino, Tulare, and Kern counties were grouped as having the highest annual average ozone concentrations ranging from 0.051 to 0.053 ppm. Five counties (San Francisco, Humboldt, San Mateo, Mendocino, and Sonoma) were grouped as having the lowest annual average ozone concentrations ranging from 0.028 to 0.031 ppm. 
-
-For PM 2.5, following a Tukey HSD test, Kings, Tulare, and Fresno counties were grouped as having the highest annual average PM2.5 concentrations ranging from 15.7 to 17.8 ug/m3. Monterey, Nevada, and Lake counties were grouped as having the lowest annual average PM2.5 concentrations ranging from 4.4 to 6.0 ug/m3. 
 
 \newpage
 
@@ -578,27 +588,51 @@ joined_df <- listed_df %>%
 
 # ----- testing out the asthma MLR ---------------------------------------------
 
-asthma_regression <- lm(data = joined_df,
-                        ER_asthma_visits_per_100k ~  
-                          mean_annual_ozone +
-                          mean_annual_PM25 +
-                          percent_poverty +
-                          acres_burned)
-summary(asthma_regression)
-
-tab_model(asthma_regression)
+lm(data = joined_df,
+   ER_asthma_visits_per_100k ~  
+   mean_annual_ozone +
+   mean_annual_PM25 +
+   percent_poverty +
+   acres_burned)%>%
+  tidy() %>%
+  mutate(
+    term = c("Intercept", 
+             "Mean Annual Ozone", 
+             "Mean Annual PM2.5", 
+             "Percent Poverty", 
+             "Acres Burned")) %>%
+  kable(
+    caption = "Estimating Variation in ER Visits for Asthma",
+    col.names = c("Predictor", 
+                  "Estimate", 
+                  "Std. Error", 
+                  "Test Statistic", 
+                  "p-value"),
+    digits = c(0, 2, 3, 2, 3))
 
 # ----- testing out births MLR -------------------------------------------------
 
-births_regression <- lm(data = joined_df,
-                          percent_underweight_births ~  
-                            mean_annual_ozone +
-                            mean_annual_PM25 +
-                            percent_poverty +
-                            acres_burned)
-summary(births_regression)
-
-tab_model(births_regression)
+lm(data = joined_df,
+   percent_underweight_births ~  
+     mean_annual_ozone +
+     mean_annual_PM25 +
+     percent_poverty +
+     acres_burned) %>%
+  tidy() %>%
+  mutate(
+    term = c("Intercept", 
+             "Mean Annual Ozone", 
+             "Mean Annual PM2.5", 
+             "Percent Poverty", 
+             "Acres Burned")) %>%
+  kable(
+    caption = "Estimating Variation in Low Birth Weight Rates",
+    col.names = c("Predictor", 
+                  "Estimate", 
+                  "Std. Error", 
+                  "Test Statistic", 
+                  "p-value"),
+    digits = c(0, 2, 3, 2, 3))
 ```
 
 
@@ -643,6 +677,8 @@ A one ug/m3 increase in PM2.5 concentration is associated with a 0.07 unit incre
 \newpage
 
 # Summary and Conclusions
+
+The outputs of the multiple linear regression models, particularly for ER visits for asthma, suggest the need for further evaluation in future analyses. Previous literature suggests that increases in air pollution concentrations, especially particulate matter, increase the prevalence of asthma related episodes and ER visits/hospitalizations. The model in this analysis gives the opposite trend, and a large standard error value for ozone as a predictor indicates additional exploration may be needed. There could be many more potential predictors to include in the model, such as residence (urban vs rural, proximity to pollution point sources), and medical history factors. Pollution levels can also fluctuate drastically on short time scales, so annual averages may not be the best method for this analysis. If higher time resolution data could be obtained for asthma-related ER visits, air pollution data down to hourly averages could be analyzed for potentially more accurate results.  
 
 
 \newpage
