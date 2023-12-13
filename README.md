@@ -28,6 +28,14 @@ https://ephtracking.cdc.gov/DataExplorer/
 
 County population data were pulled using the 'tidycensus' package in R. Annual American Community Survey data for counties with populations greater than 65,000 were accessed. 
 
+Wildfire data comes from the CalFire annual statistics summary publications (aka Redbooks) accessed 11/07/2023.
+
+https://www.fire.ca.gov/our-impact/statistics
+
+Air quality data (PM2.5 and ozone) comes the the US EPS Air Data pregenerate data files for annual summary data accessed 11/07/2023. 
+
+https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
+
 ## Folder structure, file formats, and naming conventions 
 
 The repository contains a Code folder which has all data processing R files for each individual variable and the files with the analytical model code. There is also a Data folder, with Raw and Processed folders within. The Raw folder contains unprocessed .csv files pulled from the data sources. The Processed folder contains wrangled datasets for each variable.  
@@ -119,6 +127,14 @@ Processed/BirthPercent_counties
 | County | Name of County | factor | NA |
 | Year | year of data | factor | NA |
 | Value | poverty rate for each county | numeric | NA |
+
+Raw/EPA_AQS_annual/annual_conc_by_monitor_<year>.csv:
+
+Processed/CA_AQ_processed.csv:
+
+Raw/CA_wildfire/<year>.csv: 
+
+Processed/CA_wildfire_processed.csv: 
 
 ## Scripts and code
 
