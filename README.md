@@ -131,7 +131,7 @@ Processed/BirthPercent_counties
 | Year | year of data | factor | NA |
 | Value | poverty rate for each county | numeric | NA |
 
-Raw/EPA_AQS_annual/annual_conc_by_monitor_<year>.csv:
+Raw/EPA_AQS_annual/annual_conc_by_monitor_year.csv:
 
 Note that all year files have the same columns, and units marked "yes" are determined by row by the 'Units of Measure' column
 | Column Name  | Description | Data Class | Units
@@ -206,7 +206,7 @@ Note that units marked "yes" are determined by row by the 'Units of Measure' col
 | State Name | the name of the state where the monitoring site is located (California) | chr | NA |
 | County Name | the name of the county where the monitoring site is located | chr | NA |
 
-Raw/CA_wildfire/<year>.csv: 
+Raw/CA_wildfire/year.csv: 
 
 Note that all year files have the same columns
 | Column Name  | Description | Data Class | Units
