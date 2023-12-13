@@ -133,7 +133,7 @@ Processed/BirthPercent_counties
 
 Raw/EPA_AQS_annual/annual_conc_by_monitor_year.csv:
 
-Note that all year files have the same columns, and units marked "yes" are determined by row by the 'Units of Measure' column
+Note that all year files (2005 through 2019) have the same columns, and units marked "yes" are determined by row by the 'Units of Measure' column
 | Column Name  | Description | Data Class | Units
 | ------------- | ------------- | ------------- | ------------- |
 | State Code | state FIPS in which monitor resides | chr | NA |
@@ -199,7 +199,7 @@ Note that units marked "yes" are determined by row by the 'Units of Measure' col
 | ------------- | ------------- | ------------- | ------------- |
 | Latitude | monitor's angular distance north of the equator | num | decimal degrees |
 | Longitude | monitor's angular distance east of the prime meridian | num | decimal degrees |
-| Pollutant Standard | description of the ambient air quality standard rules for aggregate statistics | chr | yes |
+| Pollutant Standard | description of the ambient air quality standard rules for aggregate statistics | chr | NA |
 | Year | year represented by annual summary data | num | NA |
 | Units of Measure | unit of measure for the parameter | chr | NA |
 | Arithmetic Mean | the average value for the year | num | yes |
@@ -208,7 +208,7 @@ Note that units marked "yes" are determined by row by the 'Units of Measure' col
 
 Raw/CA_wildfire/year.csv: 
 
-Note that all year files have the same columns
+Note that all year files (2008 through 2019) have the same columns
 | Column Name  | Description | Data Class | Units
 | ------------- | ------------- | ------------- | ------------- |
 | UNIT | county in which the fire occurred | chr | NA |
