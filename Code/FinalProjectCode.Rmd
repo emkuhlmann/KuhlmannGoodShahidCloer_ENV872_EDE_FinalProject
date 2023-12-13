@@ -4,7 +4,6 @@ subtitle: Ashton Cloer, Elizabeth Good, Emily Kuhlman, Sakina Shahid/
 date: "https://github.com/emkuhlmann/KuhlmannGoodShahidCloer_ENV872_EDE_FinalProject"
 output:
   pdf_document: default
-  html_document: default
 editor_options:
   chunk_output_type: inline
 ---
@@ -22,6 +21,7 @@ library(here)
 setwd(here())
 
 # Load your packages
+options(knitr.table.format = "latex")
 
 library(tidyverse)
 library(agricolae)
@@ -33,6 +33,7 @@ library(tigris)
 library(ggpubr)
 library(Kendall)
 library(knitr)
+library(kableExtra)
 library(tidyr)
 library(broom)
 
@@ -322,9 +323,9 @@ ggarrange(pm_plot,
 
 \newpage
 
-For Ozone, following a Tukey HSD test, San Bernardino, Tulare, and Kern counties were grouped as having the highest annual average ozone concentrations ranging from 0.051 to 0.053 ppm. Five counties (San Francisco, Humboldt, San Mateo, Mendocino, and Sonoma) were grouped as having the lowest annual average ozone concentrations ranging from 0.028 to 0.031 ppm. 
+Ozone annual concentrations differed significantly by county (ANOVA; df = 34; F = 205.3; p-value < 2e-16). For Ozone, following a Tukey HSD test, San Bernardino, Tulare, and Kern counties were grouped as having the highest annual average ozone concentrations ranging from 0.051 to 0.053 ppm. Five counties (San Francisco, Humboldt, San Mateo, Mendocino, and Sonoma) were grouped as having the lowest annual average ozone concentrations ranging from 0.028 to 0.031 ppm. 
 
-For PM 2.5, following a Tukey HSD test, Kings, Tulare, and Fresno counties were grouped as having the highest annual average PM2.5 concentrations ranging from 15.7 to 17.8 ug/m3. Monterey, Nevada, and Lake counties were grouped as having the lowest annual average PM2.5 concentrations ranging from 4.4 to 6.0 ug/m3. 
+PM2.5 annual concentrations differed significantly by county (ANOVA; df = 34; F = 41.84; p-value < 2e-16). For PM 2.5, following a Tukey HSD test, Kings, Tulare, and Fresno counties were grouped as having the highest annual average PM2.5 concentrations ranging from 15.7 to 17.8 ug/m3. Monterey, Nevada, and Lake counties were grouped as having the lowest annual average PM2.5 concentrations ranging from 4.4 to 6.0 ug/m3. 
 
 ```{r Air Quality Time Series, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="Ozone and PM 2.5 Time Series", fig.height = 6.5}
 
@@ -462,7 +463,7 @@ print(Poverty_year)
 
 The average poverty rate in California counties, between the years 2005 to 2019, showed a quadratic pattern. The average poverty rate peaked from 2011 to 2013 at over 18% and reached its lowest in 2019 at 12.5%.
 
-There was a significant difference between the mean poverty rate between the 35 test counties in California. Tulare county stood out at having the highest poverty rate at 24.47% while San Mateo had the lowest at 7.15%, both were statistically significant.
+There was a significant difference between the mean poverty rate between the 35 test counties in California (ANOVA; df = 34; F = 78.18; p-value < 2e-16). Tulare county stood out at having the highest poverty rate at 24.47% while San Mateo had the lowest at 7.15%, both were statistically significant.
 
 \newpage
 
@@ -487,7 +488,7 @@ AsthmaVisits_heatmap <- ggplot(Asthma_data_processed,
 AsthmaVisits_heatmap
 ```
 
-From a Tukey HSD test analyzing emergency department visits for asthma by California county, Lake County stands out as the county with the highest average ED visit rate for asthma of 634 per 100k residents. 23 of the 35 counties included in the analysis were grouped together to have a statistically non-significant difference between their mean ED visit rates for asthma ranging from 4 to 67 ED visits per 100k residents. 
+There are significant differences among asthma ED visits by county (ANOVA; df = 34; F = 133.2; p-value < 2e-16). From a Tukey HSD test analyzing emergency department visits for asthma by California county, Lake County stands out as the county with the highest average ED visit rate for asthma of 634 per 100k residents. 23 of the 35 counties included in the analysis were grouped together to have a statistically non-significant difference between their mean ED visit rates for asthma ranging from 4 to 67 ED visits per 100k residents. 
 
 The heatmap shows that most counties have annual emergency department visits for asthma below 300 per 100k residents. Three counties, Mendocino, Humboldt, and Lake, appear to have consistently higher numbers of ED visits for asthma for all years included in the analysis. Most counties have fairly consistent numbers of visits across the study period. However, Shasta, Kings, and Butte counties have periods where the annual visits jump up by several hundred, and there is some overlap in the periods of these jumps between the three counties. 
 
@@ -511,7 +512,7 @@ Birthpercent_heatmap <- ggplot(bp_processed, aes(x = Year, y = County, fill = Va
 Birthpercent_heatmap
 ```
 
-There was minimal difference between percentages of low birth weight births among California counties according to a Tukey HSD test. However, Fresno County stood out as the county with the highest percent of births at a low birth weight (6.1%), and this was statistically significantly higher than the other 34 counties analyzed. Placer County stood out as the county with the lowest percent of births at a low birth weight (3.9%), which was statistically significantly lower than the other 34 counties.
+There were significant differences between percentages of low birth weight births among California counties (ANOVA; df = 34; F = 24.68; p-value < 2e-16). According to a Tukey HSD test, Fresno County stood out as the county with the highest percent of births at a low birth weight (6.1%), and this was statistically significantly higher than the other 34 counties analyzed. Placer County stood out as the county with the lowest percent of births at a low birth weight (3.9%), which was statistically significantly lower than the other 34 counties.
 
 The heatmap shows the change in % of Low Birthweight per county throughout the years 2005-2019. % Low Birthweight is reported based on a persons' residence address and not where they were hospitalized. Some counties like Fresno, San Joaquin, Bernardino and Solano have high % of Low Birthweights. Placer has a relatively low amount of % low birthweights. Overall, there is variability in low birthweight for all counties for all years but a general increase in % low birthweight rates in the time period 2016-2020.  
 
@@ -614,7 +615,8 @@ lm(data = joined_df,
                   "Std. Error", 
                   "Test Statistic", 
                   "p-value"),
-    digits = c(0, 2, 3, 2, 3))
+    digits = c(0, 2, 3, 2, 3)) %>%
+  add_footnote(c("R-squared: 0.4643"))
 
 # ----- testing out births MLR -------------------------------------------------
 
@@ -638,7 +640,8 @@ lm(data = joined_df,
                   "Std. Error", 
                   "Test Statistic", 
                   "p-value"),
-    digits = c(0, 2, 3, 2, 3))
+    digits = c(0, 2, 3, 2, 3)) %>%
+  add_footnote(c("R-squared: 0.2195"))
 ```
 
 
@@ -651,9 +654,9 @@ Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantl
 
 Based on statistical models, we conclude the following:
 
-There has been no statistically significant trend in ozone concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall p value = 0.37).
+There has been no statistically significant trend in ozone concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall; tau = 0.181; p value = 0.37).
 
-There has been a statistically significant trend in PM2.5 concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall p value = 0.023). A one year increase is associated with a 0.16 ug/m3 decrease in PM2.5 concentrations (p value < 0.05).
+There has been a statistically significant trend in PM2.5 concentrations across the California counties of interest from 2005 through 2019 (Mann-Kendall; tau = -0.448; p value = 0.023). A one year increase is associated with a 0.16 ug/m3 decrease in PM2.5 concentrations (LM; df = 13; F = 7.528; p value < 0.05).
 
 ## Question 2: Do PM2.5 and ozone concentrations impact asthma rates in California counties?
 
@@ -662,11 +665,12 @@ Alternative Hypothesis: Ozone and PM2.5 concentrations have changed significantl
 
 
 Based on statistical models, we conclude the following:
-A one ppm decrease in ozone concentration is associated with a 7367 unit increase in ED visits for asthma per 100k (p < 0.001). 
 
-A one ug/m3 decrease in PM2.5 concentration is associated with a 27 unit increase in ED visits for asthma per 100k (p < 0.001).
+A one ppm decrease in ozone concentration is associated with a 7367 unit increase in ED visits for asthma per 100k (MLR; df = 166, F = 35.97; p < 0.001). 
 
-A one unit increase in percent poverty is associated with a 19 unit increase in ED visits for asthma per 100k (p < 0.001). 
+A one ug/m3 decrease in PM2.5 concentration is associated with a 27 unit increase in ED visits for asthma per 100k (MLR; df = 166, F = 35.97; p < 0.001).
+
+A one unit increase in percent poverty is associated with a 19 unit increase in ED visits for asthma per 100k (MLR; df = 166, F = 35.97; p < 0.001). 
 
 
 
@@ -678,7 +682,7 @@ Alternative Hypothesis: PM 2.5 and Ozone concentrations impact birth weights in 
 
 Based on statistical models, we conclude the following:
 
-A one ug/m3 increase in PM2.5 concentration is associated with a 0.07 unit increase in percent underweight births (p < 0.001). 
+A one ug/m3 increase in PM2.5 concentration is associated with a 0.07 unit increase in percent underweight births (MLR; df = 166; F = 11.67; p < 0.001). 
 
 \newpage
 
@@ -686,7 +690,7 @@ A one ug/m3 increase in PM2.5 concentration is associated with a 0.07 unit incre
 
 The outputs of the multiple linear regression models, particularly for emergency department visits for asthma, suggest the need for further evaluation in future analyses. Previous literature suggests that increases in air pollution concentrations, especially particulate matter, increase the prevalence of asthma related episodes and ED visits/hospitalizations. The model in this analysis gives the opposite trend, and a large standard error value for ozone as a predictor indicates additional exploration may be needed. There could be many more potential predictors to include in the model, such as residence (urban vs rural, proximity to pollution point sources), and medical history factors. Pollution levels can also fluctuate drastically on short time scales, so annual averages may not be the best method for this analysis. If higher time resolution data could be obtained for asthma-related ED visits, air pollution data down to hourly averages could be analyzed for potentially more accurate results.  
 
-Our results suggest that PM2.5 and ozone concentrations could have some significant influence on low birth weight rates and asthma ED visits. Socioeconomic status (percent of households living in poverty) is also a significant predictor of asthma ED visits. Annual acreage burned in wildfires did not seem to have an effect on low birth weight rates or asthma ED visits, but it could be useful to analyze a more complete picture of the state's wildfire activity by including all wildfire management jurisdictions in the future. This is also another situation where higher time resolution data for asthma ED visits could enhance the analysis. Overall, results from previous literature and some of the results obtained through this analysis indicate the importance of equal access to clean air for the health and well being of California communities. 
+Our results suggest that PM2.5 and ozone concentrations could have some significant influence on low birth weight rates and asthma ED visits, even though our results indicate that PM2.5 concentrations have significantly decreased since 2005. Socioeconomic status (percent of households living in poverty) is also a significant predictor of asthma ED visits. Annual acreage burned in wildfires did not seem to have an effect on low birth weight rates or asthma ED visits, but it could be useful to analyze a more complete picture of the state's wildfire activity by including all wildfire management jurisdictions in the future. This is also another situation where higher time resolution data for asthma ED visits could enhance the analysis. Overall, results from previous literature and some of the results obtained through this analysis indicate the importance of equal access to clean air for the health and well being of California communities. 
 
 
 \newpage
