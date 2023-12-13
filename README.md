@@ -11,10 +11,13 @@ Our analysis consists of running multiple linear regression models, heatmaps and
 
 ## Investigators
 
-Ashton Cloer,Duke University
-Elizabeth Good,Duke University
-Emily Kuhlmann,Duke University, emily.kuhlmann@duke.edu
-Sakina Shahid,Duke University, ss1392@duke.edu
+Ashton Cloer, Duke University;
+
+Elizabeth Good, Duke University, eag73@duke.edu;
+
+Emily Kuhlmann, Duke University, emily.kuhlmann@duke.edu;
+
+Sakina Shahid, Duke University, ss1392@duke.edu
 
 ## Keywords
 
@@ -129,6 +132,64 @@ Processed/BirthPercent_counties
 | Value | poverty rate for each county | numeric | NA |
 
 Raw/EPA_AQS_annual/annual_conc_by_monitor_<year>.csv:
+Note that all year files have the same columns, and units marked "yes" are determined by row by the 'Units of Measure' column
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| State Code |  | chr | NA |
+| County Code |  | chr | NA |
+| Site Num |  | chr | NA |
+| Parameter Code |  | num | NA |
+| POC |  | num | NA |
+| Latitude |  | num | NA |
+| Longitude |  | num | NA |
+| Datum |  | chr | NA |
+| Parameter Name |  | chr | NA |
+| Sample Duration |  | chr | NA |
+| Pollutant Standard |  | chr | NA |
+| Metric Used |  | chr | NA |
+| Method Name |  | chr | NA |
+| Year |  | num | NA |
+| Units of Measure |  | chr | NA |
+| Event Type |  | chr | NA |
+| Observation Count |  | num | NA |
+| Observation Percent |  | num | NA |
+| Completeness Indicator |  | chr | NA |
+| Valid Day Count |  | num | NA |
+| Required Day Count |  | num | NA |
+| Exceptional Data Count |  | num | NA |
+| Null Data Count |  | num | NA |
+| Primary Exceedance Count |  | num | NA |
+| Secondary Exceedance Count |  | num | NA |
+| Certification Indicator |  | chr | NA |
+| Num Obs Below MDL |  | num | NA |
+| Arithmetic Mean |  | num | NA |
+| Arithmetic Standard Dev |  | num | NA |
+| 1st Max Value |  | num | NA |
+| 1st Max DateTime |  | POSIXct | NA |
+| 2nd Max Value |  | num | NA |
+| 2nd Max DateTime |  | POSIXct | NA |
+| 3rd Max Value |  | num | NA |
+| 3rd Max DateTime |  | POSIXct | NA |
+| 4th Max Value |  | num | NA |
+| 4th Max DateTime |  | POSIXct | NA |
+| 1st Max Non Overlapping Value |  | num | NA |
+| 1st NO Max DateTime |  | POSIXct | NA |
+| 2nd Max Non Overlapping Value |  | num | NA |
+| 2nd NO Max DateTime |  | POSIXct | NA |
+| 99th Percentile |  | num | NA |
+| 98th Percentile |  | num | NA |
+| 95th Percentile |  | num | NA |
+| 90th Percentile |  | num | NA |
+| 75th Percentile |  | num | NA |
+| 50th Percentile |  | num | NA |
+| 10th Percentile |  | num | NA |
+| Local Site Name |  | chr | NA |
+| Address |  | chr | NA |
+| State Name |  | chr | NA |
+| County Name |  | chr | NA |
+| City Name |  | chr | NA |
+| CBSA Name |  | chr | NA |
+| Date of Last Change |  | Date | NA |
 
 Processed/CA_AQ_processed.csv:
 
