@@ -35,7 +35,7 @@ Wildfire data comes from the CalFire annual statistics summary publications (aka
 
 https://www.fire.ca.gov/our-impact/statistics
 
-Air quality data (PM2.5 and ozone) comes the the US EPS Air Data pregenerate data files for annual summary data accessed 11/07/2023. 
+Air quality data (PM2.5 and ozone) comes from the US EPS Air Data pre-generated data files for annual summary data accessed 11/07/2023. 
 
 https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
 
