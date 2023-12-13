@@ -132,74 +132,98 @@ Processed/BirthPercent_counties
 | Value | poverty rate for each county | numeric | NA |
 
 Raw/EPA_AQS_annual/annual_conc_by_monitor_<year>.csv:
+
 Note that all year files have the same columns, and units marked "yes" are determined by row by the 'Units of Measure' column
 | Column Name  | Description | Data Class | Units
 | ------------- | ------------- | ------------- | ------------- |
-| State Code |  | chr | NA |
-| County Code |  | chr | NA |
-| Site Num |  | chr | NA |
-| Parameter Code |  | num | NA |
-| POC |  | num | NA |
-| Latitude |  | num | NA |
-| Longitude |  | num | NA |
-| Datum |  | chr | NA |
-| Parameter Name |  | chr | NA |
-| Sample Duration |  | chr | NA |
-| Pollutant Standard |  | chr | NA |
-| Metric Used |  | chr | NA |
-| Method Name |  | chr | NA |
-| Year |  | num | NA |
-| Units of Measure |  | chr | NA |
-| Event Type |  | chr | NA |
-| Observation Count |  | num | NA |
-| Observation Percent |  | num | NA |
-| Completeness Indicator |  | chr | NA |
-| Valid Day Count |  | num | NA |
-| Required Day Count |  | num | NA |
-| Exceptional Data Count |  | num | NA |
-| Null Data Count |  | num | NA |
-| Primary Exceedance Count |  | num | NA |
-| Secondary Exceedance Count |  | num | NA |
-| Certification Indicator |  | chr | NA |
-| Num Obs Below MDL |  | num | NA |
-| Arithmetic Mean |  | num | NA |
-| Arithmetic Standard Dev |  | num | NA |
-| 1st Max Value |  | num | NA |
-| 1st Max DateTime |  | POSIXct | NA |
-| 2nd Max Value |  | num | NA |
-| 2nd Max DateTime |  | POSIXct | NA |
-| 3rd Max Value |  | num | NA |
-| 3rd Max DateTime |  | POSIXct | NA |
-| 4th Max Value |  | num | NA |
-| 4th Max DateTime |  | POSIXct | NA |
-| 1st Max Non Overlapping Value |  | num | NA |
-| 1st NO Max DateTime |  | POSIXct | NA |
-| 2nd Max Non Overlapping Value |  | num | NA |
-| 2nd NO Max DateTime |  | POSIXct | NA |
-| 99th Percentile |  | num | NA |
-| 98th Percentile |  | num | NA |
-| 95th Percentile |  | num | NA |
-| 90th Percentile |  | num | NA |
-| 75th Percentile |  | num | NA |
-| 50th Percentile |  | num | NA |
-| 10th Percentile |  | num | NA |
-| Local Site Name |  | chr | NA |
-| Address |  | chr | NA |
-| State Name |  | chr | NA |
-| County Name |  | chr | NA |
-| City Name |  | chr | NA |
-| CBSA Name |  | chr | NA |
-| Date of Last Change |  | Date | NA |
+| State Code | state FIPS in which monitor resides | chr | NA |
+| County Code | county FIPS in which monitor resides | chr | NA |
+| Site Num | unique numbe within county identifying site | chr | NA |
+| Parameter Code | AQS code corresponding to measured parameter | num | NA |
+| POC | "Parameter Occurrence Code" distinguishes different instruments measuring same parameter at same site | num | NA |
+| Latitude | monitor's angular distance north of the equator | num | decimal degrees |
+| Longitude | monitor's angular distance east of the prime meridian | num | decimal degrees |
+| Datum | datum associated with the lat long | chr | NA |
+| Parameter Name | name assigned in AQS to parameter; pollutant or non-pollutants | chr | NA |
+| Sample Duration | length of time that air passes through monitoring device before measure | chr | NA |
+| Pollutant Standard | description of the ambient air quality standard rules for aggregate statistics | chr | NA |
+| Metric Used | base metric used in calculation of aggregate statistics | chr | NA |
+| Method Name | description of processes, equipment, and protocols in gathering and measuring sample | chr | NA |
+| Year | year represented by annual summary data | num | NA |
+| Units of Measure | unit of measure for the parameter | chr | NA |
+| Event Type | indicates whether data measured during exceptional events are included in the summary | chr | NA |
+| Observation Count | number of samples taken during the year | num | NA |
+| Observation Percent | percent representing the number of observations taken with respect to the number scheduled to be taken | num | NA |
+| Completeness Indicator | indication of whether regulatory data completeness criteria have been met | chr | NA |
+| Valid Day Count | number of days during the year where daily monitoring criteria were met | num | NA |
+| Required Day Count | number of days during the year which the monitor was scheduled to take samples | num | NA |
+| Exceptional Data Count | number of data points affected by exceptional air quality events | num | NA |
+| Null Data Count | count of scheduled samples when no data was collected and reason no reported | num | NA |
+| Primary Exceedance Count | number of samples during the year that exceeded the primary standard | num | NA |
+| Secondary Exceedance Count | number of sample during the year that exceeded the secondary standard | num | NA |
+| Certification Indicator | indication whether the completeness and accuracy of the information has been certified by the submitter | chr | NA |
+| Num Obs Below MDL | the number of samples that were below the method detection limit | num | NA |
+| Arithmetic Mean | the average value for the year | num | yes |
+| Arithmetic Standard Dev | the standard deviation about the mean for the year | num | yes |
+| 1st Max Value | the highest value for the year | num | yes |
+| 1st Max DateTime | the date and time when the highest value was taken | POSIXct | NA |
+| 2nd Max Value | the second highest value for the year | num | yes |
+| 2nd Max DateTime | the date and time when the second highest value was taken | POSIXct | NA |
+| 3rd Max Value | the third highest value for the year | num | yes |
+| 3rd Max DateTime | the date and time when the third highest value was taken | POSIXct | NA |
+| 4th Max Value | the fourth highest value for the year | num | yes |
+| 4th Max DateTime | the date and time when the fourth highest value was taken | POSIXct | NA |
+| 1st Max Non Overlapping Value | for 8-hour CO averages, the highest value of the year | num | yes |
+| 1st NO Max DateTime | the date and time when the first maximumnon overlapping value for the year was taken | POSIXct | NA |
+| 2nd Max Non Overlapping Value | for 8-hour CO averages, the second highest value of the year that does not share any hours with the 8-hour period of the first max non overlapping value | num | yes |
+| 2nd NO Max DateTime | the date and time when the second maximum non overlapping value for the year was taken | POSIXct | NA |
+| 99th Percentile | the value from this monitor for which 99 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 98th Percentile | the value from this monitor for which 98 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 95th Percentile | the value from this monitor for which 95 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 90th Percentile | the value from this monitor for which 90 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 75th Percentile | the value from this monitor for which 75 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 50th Percentile | the value from this monitor for which 50 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| 10th Percentile | the value from this monitor for which 10 percent of the rest of the measured values for the year are equal to or less than | num | yes |
+| Local Site Name | the name of the site given by the air pollution control agency that operates it | chr | NA |
+| Address | the approximate street address of the monitoring site | chr | NA |
+| State Name | the name of the state where the monitoring site is located | chr | NA |
+| County Name | the name of the county where the monitoring site is located | chr | NA |
+| City Name | the name of the city where the monitoring site is located | chr | NA |
+| CBSA Name | the name of the core bases statistical area (metropolitan area) where the monitoring site is located | chr | NA |
+| Date of Last Change | the date the last time any numeric values in this record wer eupdated in the AQS data system | Date | NA |
 
 Processed/CA_AQ_processed.csv:
 
+Note that units marked "yes" are determined by row by the 'Units of Measure' column
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| Latitude | monitor's angular distance north of the equator | num | decimal degrees |
+| Longitude | monitor's angular distance east of the prime meridian | num | decimal degrees |
+| Pollutant Standard | description of the ambient air quality standard rules for aggregate statistics | chr | yes |
+| Year | year represented by annual summary data | num | NA |
+| Units of Measure | unit of measure for the parameter | chr | NA |
+| Arithmetic Mean | the average value for the year | num | yes |
+| State Name | the name of the state where the monitoring site is located (California) | chr | NA |
+| County Name | the name of the county where the monitoring site is located | chr | NA |
+
 Raw/CA_wildfire/<year>.csv: 
+
+Note that all year files have the same columns
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| UNIT | county in which the fire occurred | chr | NA |
+| YEAR | year in which the fire occurred | num | NA |
+| ACRES BURNED | number of acres burned in the fire | num | acres |
 
 Processed/CA_wildfire_processed.csv: 
 
-## Scripts and code
+| Column Name  | Description | Data Class | Units
+| ------------- | ------------- | ------------- | ------------- |
+| UNIT | county in which the fire occurred | chr | NA |
+| YEAR | year in which the fire occurred | num | NA |
+| mean | average number of acres burned in the fire | num | acres |
 
-<list any software scripts/code contained in the repository and a description of their purpose.>
+## Scripts and code
 
 1. DataProcessing_SocioEco.RMD: This RMD was used for data wrangling the socioeconomic data, normalizing the data, removing unnecessary counties, saving processed data files, and testing visualization and exploratory data techniques for the final project.
 2. FinalCodeforSocio.RMD: Used to communicate final code needed for the final project that represents the socioeconomic data and exploratory analysis.
@@ -207,8 +231,15 @@ Processed/CA_wildfire_processed.csv:
 4. DataVis_Asthma.R: This code provides the processed asthma data and creates the heatmap used in the final PDF.
 5. PopulationData.R: This code was used to pull population data for California counties from 2005-2019 using the tidycensus package. It was also used to wrangle the data to inlude the necessary counties and other information. 
 6. DataProcessing_BirthPercent.RMD: This code was used to upload the raw data to R and wrangled to tidy the dataset to include relevant counties, years and information. 
-7. DataVis_BirthPercent.RMD: The code here was used to visualize the heatmap for low birth weight by county from 2005-2019. 
-8. FinalPorjectCode.RMD: This is the code used to create the PDF document which contains all of the necessary graphs, visualizations and analysis pertaining to our project. 
+7. DataVis_BirthPercent.RMD: The code here was used to visualize the heatmap for low birth weight by county from 2005-2019.
+8. CA_wildfire_processing.R: This code reads in each year of raw wildfire data and joins it into one data file with average acreage burned per county per year.
+9.  DataProcessing_AirQuality.R: This code reads in each year of airquality data, joins it into one data file, and selects the columns and parameters of interest.
+10.  DataVis_wildfire.R: This code takes the processed wildfire data and makes a heat map of acreage burned per county per year.
+11.  DataVis_AirQuality.R: This code takes the processed air quality data, filters it into PM2.5 and ozone data summarazed by county by year, and creates box and whisker plots as well as time series plots.
+12.  CA_Counties_Mapping.R: This code creates maps to visualize the counties included in the analysis as well as maps of the PM2.5 and ozone air quality monitor locations. 
+13.  linear_model.R: This code combines all of the variables of interest into one data frame for MLR analysis. It runs MLR for asthma and birth weights and also does an ANOVA analysis for asthma and birth weights by county. 
+14. FinalPorjectCode.RMD: This is the code used to create the PDF document which contains all of the necessary graphs, visualizations and analysis pertaining to our project.
+
 
 ## Quality assurance/quality control
 
